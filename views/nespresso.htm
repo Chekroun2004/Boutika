@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://www.deliziocaffe.com/xmlrpc.php" />
+
+	<script defer src="data:text/javascript;base64,CgkJZG9jdW1lbnQuZG9jdW1lbnRFbGVtZW50LmNsYXNzTmFtZSA9ICdqcyc7Cgk="></script>
+	
+	<script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">var ewww_webp_supported=!1;function check_webp_feature(A,e){var w;e=void 0!==e?e:function(){},ewww_webp_supported?e(ewww_webp_supported):((w=new Image).onload=function(){ewww_webp_supported=0<w.width&&0<w.height,e&&e(ewww_webp_supported)},w.onerror=function(){e&&e(!1)},w.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA=="}[A])}check_webp_feature("alpha");</script><script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">var Arrive=function(c,w){"use strict";if(c.MutationObserver&&"undefined"!=typeof HTMLElement){var r,a=0,u=(r=HTMLElement.prototype.matches||HTMLElement.prototype.webkitMatchesSelector||HTMLElement.prototype.mozMatchesSelector||HTMLElement.prototype.msMatchesSelector,{matchesSelector:function(e,t){return e instanceof HTMLElement&&r.call(e,t)},addMethod:function(e,t,r){var a=e[t];e[t]=function(){return r.length==arguments.length?r.apply(this,arguments):"function"==typeof a?a.apply(this,arguments):void 0}},callCallbacks:function(e,t){t&&t.options.onceOnly&&1==t.firedElems.length&&(e=[e[0]]);for(var r,a=0;r=e[a];a++)r&&r.callback&&r.callback.call(r.elem,r.elem);t&&t.options.onceOnly&&1==t.firedElems.length&&t.me.unbindEventWithSelectorAndCallback.call(t.target,t.selector,t.callback)},checkChildNodesRecursively:function(e,t,r,a){for(var i,n=0;i=e[n];n++)r(i,t,a)&&a.push({callback:t.callback,elem:i}),0<i.childNodes.length&&u.checkChildNodesRecursively(i.childNodes,t,r,a)},mergeArrays:function(e,t){var r,a={};for(r in e)e.hasOwnProperty(r)&&(a[r]=e[r]);for(r in t)t.hasOwnProperty(r)&&(a[r]=t[r]);return a},toElementsArray:function(e){return e=void 0!==e&&("number"!=typeof e.length||e===c)?[e]:e}}),e=(l.prototype.addEvent=function(e,t,r,a){a={target:e,selector:t,options:r,callback:a,firedElems:[]};return this._beforeAdding&&this._beforeAdding(a),this._eventsBucket.push(a),a},l.prototype.removeEvent=function(e){for(var t,r=this._eventsBucket.length-1;t=this._eventsBucket[r];r--)e(t)&&(this._beforeRemoving&&this._beforeRemoving(t),(t=this._eventsBucket.splice(r,1))&&t.length&&(t[0].callback=null))},l.prototype.beforeAdding=function(e){this._beforeAdding=e},l.prototype.beforeRemoving=function(e){this._beforeRemoving=e},l),t=function(i,n){var o=new e,l=this,s={fireOnAttributesModification:!1};return o.beforeAdding(function(t){var e=t.target;e!==c.document&&e!==c||(e=document.getElementsByTagName("html")[0]);var r=new MutationObserver(function(e){n.call(this,e,t)}),a=i(t.options);r.observe(e,a),t.observer=r,t.me=l}),o.beforeRemoving(function(e){e.observer.disconnect()}),this.bindEvent=function(e,t,r){t=u.mergeArrays(s,t);for(var a=u.toElementsArray(this),i=0;i<a.length;i++)o.addEvent(a[i],e,t,r)},this.unbindEvent=function(){var r=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<r.length;t++)if(this===w||e.target===r[t])return!0;return!1})},this.unbindEventWithSelectorOrCallback=function(r){var a=u.toElementsArray(this),i=r,e="function"==typeof r?function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.callback===i)return!0;return!1}:function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.selector===r)return!0;return!1};o.removeEvent(e)},this.unbindEventWithSelectorAndCallback=function(r,a){var i=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<i.length;t++)if((this===w||e.target===i[t])&&e.selector===r&&e.callback===a)return!0;return!1})},this},i=new function(){var s={fireOnAttributesModification:!1,onceOnly:!1,existing:!1};function n(e,t,r){return!(!u.matchesSelector(e,t.selector)||(e._id===w&&(e._id=a++),-1!=t.firedElems.indexOf(e._id)))&&(t.firedElems.push(e._id),!0)}var c=(i=new t(function(e){var t={attributes:!1,childList:!0,subtree:!0};return e.fireOnAttributesModification&&(t.attributes=!0),t},function(e,i){e.forEach(function(e){var t=e.addedNodes,r=e.target,a=[];null!==t&&0<t.length?u.checkChildNodesRecursively(t,i,n,a):"attributes"===e.type&&n(r,i)&&a.push({callback:i.callback,elem:r}),u.callCallbacks(a,i)})})).bindEvent;return i.bindEvent=function(e,t,r){t=void 0===r?(r=t,s):u.mergeArrays(s,t);var a=u.toElementsArray(this);if(t.existing){for(var i=[],n=0;n<a.length;n++)for(var o=a[n].querySelectorAll(e),l=0;l<o.length;l++)i.push({callback:r,elem:o[l]});if(t.onceOnly&&i.length)return r.call(i[0].elem,i[0].elem);setTimeout(u.callCallbacks,1,i)}c.call(this,e,t,r)},i},o=new function(){var a={};function i(e,t){return u.matchesSelector(e,t.selector)}var n=(o=new t(function(){return{childList:!0,subtree:!0}},function(e,r){e.forEach(function(e){var t=e.removedNodes,e=[];null!==t&&0<t.length&&u.checkChildNodesRecursively(t,r,i,e),u.callCallbacks(e,r)})})).bindEvent;return o.bindEvent=function(e,t,r){t=void 0===r?(r=t,a):u.mergeArrays(a,t),n.call(this,e,t,r)},o};d(HTMLElement.prototype),d(NodeList.prototype),d(HTMLCollection.prototype),d(HTMLDocument.prototype),d(Window.prototype);var n={};return s(i,n,"unbindAllArrive"),s(o,n,"unbindAllLeave"),n}function l(){this._eventsBucket=[],this._beforeAdding=null,this._beforeRemoving=null}function s(e,t,r){u.addMethod(t,r,e.unbindEvent),u.addMethod(t,r,e.unbindEventWithSelectorOrCallback),u.addMethod(t,r,e.unbindEventWithSelectorAndCallback)}function d(e){e.arrive=i.bindEvent,s(i,e,"unbindArrive"),e.leave=o.bindEvent,s(o,e,"unbindLeave")}}(window,void 0),ewww_webp_supported=!1;function check_webp_feature(e,t){var r;ewww_webp_supported?t(ewww_webp_supported):((r=new Image).onload=function(){ewww_webp_supported=0<r.width&&0<r.height,t(ewww_webp_supported)},r.onerror=function(){t(!1)},r.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",animation:"UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"}[e])}function ewwwLoadImages(e){if(e){for(var t=document.querySelectorAll(".batch-image img, .image-wrapper a, .ngg-pro-masonry-item a, .ngg-galleria-offscreen-seo-wrapper a"),r=0,a=t.length;r<a;r++)ewwwAttr(t[r],"data-src",t[r].getAttribute("data-webp")),ewwwAttr(t[r],"data-thumbnail",t[r].getAttribute("data-webp-thumbnail"));for(var i=document.querySelectorAll("div.woocommerce-product-gallery__image"),r=0,a=i.length;r<a;r++)ewwwAttr(i[r],"data-thumb",i[r].getAttribute("data-webp-thumb"))}for(var n=document.querySelectorAll("video"),r=0,a=n.length;r<a;r++)ewwwAttr(n[r],"poster",e?n[r].getAttribute("data-poster-webp"):n[r].getAttribute("data-poster-image"));for(var o,l=document.querySelectorAll("img.ewww_webp_lazy_load"),r=0,a=l.length;r<a;r++)e&&(ewwwAttr(l[r],"data-lazy-srcset",l[r].getAttribute("data-lazy-srcset-webp")),ewwwAttr(l[r],"data-srcset",l[r].getAttribute("data-srcset-webp")),ewwwAttr(l[r],"data-lazy-src",l[r].getAttribute("data-lazy-src-webp")),ewwwAttr(l[r],"data-src",l[r].getAttribute("data-src-webp")),ewwwAttr(l[r],"data-orig-file",l[r].getAttribute("data-webp-orig-file")),ewwwAttr(l[r],"data-medium-file",l[r].getAttribute("data-webp-medium-file")),ewwwAttr(l[r],"data-large-file",l[r].getAttribute("data-webp-large-file")),null!=(o=l[r].getAttribute("srcset"))&&!1!==o&&o.includes("R0lGOD")&&ewwwAttr(l[r],"src",l[r].getAttribute("data-lazy-src-webp"))),l[r].className=l[r].className.replace(/\bewww_webp_lazy_load\b/,"");for(var s=document.querySelectorAll(".ewww_webp"),r=0,a=s.length;r<a;r++)e?(ewwwAttr(s[r],"srcset",s[r].getAttribute("data-srcset-webp")),ewwwAttr(s[r],"src",s[r].getAttribute("data-src-webp")),ewwwAttr(s[r],"data-orig-file",s[r].getAttribute("data-webp-orig-file")),ewwwAttr(s[r],"data-medium-file",s[r].getAttribute("data-webp-medium-file")),ewwwAttr(s[r],"data-large-file",s[r].getAttribute("data-webp-large-file")),ewwwAttr(s[r],"data-large_image",s[r].getAttribute("data-webp-large_image")),ewwwAttr(s[r],"data-src",s[r].getAttribute("data-webp-src"))):(ewwwAttr(s[r],"srcset",s[r].getAttribute("data-srcset-img")),ewwwAttr(s[r],"src",s[r].getAttribute("data-src-img"))),s[r].className=s[r].className.replace(/\bewww_webp\b/,"ewww_webp_loaded");window.jQuery&&jQuery.fn.isotope&&jQuery.fn.imagesLoaded&&(jQuery(".fusion-posts-container-infinite").imagesLoaded(function(){jQuery(".fusion-posts-container-infinite").hasClass("isotope")&&jQuery(".fusion-posts-container-infinite").isotope()}),jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").imagesLoaded(function(){jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").isotope()}))}function ewwwWebPInit(e){ewwwLoadImages(e),ewwwNggLoadGalleries(e),document.arrive(".ewww_webp",function(){ewwwLoadImages(e)}),document.arrive(".ewww_webp_lazy_load",function(){ewwwLoadImages(e)}),document.arrive("videos",function(){ewwwLoadImages(e)}),"loading"==document.readyState?document.addEventListener("DOMContentLoaded",ewwwJSONParserInit):("undefined"!=typeof galleries&&ewwwNggParseGalleries(e),ewwwWooParseVariations(e))}function ewwwAttr(e,t,r){null!=r&&!1!==r&&e.setAttribute(t,r)}function ewwwJSONParserInit(){"undefined"!=typeof galleries&&check_webp_feature("alpha",ewwwNggParseGalleries),check_webp_feature("alpha",ewwwWooParseVariations)}function ewwwWooParseVariations(e){if(e)for(var t=document.querySelectorAll("form.variations_form"),r=0,a=t.length;r<a;r++){var i=t[r].getAttribute("data-product_variations"),n=!1;try{for(var o in i=JSON.parse(i))void 0!==i[o]&&void 0!==i[o].image&&(void 0!==i[o].image.src_webp&&(i[o].image.src=i[o].image.src_webp,n=!0),void 0!==i[o].image.srcset_webp&&(i[o].image.srcset=i[o].image.srcset_webp,n=!0),void 0!==i[o].image.full_src_webp&&(i[o].image.full_src=i[o].image.full_src_webp,n=!0),void 0!==i[o].image.gallery_thumbnail_src_webp&&(i[o].image.gallery_thumbnail_src=i[o].image.gallery_thumbnail_src_webp,n=!0),void 0!==i[o].image.thumb_src_webp&&(i[o].image.thumb_src=i[o].image.thumb_src_webp,n=!0));n&&ewwwAttr(t[r],"data-product_variations",JSON.stringify(i))}catch(e){}}}function ewwwNggParseGalleries(e){if(e)for(var t in galleries){var r=galleries[t];galleries[t].images_list=ewwwNggParseImageList(r.images_list)}}function ewwwNggLoadGalleries(e){e&&document.addEventListener("ngg.galleria.themeadded",function(e,t){window.ngg_galleria._create_backup=window.ngg_galleria.create,window.ngg_galleria.create=function(e,t){var r=$(e).data("id");return galleries["gallery_"+r].images_list=ewwwNggParseImageList(galleries["gallery_"+r].images_list),window.ngg_galleria._create_backup(e,t)}})}function ewwwNggParseImageList(e){for(var t in e){var r=e[t];if(void 0!==r["image-webp"]&&(e[t].image=r["image-webp"],delete e[t]["image-webp"]),void 0!==r["thumb-webp"]&&(e[t].thumb=r["thumb-webp"],delete e[t]["thumb-webp"]),void 0!==r.full_image_webp&&(e[t].full_image=r.full_image_webp,delete e[t].full_image_webp),void 0!==r.srcsets)for(var a in r.srcsets)nggSrcset=r.srcsets[a],void 0!==r.srcsets[a+"-webp"]&&(e[t].srcsets[a]=r.srcsets[a+"-webp"],delete e[t].srcsets[a+"-webp"]);if(void 0!==r.full_srcsets)for(var i in r.full_srcsets)nggFSrcset=r.full_srcsets[i],void 0!==r.full_srcsets[i+"-webp"]&&(e[t].full_srcsets[i]=r.full_srcsets[i+"-webp"],delete e[t].full_srcsets[i+"-webp"])}return e}check_webp_feature("alpha",ewwwWebPInit);</script><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	
+	
+	<!-- This site is optimized with the Yoast SEO Premium plugin v22.1 (Yoast SEO v22.1) - https://yoast.com/wordpress/plugins/seo/ -->
+	<link media="all" href="https://www.deliziocaffe.com/wp-content/cache/autoptimize/css/autoptimize_4e8a86f37ab04377f077c8e9ba0df113.css" rel="stylesheet"><link media="only screen and (max-width: 768px)" href="https://www.deliziocaffe.com/wp-content/cache/autoptimize/css/autoptimize_6fe211f8bb15af76999ce9135805d7af.css" rel="stylesheet"><title>Machine à Capsules Compatible Nespresso - Delizio Caffè &amp; Stores</title>
+	<link rel="canonical" href="https://www.deliziocaffe.com/product/machine-a-capsules-compatible-nespresso/" />
+	<meta property="og:locale" content="fr_FR" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Machine à Capsules Compatible Nespresso" />
+	<meta property="og:url" content="https://www.deliziocaffe.com/product/machine-a-capsules-compatible-nespresso/" />
+	<meta property="og:site_name" content="Delizio Caffè &amp; Stores" />
+	<meta property="article:modified_time" content="2023-12-20T04:41:19+00:00" />
+	<meta property="og:image" content="https://www.deliziocaffe.com/wp-content/uploads/2023/04/KRUPS.png" />
+	<meta property="og:image:width" content="800" />
+	<meta property="og:image:height" content="1000" />
+	<meta property="og:image:type" content="image/png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.deliziocaffe.com/product/machine-a-capsules-compatible-nespresso/","url":"https://www.deliziocaffe.com/product/machine-a-capsules-compatible-nespresso/","name":"Machine à Capsules Compatible Nespresso - Delizio Caffè &amp; Stores","isPartOf":{"@id":"https://www.deliziocaffe.com/#website"},"primaryImageOfPage":{"@id":"https://www.deliziocaffe.com/product/machine-a-capsules-compatible-nespresso/#primaryimage"},"image":{"@id":"https://www.deliziocaffe.com/product/machine-a-capsules-compatible-nespresso/#primaryimage"},"thumbnailUrl":"https://www.deliziocaffe.com/wp-content/uploads/2023/04/KRUPS.png","datePublished":"2023-04-11T12:19:18+00:00","dateModified":"2023-12-20T04:41:19+00:00","breadcrumb":{"@id":"https://www.deliziocaffe.com/product/machine-a-capsules-compatible-nespresso/#breadcrumb"},"inLanguage":"fr-FR","potentialAction":[{"@type":"ReadAction","target":["https://www.deliziocaffe.com/product/machine-a-capsules-compatible-nespresso/"]}]},{"@type":"ImageObject","inLanguage":"fr-FR","@id":"https://www.deliziocaffe.com/product/machine-a-capsules-compatible-nespresso/#primaryimage","url":"https://www.deliziocaffe.com/wp-content/uploads/2023/04/KRUPS.png","contentUrl":"https://www.deliziocaffe.com/wp-content/uploads/2023/04/KRUPS.png","width":800,"height":1000},{"@type":"BreadcrumbList","@id":"https://www.deliziocaffe.com/product/machine-a-capsules-compatible-nespresso/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.deliziocaffe.com/"},{"@type":"ListItem","position":2,"name":"Boutique","item":"https://www.deliziocaffe.com/shop/"},{"@type":"ListItem","position":3,"name":"Machine à Capsules Compatible Nespresso"}]},{"@type":"WebSite","@id":"https://www.deliziocaffe.com/#website","url":"https://www.deliziocaffe.com/","name":"Delizio Caffè &amp; Stores","description":"Bienvenue dans le monde du café espresso typique italien","publisher":{"@id":"https://www.deliziocaffe.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.deliziocaffe.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"fr-FR"},{"@type":"Organization","@id":"https://www.deliziocaffe.com/#organization","name":"Delizio Caffè","url":"https://www.deliziocaffe.com/","logo":{"@type":"ImageObject","inLanguage":"fr-FR","@id":"https://www.deliziocaffe.com/#/schema/logo/image/","url":"https://i0.wp.com/www.deliziocaffe.com/wp-content/uploads/2022/04/2022-04-16-15.14.13.jpg?fit=1014%2C339&ssl=1","contentUrl":"https://i0.wp.com/www.deliziocaffe.com/wp-content/uploads/2022/04/2022-04-16-15.14.13.jpg?fit=1014%2C339&ssl=1","width":1014,"height":339,"caption":"Delizio Caffè"},"image":{"@id":"https://www.deliziocaffe.com/#/schema/logo/image/"}}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//cdn.linearicons.com' />
+<link rel="alternate" type="application/rss+xml" title="Delizio Caffè &amp; Stores &raquo; Flux" href="https://www.deliziocaffe.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Delizio Caffè &amp; Stores &raquo; Flux des commentaires" href="https://www.deliziocaffe.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Delizio Caffè &amp; Stores &raquo; Machine à Capsules Compatible Nespresso Flux des commentaires" href="https://www.deliziocaffe.com/product/machine-a-capsules-compatible-nespresso/feed/" />
+<meta content="Divi v.4.18.0" name="generator"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel='stylesheet' id='et-builder-googlefonts-cached-css' href='https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;subset=latin,latin-ext&#038;display=swap' type='text/css' media='all' />
+
+<link rel='stylesheet' id='popup-maker-site-css' href='https://www.deliziocaffe.com/wp-content/cache/autoptimize/css/autoptimize_single_d857fc20f54d2d02f9bd82289b6b5bec.css?generated=1741783488&#038;ver=1.20.4' type='text/css' media='all' />
+
+
+
+<link rel='stylesheet' id='dashicons-css' href='https://www.deliziocaffe.com/wp-includes/css/dashicons.min.css?ver=6.7.2' type='text/css' media='all' />
+
+<link rel='stylesheet' id='psfw-font-css' href='//fonts.googleapis.com/css?family=Bitter%7CHind%7CPlayfair+Display%3A400%2C400i%2C700%2C700i%2C900%2C900i%7COpen+Sans%3A400%2C500%2C600%2C700%2C900%7CLato%3A300%2C400%2C700%2C900%7CMontserrat%7CDroid+Sans%7CRoboto%7CLora%3A400%2C400i%2C700%2C700i%7CRoboto+Slab%7CRubik%7CMerriweather%3A300%2C400%2C700%2C900%7CPoppins%7CRopa+Sans%7CPlayfair+Display%7CRubik%7CSource+Sans+Pro%7CRoboto+Condensed%7CRoboto+Slab%3A300%2C400%2C700%7CAmatic+SC%3A400%2C700%7CQuicksand%7COswald%7CQuicksand%3A400%2C500%2C700&#038;ver=6.7.2' type='text/css' media='all' />
+
+
+<link rel='stylesheet' id='psfw-linearicons-css' href='https://cdn.linearicons.com/free/1.0.0/icon-font.min.css?ver=6.7.2' type='text/css' media='all' />
+
+
+
+
+
+<script type="text/template" id="tmpl-variation-template">
+	<div class="woocommerce-variation-description">{{{ data.variation.variation_description }}}</div>
+	<div class="woocommerce-variation-price">{{{ data.variation.price_html }}}</div>
+	<div class="woocommerce-variation-availability">{{{ data.variation.availability_html }}}</div>
+</script>
+<script type="text/template" id="tmpl-unavailable-variation-template">
+	<p role="alert">Désolé, ce produit n&rsquo;est pas disponible. Veuillez choisir une combinaison différente.</p>
+</script>
+<script defer type="text/javascript" src="https://www.deliziocaffe.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script defer id="xoo-aff-js-js-extra" src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgeG9vX2FmZl9sb2NhbGl6ZSA9IHsiYWRtaW51cmwiOiJodHRwczpcL1wvd3d3LmRlbGl6aW9jYWZmZS5jb21cL3dwLWFkbWluXC9hZG1pbi1hamF4LnBocCIsImNvdW50cmllcyI6IntcIkFGXCI6XCJBZmdoYW5pc3RhblwiLFwiQVhcIjpcIlx1MDBjNWxhbmQgSXNsYW5kc1wiLFwiQUxcIjpcIkFsYmFuaWFcIixcIkRaXCI6XCJBbGdlcmlhXCIsXCJBU1wiOlwiQW1lcmljYW4gU2Ftb2FcIixcIkFEXCI6XCJBbmRvcnJhXCIsXCJBT1wiOlwiQW5nb2xhXCIsXCJBSVwiOlwiQW5ndWlsbGFcIixcIkFRXCI6XCJBbnRhcmN0aWNhXCIsXCJBR1wiOlwiQW50aWd1YSBhbmQgQmFyYnVkYVwiLFwiQVJcIjpcIkFyZ2VudGluYVwiLFwiQU1cIjpcIkFybWVuaWFcIixcIkFXXCI6XCJBcnViYVwiLFwiQVVcIjpcIkF1c3RyYWxpYVwiLFwiQVRcIjpcIkF1c3RyaWFcIixcIkFaXCI6XCJBemVyYmFpamFuXCIsXCJCU1wiOlwiQmFoYW1hc1wiLFwiQkhcIjpcIkJhaHJhaW5cIixcIkJEXCI6XCJCYW5nbGFkZXNoXCIsXCJCQlwiOlwiQmFyYmFkb3NcIixcIkJZXCI6XCJCZWxhcnVzXCIsXCJCRVwiOlwiQmVsZ2l1bVwiLFwiUFdcIjpcIkJlbGF1XCIsXCJCWlwiOlwiQmVsaXplXCIsXCJCSlwiOlwiQmVuaW5cIixcIkJNXCI6XCJCZXJtdWRhXCIsXCJCVFwiOlwiQmh1dGFuXCIsXCJCT1wiOlwiQm9saXZpYVwiLFwiQlFcIjpcIkJvbmFpcmUsIFNhaW50IEV1c3RhdGl1cyBhbmQgU2FiYVwiLFwiQkFcIjpcIkJvc25pYSBhbmQgSGVyemVnb3ZpbmFcIixcIkJXXCI6XCJCb3Rzd2FuYVwiLFwiQlZcIjpcIkJvdXZldCBJc2xhbmRcIixcIkJSXCI6XCJCcmF6aWxcIixcIklPXCI6XCJCcml0aXNoIEluZGlhbiBPY2VhbiBUZXJyaXRvcnlcIixcIkJOXCI6XCJCcnVuZWlcIixcIkJHXCI6XCJCdWxnYXJpYVwiLFwiQkZcIjpcIkJ1cmtpbmEgRmFzb1wiLFwiQklcIjpcIkJ1cnVuZGlcIixcIktIXCI6XCJDYW1ib2RpYVwiLFwiQ01cIjpcIkNhbWVyb29uXCIsXCJDQVwiOlwiQ2FuYWRhXCIsXCJDVlwiOlwiQ2FwZSBWZXJkZVwiLFwiS1lcIjpcIkNheW1hbiBJc2xhbmRzXCIsXCJDRlwiOlwiQ2VudHJhbCBBZnJpY2FuIFJlcHVibGljXCIsXCJURFwiOlwiQ2hhZFwiLFwiQ0xcIjpcIkNoaWxlXCIsXCJDTlwiOlwiQ2hpbmFcIixcIkNYXCI6XCJDaHJpc3RtYXMgSXNsYW5kXCIsXCJDQ1wiOlwiQ29jb3MgKEtlZWxpbmcpIElzbGFuZHNcIixcIkNPXCI6XCJDb2xvbWJpYVwiLFwiS01cIjpcIkNvbW9yb3NcIixcIkNHXCI6XCJDb25nbyAoQnJhenphdmlsbGUpXCIsXCJDRFwiOlwiQ29uZ28gKEtpbnNoYXNhKVwiLFwiQ0tcIjpcIkNvb2sgSXNsYW5kc1wiLFwiQ1JcIjpcIkNvc3RhIFJpY2FcIixcIkhSXCI6XCJDcm9hdGlhXCIsXCJDVVwiOlwiQ3ViYVwiLFwiQ1dcIjpcIkN1cmFcdTAwZTdhb1wiLFwiQ1lcIjpcIkN5cHJ1c1wiLFwiQ1pcIjpcIkN6ZWNoIFJlcHVibGljXCIsXCJES1wiOlwiRGVubWFya1wiLFwiREpcIjpcIkRqaWJvdXRpXCIsXCJETVwiOlwiRG9taW5pY2FcIixcIkRPXCI6XCJEb21pbmljYW4gUmVwdWJsaWNcIixcIkVDXCI6XCJFY3VhZG9yXCIsXCJFR1wiOlwiRWd5cHRcIixcIlNWXCI6XCJFbCBTYWx2YWRvclwiLFwiR1FcIjpcIkVxdWF0b3JpYWwgR3VpbmVhXCIsXCJFUlwiOlwiRXJpdHJlYVwiLFwiRUVcIjpcIkVzdG9uaWFcIixcIkVUXCI6XCJFdGhpb3BpYVwiLFwiRktcIjpcIkZhbGtsYW5kIElzbGFuZHNcIixcIkZPXCI6XCJGYXJvZSBJc2xhbmRzXCIsXCJGSlwiOlwiRmlqaVwiLFwiRklcIjpcIkZpbmxhbmRcIixcIkZSXCI6XCJGcmFuY2VcIixcIkdGXCI6XCJGcmVuY2ggR3VpYW5hXCIsXCJQRlwiOlwiRnJlbmNoIFBvbHluZXNpYVwiLFwiVEZcIjpcIkZyZW5jaCBTb3V0aGVybiBUZXJyaXRvcmllc1wiLFwiR0FcIjpcIkdhYm9uXCIsXCJHTVwiOlwiR2FtYmlhXCIsXCJHRVwiOlwiR2VvcmdpYVwiLFwiREVcIjpcIkdlcm1hbnlcIixcIkdIXCI6XCJHaGFuYVwiLFwiR0lcIjpcIkdpYnJhbHRhclwiLFwiR1JcIjpcIkdyZWVjZVwiLFwiR0xcIjpcIkdyZWVubGFuZFwiLFwiR0RcIjpcIkdyZW5hZGFcIixcIkdQXCI6XCJHdWFkZWxvdXBlXCIsXCJHVVwiOlwiR3VhbVwiLFwiR1RcIjpcIkd1YXRlbWFsYVwiLFwiR0dcIjpcIkd1ZXJuc2V5XCIsXCJHTlwiOlwiR3VpbmVhXCIsXCJHV1wiOlwiR3VpbmVhLUJpc3NhdVwiLFwiR1lcIjpcIkd1eWFuYVwiLFwiSFRcIjpcIkhhaXRpXCIsXCJITVwiOlwiSGVhcmQgSXNsYW5kIGFuZCBNY0RvbmFsZCBJc2xhbmRzXCIsXCJITlwiOlwiSG9uZHVyYXNcIixcIkhLXCI6XCJIb25nIEtvbmdcIixcIkhVXCI6XCJIdW5nYXJ5XCIsXCJJU1wiOlwiSWNlbGFuZFwiLFwiSU5cIjpcIkluZGlhXCIsXCJJRFwiOlwiSW5kb25lc2lhXCIsXCJJUlwiOlwiSXJhblwiLFwiSVFcIjpcIklyYXFcIixcIklFXCI6XCJJcmVsYW5kXCIsXCJJTVwiOlwiSXNsZSBvZiBNYW5cIixcIklMXCI6XCJJc3JhZWxcIixcIklUXCI6XCJJdGFseVwiLFwiQ0lcIjpcIkl2b3J5IENvYXN0XCIsXCJKTVwiOlwiSmFtYWljYVwiLFwiSlBcIjpcIkphcGFuXCIsXCJKRVwiOlwiSmVyc2V5XCIsXCJKT1wiOlwiSm9yZGFuXCIsXCJLWlwiOlwiS2F6YWtoc3RhblwiLFwiS0VcIjpcIktlbnlhXCIsXCJLSVwiOlwiS2lyaWJhdGlcIixcIktXXCI6XCJLdXdhaXRcIixcIktHXCI6XCJLeXJneXpzdGFuXCIsXCJMQVwiOlwiTGFvc1wiLFwiTFZcIjpcIkxhdHZpYVwiLFwiTEJcIjpcIkxlYmFub25cIixcIkxTXCI6XCJMZXNvdGhvXCIsXCJMUlwiOlwiTGliZXJpYVwiLFwiTFlcIjpcIkxpYnlhXCIsXCJMSVwiOlwiTGllY2h0ZW5zdGVpblwiLFwiTFRcIjpcIkxpdGh1YW5pYVwiLFwiTFVcIjpcIkx1eGVtYm91cmdcIixcIk1PXCI6XCJNYWNhbyBTLkEuUi4sIENoaW5hXCIsXCJNS1wiOlwiTm9ydGggTWFjZWRvbmlhXCIsXCJNR1wiOlwiTWFkYWdhc2NhclwiLFwiTVdcIjpcIk1hbGF3aVwiLFwiTVlcIjpcIk1hbGF5c2lhXCIsXCJNVlwiOlwiTWFsZGl2ZXNcIixcIk1MXCI6XCJNYWxpXCIsXCJNVFwiOlwiTWFsdGFcIixcIk1IXCI6XCJNYXJzaGFsbCBJc2xhbmRzXCIsXCJNUVwiOlwiTWFydGluaXF1ZVwiLFwiTVJcIjpcIk1hdXJpdGFuaWFcIixcIk1VXCI6XCJNYXVyaXRpdXNcIixcIllUXCI6XCJNYXlvdHRlXCIsXCJNWFwiOlwiTWV4aWNvXCIsXCJGTVwiOlwiTWljcm9uZXNpYVwiLFwiTURcIjpcIk1vbGRvdmFcIixcIk1DXCI6XCJNb25hY29cIixcIk1OXCI6XCJNb25nb2xpYVwiLFwiTUVcIjpcIk1vbnRlbmVncm9cIixcIk1TXCI6XCJNb250c2VycmF0XCIsXCJNQVwiOlwiTW9yb2Njb1wiLFwiTVpcIjpcIk1vemFtYmlxdWVcIixcIk1NXCI6XCJNeWFubWFyXCIsXCJOQVwiOlwiTmFtaWJpYVwiLFwiTlJcIjpcIk5hdXJ1XCIsXCJOUFwiOlwiTmVwYWxcIixcIk5MXCI6XCJOZXRoZXJsYW5kc1wiLFwiTkNcIjpcIk5ldyBDYWxlZG9uaWFcIixcIk5aXCI6XCJOZXcgWmVhbGFuZFwiLFwiTklcIjpcIk5pY2FyYWd1YVwiLFwiTkVcIjpcIk5pZ2VyXCIsXCJOR1wiOlwiTmlnZXJpYVwiLFwiTlVcIjpcIk5pdWVcIixcIk5GXCI6XCJOb3Jmb2xrIElzbGFuZFwiLFwiTVBcIjpcIk5vcnRoZXJuIE1hcmlhbmEgSXNsYW5kc1wiLFwiS1BcIjpcIk5vcnRoIEtvcmVhXCIsXCJOT1wiOlwiTm9yd2F5XCIsXCJPTVwiOlwiT21hblwiLFwiUEtcIjpcIlBha2lzdGFuXCIsXCJQU1wiOlwiUGFsZXN0aW5pYW4gVGVycml0b3J5XCIsXCJQQVwiOlwiUGFuYW1hXCIsXCJQR1wiOlwiUGFwdWEgTmV3IEd1aW5lYVwiLFwiUFlcIjpcIlBhcmFndWF5XCIsXCJQRVwiOlwiUGVydVwiLFwiUEhcIjpcIlBoaWxpcHBpbmVzXCIsXCJQTlwiOlwiUGl0Y2Fpcm5cIixcIlBMXCI6XCJQb2xhbmRcIixcIlBUXCI6XCJQb3J0dWdhbFwiLFwiUFJcIjpcIlB1ZXJ0byBSaWNvXCIsXCJRQVwiOlwiUWF0YXJcIixcIlJFXCI6XCJSZXVuaW9uXCIsXCJST1wiOlwiUm9tYW5pYVwiLFwiUlVcIjpcIlJ1c3NpYVwiLFwiUldcIjpcIlJ3YW5kYVwiLFwiQkxcIjpcIlNhaW50IEJhcnRoXHUwMGU5bGVteVwiLFwiU0hcIjpcIlNhaW50IEhlbGVuYVwiLFwiS05cIjpcIlNhaW50IEtpdHRzIGFuZCBOZXZpc1wiLFwiTENcIjpcIlNhaW50IEx1Y2lhXCIsXCJNRlwiOlwiU2FpbnQgTWFydGluIChGcmVuY2ggcGFydClcIixcIlNYXCI6XCJTYWludCBNYXJ0aW4gKER1dGNoIHBhcnQpXCIsXCJQTVwiOlwiU2FpbnQgUGllcnJlIGFuZCBNaXF1ZWxvblwiLFwiVkNcIjpcIlNhaW50IFZpbmNlbnQgYW5kIHRoZSBHcmVuYWRpbmVzXCIsXCJTTVwiOlwiU2FuIE1hcmlub1wiLFwiU1RcIjpcIlNcdTAwZTNvIFRvbVx1MDBlOSBhbmQgUHJcdTAwZWRuY2lwZVwiLFwiU0FcIjpcIlNhdWRpIEFyYWJpYVwiLFwiU05cIjpcIlNlbmVnYWxcIixcIlJTXCI6XCJTZXJiaWFcIixcIlNDXCI6XCJTZXljaGVsbGVzXCIsXCJTTFwiOlwiU2llcnJhIExlb25lXCIsXCJTR1wiOlwiU2luZ2Fwb3JlXCIsXCJTS1wiOlwiU2xvdmFraWFcIixcIlNJXCI6XCJTbG92ZW5pYVwiLFwiU0JcIjpcIlNvbG9tb24gSXNsYW5kc1wiLFwiU09cIjpcIlNvbWFsaWFcIixcIlpBXCI6XCJTb3V0aCBBZnJpY2FcIixcIkdTXCI6XCJTb3V0aCBHZW9yZ2lhXFxcL1NhbmR3aWNoIElzbGFuZHNcIixcIktSXCI6XCJTb3V0aCBLb3JlYVwiLFwiU1NcIjpcIlNvdXRoIFN1ZGFuXCIsXCJFU1wiOlwiU3BhaW5cIixcIkxLXCI6XCJTcmkgTGFua2FcIixcIlNEXCI6XCJTdWRhblwiLFwiU1JcIjpcIlN1cmluYW1lXCIsXCJTSlwiOlwiU3ZhbGJhcmQgYW5kIEphbiBNYXllblwiLFwiU1pcIjpcIlN3YXppbGFuZFwiLFwiU0VcIjpcIlN3ZWRlblwiLFwiQ0hcIjpcIlN3aXR6ZXJsYW5kXCIsXCJTWVwiOlwiU3lyaWFcIixcIlRXXCI6XCJUYWl3YW5cIixcIlRKXCI6XCJUYWppa2lzdGFuXCIsXCJUWlwiOlwiVGFuemFuaWFcIixcIlRIXCI6XCJUaGFpbGFuZFwiLFwiVExcIjpcIlRpbW9yLUxlc3RlXCIsXCJUR1wiOlwiVG9nb1wiLFwiVEtcIjpcIlRva2VsYXVcIixcIlRPXCI6XCJUb25nYVwiLFwiVFRcIjpcIlRyaW5pZGFkIGFuZCBUb2JhZ29cIixcIlROXCI6XCJUdW5pc2lhXCIsXCJUUlwiOlwiVHVya2V5XCIsXCJUTVwiOlwiVHVya21lbmlzdGFuXCIsXCJUQ1wiOlwiVHVya3MgYW5kIENhaWNvcyBJc2xhbmRzXCIsXCJUVlwiOlwiVHV2YWx1XCIsXCJVR1wiOlwiVWdhbmRhXCIsXCJVQVwiOlwiVWtyYWluZVwiLFwiQUVcIjpcIlVuaXRlZCBBcmFiIEVtaXJhdGVzXCIsXCJHQlwiOlwiVW5pdGVkIEtpbmdkb20gKFVLKVwiLFwiVVNcIjpcIlVuaXRlZCBTdGF0ZXMgKFVTKVwiLFwiVU1cIjpcIlVuaXRlZCBTdGF0ZXMgKFVTKSBNaW5vciBPdXRseWluZyBJc2xhbmRzXCIsXCJVWVwiOlwiVXJ1Z3VheVwiLFwiVVpcIjpcIlV6YmVraXN0YW5cIixcIlZVXCI6XCJWYW51YXR1XCIsXCJWQVwiOlwiVmF0aWNhblwiLFwiVkVcIjpcIlZlbmV6dWVsYVwiLFwiVk5cIjpcIlZpZXRuYW1cIixcIlZHXCI6XCJWaXJnaW4gSXNsYW5kcyAoQnJpdGlzaClcIixcIlZJXCI6XCJWaXJnaW4gSXNsYW5kcyAoVVMpXCIsXCJXRlwiOlwiV2FsbGlzIGFuZCBGdXR1bmFcIixcIkVIXCI6XCJXZXN0ZXJuIFNhaGFyYVwiLFwiV1NcIjpcIlNhbW9hXCIsXCJZRVwiOlwiWWVtZW5cIixcIlpNXCI6XCJaYW1iaWFcIixcIlpXXCI6XCJaaW1iYWJ3ZVwifSIsInN0YXRlcyI6IntcIkFGXCI6W10sXCJBT1wiOntcIkJHT1wiOlwiQmVuZ29cIixcIkJMVVwiOlwiQmVuZ3VlbGFcIixcIkJJRVwiOlwiQmlcXHUwMGU5XCIsXCJDQUJcIjpcIkNhYmluZGFcIixcIkNOTlwiOlwiQ3VuZW5lXCIsXCJIVUFcIjpcIkh1YW1ib1wiLFwiSFVJXCI6XCJIdVxcdTAwZWRsYVwiLFwiQ0NVXCI6XCJLdWFuZG8gS3ViYW5nb1wiLFwiQ05PXCI6XCJLd2FuemEtTm9ydGVcIixcIkNVU1wiOlwiS3dhbnphLVN1bFwiLFwiTFVBXCI6XCJMdWFuZGFcIixcIkxOT1wiOlwiTHVuZGEtTm9ydGVcIixcIkxTVVwiOlwiTHVuZGEtU3VsXCIsXCJNQUxcIjpcIk1hbGFuamVcIixcIk1PWFwiOlwiTW94aWNvXCIsXCJOQU1cIjpcIk5hbWliZVwiLFwiVUlHXCI6XCJVXFx1MDBlZGdlXCIsXCJaQUlcIjpcIlphaXJlXCJ9LFwiQVJcIjp7XCJDXCI6XCJDaXVkYWQgQXV0XHUwMGYzbm9tYSBkZSBCdWVub3MgQWlyZXNcIixcIkJcIjpcIkJ1ZW5vcyBBaXJlc1wiLFwiS1wiOlwiQ2F0YW1hcmNhXCIsXCJIXCI6XCJDaGFjb1wiLFwiVVwiOlwiQ2h1YnV0XCIsXCJYXCI6XCJDXHUwMGYzcmRvYmFcIixcIldcIjpcIkNvcnJpZW50ZXNcIixcIkVcIjpcIkVudHJlIFJcdTAwZWRvc1wiLFwiUFwiOlwiRm9ybW9zYVwiLFwiWVwiOlwiSnVqdXlcIixcIkxcIjpcIkxhIFBhbXBhXCIsXCJGXCI6XCJMYSBSaW9qYVwiLFwiTVwiOlwiTWVuZG96YVwiLFwiTlwiOlwiTWlzaW9uZXNcIixcIlFcIjpcIk5ldXF1XHUwMGU5blwiLFwiUlwiOlwiUlx1MDBlZG8gTmVncm9cIixcIkFcIjpcIlNhbHRhXCIsXCJKXCI6XCJTYW4gSnVhblwiLFwiRFwiOlwiU2FuIEx1aXNcIixcIlpcIjpcIlNhbnRhIENydXpcIixcIlNcIjpcIlNhbnRhIEZlXCIsXCJHXCI6XCJTYW50aWFnbyBkZWwgRXN0ZXJvXCIsXCJWXCI6XCJUaWVycmEgZGVsIEZ1ZWdvXCIsXCJUXCI6XCJUdWN1bVx1MDBlMW5cIn0sXCJBVFwiOltdLFwiQVVcIjp7XCJBQ1RcIjpcIkF1c3RyYWxpYW4gQ2FwaXRhbCBUZXJyaXRvcnlcIixcIk5TV1wiOlwiTmV3IFNvdXRoIFdhbGVzXCIsXCJOVFwiOlwiTm9ydGhlcm4gVGVycml0b3J5XCIsXCJRTERcIjpcIlF1ZWVuc2xhbmRcIixcIlNBXCI6XCJTb3V0aCBBdXN0cmFsaWFcIixcIlRBU1wiOlwiVGFzbWFuaWFcIixcIlZJQ1wiOlwiVmljdG9yaWFcIixcIldBXCI6XCJXZXN0ZXJuIEF1c3RyYWxpYVwifSxcIkFYXCI6W10sXCJCRFwiOntcIkJELTA1XCI6XCJCYWdlcmhhdFwiLFwiQkQtMDFcIjpcIkJhbmRhcmJhblwiLFwiQkQtMDJcIjpcIkJhcmd1bmFcIixcIkJELTA2XCI6XCJCYXJpc2hhbFwiLFwiQkQtMDdcIjpcIkJob2xhXCIsXCJCRC0wM1wiOlwiQm9ndXJhXCIsXCJCRC0wNFwiOlwiQnJhaG1hbmJhcmlhXCIsXCJCRC0wOVwiOlwiQ2hhbmRwdXJcIixcIkJELTEwXCI6XCJDaGF0dG9ncmFtXCIsXCJCRC0xMlwiOlwiQ2h1YWRhbmdhXCIsXCJCRC0xMVwiOlwiQ294J3MgQmF6YXJcIixcIkJELTA4XCI6XCJDdW1pbGxhXCIsXCJCRC0xM1wiOlwiRGhha2FcIixcIkJELTE0XCI6XCJEaW5hanB1clwiLFwiQkQtMTVcIjpcIkZhcmlkcHVyIFwiLFwiQkQtMTZcIjpcIkZlbmlcIixcIkJELTE5XCI6XCJHYWliYW5kaGFcIixcIkJELTE4XCI6XCJHYXppcHVyXCIsXCJCRC0xN1wiOlwiR29wYWxnYW5qXCIsXCJCRC0yMFwiOlwiSGFiaWdhbmpcIixcIkJELTIxXCI6XCJKYW1hbHB1clwiLFwiQkQtMjJcIjpcIkphc2hvcmVcIixcIkJELTI1XCI6XCJKaGFsb2thdGlcIixcIkJELTIzXCI6XCJKaGVuYWlkYWhcIixcIkJELTI0XCI6XCJKb3lwdXJoYXRcIixcIkJELTI5XCI6XCJLaGFncmFjaGhhcmlcIixcIkJELTI3XCI6XCJLaHVsbmFcIixcIkJELTI2XCI6XCJLaXNob3JlZ2FualwiLFwiQkQtMjhcIjpcIkt1cmlncmFtXCIsXCJCRC0zMFwiOlwiS3VzaHRpYVwiLFwiQkQtMzFcIjpcIkxha3NobWlwdXJcIixcIkJELTMyXCI6XCJMYWxtb25pcmhhdFwiLFwiQkQtMzZcIjpcIk1hZGFyaXB1clwiLFwiQkQtMzdcIjpcIk1hZ3VyYVwiLFwiQkQtMzNcIjpcIk1hbmlrZ2FuaiBcIixcIkJELTM5XCI6XCJNZWhlcnB1clwiLFwiQkQtMzhcIjpcIk1vdWx2aWJhemFyXCIsXCJCRC0zNVwiOlwiTXVuc2hpZ2FualwiLFwiQkQtMzRcIjpcIk15bWVuc2luZ2hcIixcIkJELTQ4XCI6XCJOYW9nYW9uXCIsXCJCRC00M1wiOlwiTmFyYWlsXCIsXCJCRC00MFwiOlwiTmFyYXlhbmdhbmpcIixcIkJELTQyXCI6XCJOYXJzaW5nZGlcIixcIkJELTQ0XCI6XCJOYXRvcmVcIixcIkJELTQ1XCI6XCJOYXdhYmdhbmpcIixcIkJELTQxXCI6XCJOZXRyYWtvbmFcIixcIkJELTQ2XCI6XCJOaWxwaGFtYXJpXCIsXCJCRC00N1wiOlwiTm9ha2hhbGlcIixcIkJELTQ5XCI6XCJQYWJuYVwiLFwiQkQtNTJcIjpcIlBhbmNoYWdhcmhcIixcIkJELTUxXCI6XCJQYXR1YWtoYWxpXCIsXCJCRC01MFwiOlwiUGlyb2pwdXJcIixcIkJELTUzXCI6XCJSYWpiYXJpXCIsXCJCRC01NFwiOlwiUmFqc2hhaGlcIixcIkJELTU2XCI6XCJSYW5nYW1hdGlcIixcIkJELTU1XCI6XCJSYW5ncHVyXCIsXCJCRC01OFwiOlwiU2F0a2hpcmFcIixcIkJELTYyXCI6XCJTaGFyaWF0cHVyXCIsXCJCRC01N1wiOlwiU2hlcnB1clwiLFwiQkQtNTlcIjpcIlNpcmFqZ2FualwiLFwiQkQtNjFcIjpcIlN1bmFtZ2FualwiLFwiQkQtNjBcIjpcIlN5bGhldFwiLFwiQkQtNjNcIjpcIlRhbmdhaWxcIixcIkJELTY0XCI6XCJUaGFrdXJnYW9uXCJ9LFwiQkVcIjpbXSxcIkJHXCI6e1wiQkctMDFcIjpcIkJsYWdvZXZncmFkXCIsXCJCRy0wMlwiOlwiQnVyZ2FzXCIsXCJCRy0wOFwiOlwiRG9icmljaFwiLFwiQkctMDdcIjpcIkdhYnJvdm9cIixcIkJHLTI2XCI6XCJIYXNrb3ZvXCIsXCJCRy0wOVwiOlwiS2FyZHpoYWxpXCIsXCJCRy0xMFwiOlwiS3l1c3RlbmRpbFwiLFwiQkctMTFcIjpcIkxvdmVjaFwiLFwiQkctMTJcIjpcIk1vbnRhbmFcIixcIkJHLTEzXCI6XCJQYXphcmR6aGlrXCIsXCJCRy0xNFwiOlwiUGVybmlrXCIsXCJCRy0xNVwiOlwiUGxldmVuXCIsXCJCRy0xNlwiOlwiUGxvdmRpdlwiLFwiQkctMTdcIjpcIlJhemdyYWRcIixcIkJHLTE4XCI6XCJSdXNlXCIsXCJCRy0yN1wiOlwiU2h1bWVuXCIsXCJCRy0xOVwiOlwiU2lsaXN0cmFcIixcIkJHLTIwXCI6XCJTbGl2ZW5cIixcIkJHLTIxXCI6XCJTbW9seWFuXCIsXCJCRy0yM1wiOlwiU29maWFcIixcIkJHLTIyXCI6XCJTb2ZpYS1HcmFkXCIsXCJCRy0yNFwiOlwiU3RhcmEgWmFnb3JhXCIsXCJCRy0yNVwiOlwiVGFyZ292aXNodGVcIixcIkJHLTAzXCI6XCJWYXJuYVwiLFwiQkctMDRcIjpcIlZlbGlrbyBUYXJub3ZvXCIsXCJCRy0wNVwiOlwiVmlkaW5cIixcIkJHLTA2XCI6XCJWcmF0c2FcIixcIkJHLTI4XCI6XCJZYW1ib2xcIn0sXCJCSFwiOltdLFwiQklcIjpbXSxcIkJPXCI6e1wiQlwiOlwiQ2h1cXVpc2FjYVwiLFwiSFwiOlwiQmVuaVwiLFwiQ1wiOlwiQ29jaGFiYW1iYVwiLFwiTFwiOlwiTGEgUGF6XCIsXCJPXCI6XCJPcnVyb1wiLFwiTlwiOlwiUGFuZG9cIixcIlBcIjpcIlBvdG9zXFx1MDBlZFwiLFwiU1wiOlwiU2FudGEgQ3J1elwiLFwiVFwiOlwiVGFyaWphXCJ9LFwiQlJcIjp7XCJBQ1wiOlwiQWNyZVwiLFwiQUxcIjpcIkFsYWdvYXNcIixcIkFQXCI6XCJBbWFwXHUwMGUxXCIsXCJBTVwiOlwiQW1hem9uYXNcIixcIkJBXCI6XCJCYWhpYVwiLFwiQ0VcIjpcIkNlYXJcdTAwZTFcIixcIkRGXCI6XCJEaXN0cml0byBGZWRlcmFsXCIsXCJFU1wiOlwiRXNwXHUwMGVkcml0byBTYW50b1wiLFwiR09cIjpcIkdvaVx1MDBlMXNcIixcIk1BXCI6XCJNYXJhbmhcdTAwZTNvXCIsXCJNVFwiOlwiTWF0byBHcm9zc29cIixcIk1TXCI6XCJNYXRvIEdyb3NzbyBkbyBTdWxcIixcIk1HXCI6XCJNaW5hcyBHZXJhaXNcIixcIlBBXCI6XCJQYXJcdTAwZTFcIixcIlBCXCI6XCJQYXJhXHUwMGVkYmFcIixcIlBSXCI6XCJQYXJhblx1MDBlMVwiLFwiUEVcIjpcIlBlcm5hbWJ1Y29cIixcIlBJXCI6XCJQaWF1XHUwMGVkXCIsXCJSSlwiOlwiUmlvIGRlIEphbmVpcm9cIixcIlJOXCI6XCJSaW8gR3JhbmRlIGRvIE5vcnRlXCIsXCJSU1wiOlwiUmlvIEdyYW5kZSBkbyBTdWxcIixcIlJPXCI6XCJSb25kXHUwMGY0bmlhXCIsXCJSUlwiOlwiUm9yYWltYVwiLFwiU0NcIjpcIlNhbnRhIENhdGFyaW5hXCIsXCJTUFwiOlwiU1x1MDBlM28gUGF1bG9cIixcIlNFXCI6XCJTZXJnaXBlXCIsXCJUT1wiOlwiVG9jYW50aW5zXCJ9LFwiQ0FcIjp7XCJBQlwiOlwiQWxiZXJ0YVwiLFwiQkNcIjpcIkJyaXRpc2ggQ29sdW1iaWFcIixcIk1CXCI6XCJNYW5pdG9iYVwiLFwiTkJcIjpcIk5ldyBCcnVuc3dpY2tcIixcIk5MXCI6XCJOZXdmb3VuZGxhbmQgYW5kIExhYnJhZG9yXCIsXCJOVFwiOlwiTm9ydGh3ZXN0IFRlcnJpdG9yaWVzXCIsXCJOU1wiOlwiTm92YSBTY290aWFcIixcIk5VXCI6XCJOdW5hdnV0XCIsXCJPTlwiOlwiT250YXJpb1wiLFwiUEVcIjpcIlByaW5jZSBFZHdhcmQgSXNsYW5kXCIsXCJRQ1wiOlwiUXVlYmVjXCIsXCJTS1wiOlwiU2Fza2F0Y2hld2FuXCIsXCJZVFwiOlwiWXVrb24gVGVycml0b3J5XCJ9LFwiQ0hcIjp7XCJBR1wiOlwiQWFyZ2F1XCIsXCJBUlwiOlwiQXBwZW56ZWxsIEF1c3NlcnJob2RlblwiLFwiQUlcIjpcIkFwcGVuemVsbCBJbm5lcnJob2RlblwiLFwiQkxcIjpcIkJhc2VsLUxhbmRzY2hhZnRcIixcIkJTXCI6XCJCYXNlbC1TdGFkdFwiLFwiQkVcIjpcIkJlcm5cIixcIkZSXCI6XCJGcmlib3VyZ1wiLFwiR0VcIjpcIkdlbmV2YVwiLFwiR0xcIjpcIkdsYXJ1c1wiLFwiR1JcIjpcIkdyYXViXHUwMGZjbmRlblwiLFwiSlVcIjpcIkp1cmFcIixcIkxVXCI6XCJMdXplcm5cIixcIk5FXCI6XCJOZXVjaFx1MDBlMnRlbFwiLFwiTldcIjpcIk5pZHdhbGRlblwiLFwiT1dcIjpcIk9id2FsZGVuXCIsXCJTSFwiOlwiU2NoYWZmaGF1c2VuXCIsXCJTWlwiOlwiU2Nod3l6XCIsXCJTT1wiOlwiU29sb3RodXJuXCIsXCJTR1wiOlwiU3QuIEdhbGxlblwiLFwiVEdcIjpcIlRodXJnYXVcIixcIlRJXCI6XCJUaWNpbm9cIixcIlVSXCI6XCJVcmlcIixcIlZTXCI6XCJWYWxhaXNcIixcIlZEXCI6XCJWYXVkXCIsXCJaR1wiOlwiWnVnXCIsXCJaSFwiOlwiWlx1MDBmY3JpY2hcIn0sXCJDTlwiOntcIkNOMVwiOlwiWXVubmFuIFxcXC8gXHU0ZTkxXHU1MzU3XCIsXCJDTjJcIjpcIkJlaWppbmcgXFxcLyBcdTUzMTdcdTRlYWNcIixcIkNOM1wiOlwiVGlhbmppbiBcXFwvIFx1NTkyOVx1NmQyNVwiLFwiQ040XCI6XCJIZWJlaSBcXFwvIFx1NmNiM1x1NTMxN1wiLFwiQ041XCI6XCJTaGFueGkgXFxcLyBcdTVjNzFcdTg5N2ZcIixcIkNONlwiOlwiSW5uZXIgTW9uZ29saWEgXFxcLyBcdTUxNjdcdTg0OTlcdTUzZTRcIixcIkNON1wiOlwiTGlhb25pbmcgXFxcLyBcdThmYmRcdTViODFcIixcIkNOOFwiOlwiSmlsaW4gXFxcLyBcdTU0MDlcdTY3OTdcIixcIkNOOVwiOlwiSGVpbG9uZ2ppYW5nIFxcXC8gXHU5ZWQxXHU5Zjk5XHU2YzVmXCIsXCJDTjEwXCI6XCJTaGFuZ2hhaSBcXFwvIFx1NGUwYVx1NmQ3N1wiLFwiQ04xMVwiOlwiSmlhbmdzdSBcXFwvIFx1NmM1Zlx1ODJjZlwiLFwiQ04xMlwiOlwiWmhlamlhbmcgXFxcLyBcdTZkNTlcdTZjNWZcIixcIkNOMTNcIjpcIkFuaHVpIFxcXC8gXHU1Yjg5XHU1ZmJkXCIsXCJDTjE0XCI6XCJGdWppYW4gXFxcLyBcdTc5OGZcdTVlZmFcIixcIkNOMTVcIjpcIkppYW5neGkgXFxcLyBcdTZjNWZcdTg5N2ZcIixcIkNOMTZcIjpcIlNoYW5kb25nIFxcXC8gXHU1YzcxXHU0ZTFjXCIsXCJDTjE3XCI6XCJIZW5hbiBcXFwvIFx1NmNiM1x1NTM1N1wiLFwiQ04xOFwiOlwiSHViZWkgXFxcLyBcdTZlNTZcdTUzMTdcIixcIkNOMTlcIjpcIkh1bmFuIFxcXC8gXHU2ZTU2XHU1MzU3XCIsXCJDTjIwXCI6XCJHdWFuZ2RvbmcgXFxcLyBcdTVlN2ZcdTRlMWNcIixcIkNOMjFcIjpcIkd1YW5neGkgWmh1YW5nIFxcXC8gXHU1ZTdmXHU4OTdmXHU1OGVlXHU2NWNmXCIsXCJDTjIyXCI6XCJIYWluYW4gXFxcLyBcdTZkNzdcdTUzNTdcIixcIkNOMjNcIjpcIkNob25ncWluZyBcXFwvIFx1OTFjZFx1NWU4NlwiLFwiQ04yNFwiOlwiU2ljaHVhbiBcXFwvIFx1NTZkYlx1NWRkZFwiLFwiQ04yNVwiOlwiR3VpemhvdSBcXFwvIFx1OGQzNVx1NWRkZVwiLFwiQ04yNlwiOlwiU2hhYW54aSBcXFwvIFx1OTY1NVx1ODk3ZlwiLFwiQ04yN1wiOlwiR2Fuc3UgXFxcLyBcdTc1MThcdTgwODNcIixcIkNOMjhcIjpcIlFpbmdoYWkgXFxcLyBcdTk3NTJcdTZkNzdcIixcIkNOMjlcIjpcIk5pbmd4aWEgSHVpIFxcXC8gXHU1YjgxXHU1OTBmXCIsXCJDTjMwXCI6XCJNYWNhdSBcXFwvIFx1NmZiM1x1OTVlOFwiLFwiQ04zMVwiOlwiVGliZXQgXFxcLyBcdTg5N2ZcdTg1Y2ZcIixcIkNOMzJcIjpcIlhpbmppYW5nIFxcXC8gXHU2NWIwXHU3NTg2XCJ9LFwiQ1pcIjpbXSxcIkRFXCI6W10sXCJES1wiOltdLFwiRUVcIjpbXSxcIkVTXCI6e1wiQ1wiOlwiQSBDb3J1XHUwMGYxYVwiLFwiVklcIjpcIkFyYWJhXFxcL1x1MDBjMWxhdmFcIixcIkFCXCI6XCJBbGJhY2V0ZVwiLFwiQVwiOlwiQWxpY2FudGVcIixcIkFMXCI6XCJBbG1lclx1MDBlZGFcIixcIk9cIjpcIkFzdHVyaWFzXCIsXCJBVlwiOlwiXHUwMGMxdmlsYVwiLFwiQkFcIjpcIkJhZGFqb3pcIixcIlBNXCI6XCJCYWxlYXJlc1wiLFwiQlwiOlwiQmFyY2Vsb25hXCIsXCJCVVwiOlwiQnVyZ29zXCIsXCJDQ1wiOlwiQ1x1MDBlMWNlcmVzXCIsXCJDQVwiOlwiQ1x1MDBlMWRpelwiLFwiU1wiOlwiQ2FudGFicmlhXCIsXCJDU1wiOlwiQ2FzdGVsbFx1MDBmM25cIixcIkNFXCI6XCJDZXV0YVwiLFwiQ1JcIjpcIkNpdWRhZCBSZWFsXCIsXCJDT1wiOlwiQ1x1MDBmM3Jkb2JhXCIsXCJDVVwiOlwiQ3VlbmNhXCIsXCJHSVwiOlwiR2lyb25hXCIsXCJHUlwiOlwiR3JhbmFkYVwiLFwiR1VcIjpcIkd1YWRhbGFqYXJhXCIsXCJTU1wiOlwiR2lwdXprb2FcIixcIkhcIjpcIkh1ZWx2YVwiLFwiSFVcIjpcIkh1ZXNjYVwiLFwiSlwiOlwiSmFcdTAwZTluXCIsXCJMT1wiOlwiTGEgUmlvamFcIixcIkdDXCI6XCJMYXMgUGFsbWFzXCIsXCJMRVwiOlwiTGVcdTAwZjNuXCIsXCJMXCI6XCJMbGVpZGFcIixcIkxVXCI6XCJMdWdvXCIsXCJNXCI6XCJNYWRyaWRcIixcIk1BXCI6XCJNXHUwMGUxbGFnYVwiLFwiTUxcIjpcIk1lbGlsbGFcIixcIk1VXCI6XCJNdXJjaWFcIixcIk5BXCI6XCJOYXZhcnJhXCIsXCJPUlwiOlwiT3VyZW5zZVwiLFwiUFwiOlwiUGFsZW5jaWFcIixcIlBPXCI6XCJQb250ZXZlZHJhXCIsXCJTQVwiOlwiU2FsYW1hbmNhXCIsXCJURlwiOlwiU2FudGEgQ3J1eiBkZSBUZW5lcmlmZVwiLFwiU0dcIjpcIlNlZ292aWFcIixcIlNFXCI6XCJTZXZpbGxhXCIsXCJTT1wiOlwiU29yaWFcIixcIlRcIjpcIlRhcnJhZ29uYVwiLFwiVEVcIjpcIlRlcnVlbFwiLFwiVE9cIjpcIlRvbGVkb1wiLFwiVlwiOlwiVmFsZW5jaWFcIixcIlZBXCI6XCJWYWxsYWRvbGlkXCIsXCJCSVwiOlwiQml6a2FpYVwiLFwiWkFcIjpcIlphbW9yYVwiLFwiWlwiOlwiWmFyYWdvemFcIn0sXCJGSVwiOltdLFwiRlJcIjpbXSxcIkdQXCI6W10sXCJHUlwiOntcIklcIjpcIlxcdTAzOTFcXHUwM2M0XFx1MDNjNFxcdTAzYjlcXHUwM2JhXFx1MDNhZVwiLFwiQVwiOlwiXFx1MDM5MVxcdTAzYmRcXHUwM2IxXFx1MDNjNFxcdTAzYmZcXHUwM2JiXFx1MDNiOVxcdTAzYmFcXHUwM2FlIFxcdTAzOWNcXHUwM2IxXFx1MDNiYVxcdTAzYjVcXHUwM2I0XFx1MDNiZlxcdTAzYmRcXHUwM2FmXFx1MDNiMSBcXHUwM2JhXFx1MDNiMVxcdTAzYjkgXFx1MDM5OFxcdTAzYzFcXHUwM2FjXFx1MDNiYVxcdTAzYjdcIixcIkJcIjpcIlxcdTAzOWFcXHUwM2I1XFx1MDNiZFxcdTAzYzRcXHUwM2MxXFx1MDNiOVxcdTAzYmFcXHUwM2FlIFxcdTAzOWNcXHUwM2IxXFx1MDNiYVxcdTAzYjVcXHUwM2I0XFx1MDNiZlxcdTAzYmRcXHUwM2FmXFx1MDNiMVwiLFwiQ1wiOlwiXFx1MDM5NFxcdTAzYzVcXHUwM2M0XFx1MDNiOVxcdTAzYmFcXHUwM2FlIFxcdTAzOWNcXHUwM2IxXFx1MDNiYVxcdTAzYjVcXHUwM2I0XFx1MDNiZlxcdTAzYmRcXHUwM2FmXFx1MDNiMVwiLFwiRFwiOlwiXFx1MDM4OVxcdTAzYzBcXHUwM2I1XFx1MDNiOVxcdTAzYzFcXHUwM2JmXFx1MDNjMlwiLFwiRVwiOlwiXFx1MDM5OFxcdTAzYjVcXHUwM2MzXFx1MDNjM1xcdTAzYjFcXHUwM2JiXFx1MDNhZlxcdTAzYjFcIixcIkZcIjpcIlxcdTAzOTlcXHUwM2NjXFx1MDNiZFxcdTAzYjlcXHUwM2JmXFx1MDNiOSBcXHUwMzlkXFx1MDNhZVxcdTAzYzNcXHUwM2JmXFx1MDNiOVwiLFwiR1wiOlwiXFx1MDM5NFxcdTAzYzVcXHUwM2M0XFx1MDNiOVxcdTAzYmFcXHUwM2FlIFxcdTAzOTVcXHUwM2JiXFx1MDNiYlxcdTAzYWNcXHUwM2I0XFx1MDNiMVwiLFwiSFwiOlwiXFx1MDNhM1xcdTAzYzRcXHUwM2I1XFx1MDNjMVxcdTAzYjVcXHUwM2FjIFxcdTAzOTVcXHUwM2JiXFx1MDNiYlxcdTAzYWNcXHUwM2I0XFx1MDNiMVwiLFwiSlwiOlwiXFx1MDNhMFxcdTAzYjVcXHUwM2JiXFx1MDNiZlxcdTAzYzBcXHUwM2NjXFx1MDNiZFxcdTAzYmRcXHUwM2I3XFx1MDNjM1xcdTAzYmZcXHUwM2MyXCIsXCJLXCI6XCJcXHUwMzkyXFx1MDNjY1xcdTAzYzFcXHUwM2I1XFx1MDNiOVxcdTAzYmYgXFx1MDM5MVxcdTAzYjlcXHUwM2IzXFx1MDNiMVxcdTAzYWZcXHUwM2JmXCIsXCJMXCI6XCJcXHUwMzlkXFx1MDNjY1xcdTAzYzRcXHUwM2I5XFx1MDNiZiBcXHUwMzkxXFx1MDNiOVxcdTAzYjNcXHUwM2IxXFx1MDNhZlxcdTAzYmZcIixcIk1cIjpcIlxcdTAzOWFcXHUwM2MxXFx1MDNhZVxcdTAzYzRcXHUwM2I3XCJ9LFwiR0ZcIjpbXSxcIkhLXCI6e1wiSE9ORyBLT05HXCI6XCJIb25nIEtvbmcgSXNsYW5kXCIsXCJLT1dMT09OXCI6XCJLb3dsb29uXCIsXCJORVcgVEVSUklUT1JJRVNcIjpcIk5ldyBUZXJyaXRvcmllc1wifSxcIkhVXCI6e1wiQktcIjpcIkJcXHUwMGUxY3MtS2lza3VuXCIsXCJCRVwiOlwiQlxcdTAwZTlrXFx1MDBlOXNcIixcIkJBXCI6XCJCYXJhbnlhXCIsXCJCWlwiOlwiQm9yc29kLUFiYVxcdTAwZmFqLVplbXBsXFx1MDBlOW5cIixcIkJVXCI6XCJCdWRhcGVzdFwiLFwiQ1NcIjpcIkNzb25nclxcdTAwZTFkXCIsXCJGRVwiOlwiRmVqXFx1MDBlOXJcIixcIkdTXCI6XCJHeVxcdTAxNTFyLU1vc29uLVNvcHJvblwiLFwiSEJcIjpcIkhhamRcXHUwMGZhLUJpaGFyXCIsXCJIRVwiOlwiSGV2ZXNcIixcIkpOXCI6XCJKXFx1MDBlMXN6LU5hZ3lrdW4tU3pvbG5va1wiLFwiS0VcIjpcIktvbVxcdTAwZTFyb20tRXN6dGVyZ29tXCIsXCJOT1wiOlwiTlxcdTAwZjNnclxcdTAwZTFkXCIsXCJQRVwiOlwiUGVzdFwiLFwiU09cIjpcIlNvbW9neVwiLFwiU1pcIjpcIlN6YWJvbGNzLVN6YXRtXFx1MDBlMXItQmVyZWdcIixcIlRPXCI6XCJUb2xuYVwiLFwiVkFcIjpcIlZhc1wiLFwiVkVcIjpcIlZlc3pwclxcdTAwZTltXCIsXCJaQVwiOlwiWmFsYVwifSxcIklEXCI6e1wiQUNcIjpcIkRhZXJhaCBJc3RpbWV3YSBBY2VoXCIsXCJTVVwiOlwiU3VtYXRlcmEgVXRhcmFcIixcIlNCXCI6XCJTdW1hdGVyYSBCYXJhdFwiLFwiUklcIjpcIlJpYXVcIixcIktSXCI6XCJLZXB1bGF1YW4gUmlhdVwiLFwiSkFcIjpcIkphbWJpXCIsXCJTU1wiOlwiU3VtYXRlcmEgU2VsYXRhblwiLFwiQkJcIjpcIkJhbmdrYSBCZWxpdHVuZ1wiLFwiQkVcIjpcIkJlbmdrdWx1XCIsXCJMQVwiOlwiTGFtcHVuZ1wiLFwiSktcIjpcIkRLSSBKYWthcnRhXCIsXCJKQlwiOlwiSmF3YSBCYXJhdFwiLFwiQlRcIjpcIkJhbnRlblwiLFwiSlRcIjpcIkphd2EgVGVuZ2FoXCIsXCJKSVwiOlwiSmF3YSBUaW11clwiLFwiWU9cIjpcIkRhZXJhaCBJc3RpbWV3YSBZb2d5YWthcnRhXCIsXCJCQVwiOlwiQmFsaVwiLFwiTkJcIjpcIk51c2EgVGVuZ2dhcmEgQmFyYXRcIixcIk5UXCI6XCJOdXNhIFRlbmdnYXJhIFRpbXVyXCIsXCJLQlwiOlwiS2FsaW1hbnRhbiBCYXJhdFwiLFwiS1RcIjpcIkthbGltYW50YW4gVGVuZ2FoXCIsXCJLSVwiOlwiS2FsaW1hbnRhbiBUaW11clwiLFwiS1NcIjpcIkthbGltYW50YW4gU2VsYXRhblwiLFwiS1VcIjpcIkthbGltYW50YW4gVXRhcmFcIixcIlNBXCI6XCJTdWxhd2VzaSBVdGFyYVwiLFwiU1RcIjpcIlN1bGF3ZXNpIFRlbmdhaFwiLFwiU0dcIjpcIlN1bGF3ZXNpIFRlbmdnYXJhXCIsXCJTUlwiOlwiU3VsYXdlc2kgQmFyYXRcIixcIlNOXCI6XCJTdWxhd2VzaSBTZWxhdGFuXCIsXCJHT1wiOlwiR29yb250YWxvXCIsXCJNQVwiOlwiTWFsdWt1XCIsXCJNVVwiOlwiTWFsdWt1IFV0YXJhXCIsXCJQQVwiOlwiUGFwdWFcIixcIlBCXCI6XCJQYXB1YSBCYXJhdFwifSxcIklFXCI6e1wiQ1dcIjpcIkNhcmxvd1wiLFwiQ05cIjpcIkNhdmFuXCIsXCJDRVwiOlwiQ2xhcmVcIixcIkNPXCI6XCJDb3JrXCIsXCJETFwiOlwiRG9uZWdhbFwiLFwiRFwiOlwiRHVibGluXCIsXCJHXCI6XCJHYWx3YXlcIixcIktZXCI6XCJLZXJyeVwiLFwiS0VcIjpcIktpbGRhcmVcIixcIktLXCI6XCJLaWxrZW5ueVwiLFwiTFNcIjpcIkxhb2lzXCIsXCJMTVwiOlwiTGVpdHJpbVwiLFwiTEtcIjpcIkxpbWVyaWNrXCIsXCJMRFwiOlwiTG9uZ2ZvcmRcIixcIkxIXCI6XCJMb3V0aFwiLFwiTU9cIjpcIk1heW9cIixcIk1IXCI6XCJNZWF0aFwiLFwiTU5cIjpcIk1vbmFnaGFuXCIsXCJPWVwiOlwiT2ZmYWx5XCIsXCJSTlwiOlwiUm9zY29tbW9uXCIsXCJTT1wiOlwiU2xpZ29cIixcIlRBXCI6XCJUaXBwZXJhcnlcIixcIldEXCI6XCJXYXRlcmZvcmRcIixcIldIXCI6XCJXZXN0bWVhdGhcIixcIldYXCI6XCJXZXhmb3JkXCIsXCJXV1wiOlwiV2lja2xvd1wifSxcIklOXCI6e1wiQVBcIjpcIkFuZGhyYSBQcmFkZXNoXCIsXCJBUlwiOlwiQXJ1bmFjaGFsIFByYWRlc2hcIixcIkFTXCI6XCJBc3NhbVwiLFwiQlJcIjpcIkJpaGFyXCIsXCJDVFwiOlwiQ2hoYXR0aXNnYXJoXCIsXCJHQVwiOlwiR29hXCIsXCJHSlwiOlwiR3VqYXJhdFwiLFwiSFJcIjpcIkhhcnlhbmFcIixcIkhQXCI6XCJIaW1hY2hhbCBQcmFkZXNoXCIsXCJKS1wiOlwiSmFtbXUgYW5kIEthc2htaXJcIixcIkpIXCI6XCJKaGFya2hhbmRcIixcIktBXCI6XCJLYXJuYXRha2FcIixcIktMXCI6XCJLZXJhbGFcIixcIk1QXCI6XCJNYWRoeWEgUHJhZGVzaFwiLFwiTUhcIjpcIk1haGFyYXNodHJhXCIsXCJNTlwiOlwiTWFuaXB1clwiLFwiTUxcIjpcIk1lZ2hhbGF5YVwiLFwiTVpcIjpcIk1pem9yYW1cIixcIk5MXCI6XCJOYWdhbGFuZFwiLFwiT1JcIjpcIk9yaXNzYVwiLFwiUEJcIjpcIlB1bmphYlwiLFwiUkpcIjpcIlJhamFzdGhhblwiLFwiU0tcIjpcIlNpa2tpbVwiLFwiVE5cIjpcIlRhbWlsIE5hZHVcIixcIlRTXCI6XCJUZWxhbmdhbmFcIixcIlRSXCI6XCJUcmlwdXJhXCIsXCJVS1wiOlwiVXR0YXJha2hhbmRcIixcIlVQXCI6XCJVdHRhciBQcmFkZXNoXCIsXCJXQlwiOlwiV2VzdCBCZW5nYWxcIixcIkFOXCI6XCJBbmRhbWFuIGFuZCBOaWNvYmFyIElzbGFuZHNcIixcIkNIXCI6XCJDaGFuZGlnYXJoXCIsXCJETlwiOlwiRGFkcmEgYW5kIE5hZ2FyIEhhdmVsaVwiLFwiRERcIjpcIkRhbWFuIGFuZCBEaXVcIixcIkRMXCI6XCJEZWxoaVwiLFwiTERcIjpcIkxha3NoYWRlZXBcIixcIlBZXCI6XCJQb25kaWNoZXJyeSAoUHVkdWNoZXJyeSlcIn0sXCJJUlwiOntcIktIWlwiOlwiS2h1emVzdGFuICAoXFx1MDYyZVxcdTA2NDhcXHUwNjMyXFx1MDYzM1xcdTA2MmFcXHUwNjI3XFx1MDY0NilcIixcIlRIUlwiOlwiVGVocmFuICAoXFx1MDYyYVxcdTA2NDdcXHUwNjMxXFx1MDYyN1xcdTA2NDYpXCIsXCJJTE1cIjpcIklsYWFtIChcXHUwNjI3XFx1MDZjY1xcdTA2NDRcXHUwNjI3XFx1MDY0NSlcIixcIkJIUlwiOlwiQnVzaGVociAoXFx1MDYyOFxcdTA2NDhcXHUwNjM0XFx1MDY0N1xcdTA2MzEpXCIsXCJBRExcIjpcIkFyZGFiaWwgKFxcdTA2MjdcXHUwNjMxXFx1MDYyZlxcdTA2MjhcXHUwNmNjXFx1MDY0NClcIixcIkVTRlwiOlwiSXNmYWhhbiAoXFx1MDYyN1xcdTA2MzVcXHUwNjQxXFx1MDY0N1xcdTA2MjdcXHUwNjQ2KVwiLFwiWVpEXCI6XCJZYXpkIChcXHUwNmNjXFx1MDYzMlxcdTA2MmYpXCIsXCJLUkhcIjpcIktlcm1hbnNoYWggKFxcdTA2YTlcXHUwNjMxXFx1MDY0NVxcdTA2MjdcXHUwNjQ2XFx1MDYzNFxcdTA2MjdcXHUwNjQ3KVwiLFwiS1JOXCI6XCJLZXJtYW4gKFxcdTA2YTlcXHUwNjMxXFx1MDY0NVxcdTA2MjdcXHUwNjQ2KVwiLFwiSEROXCI6XCJIYW1hZGFuIChcXHUwNjQ3XFx1MDY0NVxcdTA2MmZcXHUwNjI3XFx1MDY0NilcIixcIkdaTlwiOlwiR2hhenZpbiAoXFx1MDY0MlxcdTA2MzJcXHUwNjQ4XFx1MDZjY1xcdTA2NDYpXCIsXCJaSk5cIjpcIlphbmphbiAoXFx1MDYzMlxcdTA2NDZcXHUwNjJjXFx1MDYyN1xcdTA2NDYpXCIsXCJMUlNcIjpcIkx1cmlzdGFuIChcXHUwNjQ0XFx1MDYzMVxcdTA2MzNcXHUwNjJhXFx1MDYyN1xcdTA2NDYpXCIsXCJBQlpcIjpcIkFsYm9yeiAoXFx1MDYyN1xcdTA2NDRcXHUwNjI4XFx1MDYzMVxcdTA2MzIpXCIsXCJFQVpcIjpcIkVhc3QgQXphcmJhaWphbiAoXFx1MDYyMlxcdTA2MzBcXHUwNjMxXFx1MDYyOFxcdTA2MjdcXHUwNmNjXFx1MDYyY1xcdTA2MjdcXHUwNjQ2IFxcdTA2MzRcXHUwNjMxXFx1MDY0MlxcdTA2Y2MpXCIsXCJXQVpcIjpcIldlc3QgQXphcmJhaWphbiAoXFx1MDYyMlxcdTA2MzBcXHUwNjMxXFx1MDYyOFxcdTA2MjdcXHUwNmNjXFx1MDYyY1xcdTA2MjdcXHUwNjQ2IFxcdTA2M2FcXHUwNjMxXFx1MDYyOFxcdTA2Y2MpXCIsXCJDSEJcIjpcIkNoYWhhcm1haGFsIGFuZCBCYWtodGlhcmkgKFxcdTA2ODZcXHUwNjQ3XFx1MDYyN1xcdTA2MzFcXHUwNjQ1XFx1MDYyZFxcdTA2MjdcXHUwNjQ0IFxcdTA2NDggXFx1MDYyOFxcdTA2MmVcXHUwNjJhXFx1MDZjY1xcdTA2MjdcXHUwNjMxXFx1MDZjYylcIixcIlNLSFwiOlwiU291dGggS2hvcmFzYW4gKFxcdTA2MmVcXHUwNjMxXFx1MDYyN1xcdTA2MzNcXHUwNjI3XFx1MDY0NiBcXHUwNjJjXFx1MDY0NlxcdTA2NDhcXHUwNjI4XFx1MDZjYylcIixcIlJLSFwiOlwiUmF6YXZpIEtob3Jhc2FuIChcXHUwNjJlXFx1MDYzMVxcdTA2MjdcXHUwNjMzXFx1MDYyN1xcdTA2NDYgXFx1MDYzMVxcdTA2MzZcXHUwNjQ4XFx1MDZjYylcIixcIk5LSFwiOlwiTm9ydGggS2hvcmFzYW4gKFxcdTA2MmVcXHUwNjMxXFx1MDYyN1xcdTA2MzNcXHUwNjI3XFx1MDY0NiBcXHUwNjM0XFx1MDY0NVxcdTA2MjdcXHUwNjQ0XFx1MDZjYylcIixcIlNNTlwiOlwiU2VtbmFuIChcXHUwNjMzXFx1MDY0NVxcdTA2NDZcXHUwNjI3XFx1MDY0NilcIixcIkZSU1wiOlwiRmFycyAoXFx1MDY0MVxcdTA2MjdcXHUwNjMxXFx1MDYzMylcIixcIlFITVwiOlwiUW9tIChcXHUwNjQyXFx1MDY0NSlcIixcIktSRFwiOlwiS3VyZGlzdGFuIFxcXC8gXFx1MDZhOVxcdTA2MzFcXHUwNjJmXFx1MDYzM1xcdTA2MmFcXHUwNjI3XFx1MDY0NilcIixcIktCRFwiOlwiS29oZ2lsdXllaCBhbmQgQm95ZXJBaG1hZCAoXFx1MDZhOVxcdTA2NDdcXHUwNmFmXFx1MDZjY1xcdTA2NDRcXHUwNjQ4XFx1MDZjY1xcdTA2Y2NcXHUwNjQ3IFxcdTA2NDggXFx1MDYyOFxcdTA2NDhcXHUwNmNjXFx1MDYzMVxcdTA2MjdcXHUwNjJkXFx1MDY0NVxcdTA2MmYpXCIsXCJHTFNcIjpcIkdvbGVzdGFuIChcXHUwNmFmXFx1MDY0NFxcdTA2MzNcXHUwNjJhXFx1MDYyN1xcdTA2NDYpXCIsXCJHSUxcIjpcIkdpbGFuIChcXHUwNmFmXFx1MDZjY1xcdTA2NDRcXHUwNjI3XFx1MDY0NilcIixcIk1aTlwiOlwiTWF6YW5kYXJhbiAoXFx1MDY0NVxcdTA2MjdcXHUwNjMyXFx1MDY0NlxcdTA2MmZcXHUwNjMxXFx1MDYyN1xcdTA2NDYpXCIsXCJNS1pcIjpcIk1hcmthemkgKFxcdTA2NDVcXHUwNjMxXFx1MDZhOVxcdTA2MzJcXHUwNmNjKVwiLFwiSFJaXCI6XCJIb3Jtb3pnYW4gKFxcdTA2NDdcXHUwNjMxXFx1MDY0NVxcdTA2MzJcXHUwNmFmXFx1MDYyN1xcdTA2NDYpXCIsXCJTQk5cIjpcIlNpc3RhbiBhbmQgQmFsdWNoZXN0YW4gKFxcdTA2MzNcXHUwNmNjXFx1MDYzM1xcdTA2MmFcXHUwNjI3XFx1MDY0NiBcXHUwNjQ4IFxcdTA2MjhcXHUwNjQ0XFx1MDY0OFxcdTA2ODZcXHUwNjMzXFx1MDYyYVxcdTA2MjdcXHUwNjQ2KVwifSxcIklTXCI6W10sXCJJVFwiOntcIkFHXCI6XCJBZ3JpZ2VudG9cIixcIkFMXCI6XCJBbGVzc2FuZHJpYVwiLFwiQU5cIjpcIkFuY29uYVwiLFwiQU9cIjpcIkFvc3RhXCIsXCJBUlwiOlwiQXJlenpvXCIsXCJBUFwiOlwiQXNjb2xpIFBpY2Vub1wiLFwiQVRcIjpcIkFzdGlcIixcIkFWXCI6XCJBdmVsbGlub1wiLFwiQkFcIjpcIkJhcmlcIixcIkJUXCI6XCJCYXJsZXR0YS1BbmRyaWEtVHJhbmlcIixcIkJMXCI6XCJCZWxsdW5vXCIsXCJCTlwiOlwiQmVuZXZlbnRvXCIsXCJCR1wiOlwiQmVyZ2Ftb1wiLFwiQklcIjpcIkJpZWxsYVwiLFwiQk9cIjpcIkJvbG9nbmFcIixcIkJaXCI6XCJCb2x6YW5vXCIsXCJCU1wiOlwiQnJlc2NpYVwiLFwiQlJcIjpcIkJyaW5kaXNpXCIsXCJDQVwiOlwiQ2FnbGlhcmlcIixcIkNMXCI6XCJDYWx0YW5pc3NldHRhXCIsXCJDQlwiOlwiQ2FtcG9iYXNzb1wiLFwiQ0VcIjpcIkNhc2VydGFcIixcIkNUXCI6XCJDYXRhbmlhXCIsXCJDWlwiOlwiQ2F0YW56YXJvXCIsXCJDSFwiOlwiQ2hpZXRpXCIsXCJDT1wiOlwiQ29tb1wiLFwiQ1NcIjpcIkNvc2VuemFcIixcIkNSXCI6XCJDcmVtb25hXCIsXCJLUlwiOlwiQ3JvdG9uZVwiLFwiQ05cIjpcIkN1bmVvXCIsXCJFTlwiOlwiRW5uYVwiLFwiRk1cIjpcIkZlcm1vXCIsXCJGRVwiOlwiRmVycmFyYVwiLFwiRklcIjpcIkZpcmVuemVcIixcIkZHXCI6XCJGb2dnaWFcIixcIkZDXCI6XCJGb3JsXFx1MDBlYy1DZXNlbmFcIixcIkZSXCI6XCJGcm9zaW5vbmVcIixcIkdFXCI6XCJHZW5vdmFcIixcIkdPXCI6XCJHb3JpemlhXCIsXCJHUlwiOlwiR3Jvc3NldG9cIixcIklNXCI6XCJJbXBlcmlhXCIsXCJJU1wiOlwiSXNlcm5pYVwiLFwiU1BcIjpcIkxhIFNwZXppYVwiLFwiQVFcIjpcIkwnQXF1aWxhXCIsXCJMVFwiOlwiTGF0aW5hXCIsXCJMRVwiOlwiTGVjY2VcIixcIkxDXCI6XCJMZWNjb1wiLFwiTElcIjpcIkxpdm9ybm9cIixcIkxPXCI6XCJMb2RpXCIsXCJMVVwiOlwiTHVjY2FcIixcIk1DXCI6XCJNYWNlcmF0YVwiLFwiTU5cIjpcIk1hbnRvdmFcIixcIk1TXCI6XCJNYXNzYS1DYXJyYXJhXCIsXCJNVFwiOlwiTWF0ZXJhXCIsXCJNRVwiOlwiTWVzc2luYVwiLFwiTUlcIjpcIk1pbGFub1wiLFwiTU9cIjpcIk1vZGVuYVwiLFwiTUJcIjpcIk1vbnphIGUgZGVsbGEgQnJpYW56YVwiLFwiTkFcIjpcIk5hcG9saVwiLFwiTk9cIjpcIk5vdmFyYVwiLFwiTlVcIjpcIk51b3JvXCIsXCJPUlwiOlwiT3Jpc3Rhbm9cIixcIlBEXCI6XCJQYWRvdmFcIixcIlBBXCI6XCJQYWxlcm1vXCIsXCJQUlwiOlwiUGFybWFcIixcIlBWXCI6XCJQYXZpYVwiLFwiUEdcIjpcIlBlcnVnaWFcIixcIlBVXCI6XCJQZXNhcm8gZSBVcmJpbm9cIixcIlBFXCI6XCJQZXNjYXJhXCIsXCJQQ1wiOlwiUGlhY2VuemFcIixcIlBJXCI6XCJQaXNhXCIsXCJQVFwiOlwiUGlzdG9pYVwiLFwiUE5cIjpcIlBvcmRlbm9uZVwiLFwiUFpcIjpcIlBvdGVuemFcIixcIlBPXCI6XCJQcmF0b1wiLFwiUkdcIjpcIlJhZ3VzYVwiLFwiUkFcIjpcIlJhdmVubmFcIixcIlJDXCI6XCJSZWdnaW8gQ2FsYWJyaWFcIixcIlJFXCI6XCJSZWdnaW8gRW1pbGlhXCIsXCJSSVwiOlwiUmlldGlcIixcIlJOXCI6XCJSaW1pbmlcIixcIlJNXCI6XCJSb21hXCIsXCJST1wiOlwiUm92aWdvXCIsXCJTQVwiOlwiU2FsZXJub1wiLFwiU1NcIjpcIlNhc3NhcmlcIixcIlNWXCI6XCJTYXZvbmFcIixcIlNJXCI6XCJTaWVuYVwiLFwiU1JcIjpcIlNpcmFjdXNhXCIsXCJTT1wiOlwiU29uZHJpb1wiLFwiU1VcIjpcIlN1ZCBTYXJkZWduYVwiLFwiVEFcIjpcIlRhcmFudG9cIixcIlRFXCI6XCJUZXJhbW9cIixcIlRSXCI6XCJUZXJuaVwiLFwiVE9cIjpcIlRvcmlub1wiLFwiVFBcIjpcIlRyYXBhbmlcIixcIlROXCI6XCJUcmVudG9cIixcIlRWXCI6XCJUcmV2aXNvXCIsXCJUU1wiOlwiVHJpZXN0ZVwiLFwiVURcIjpcIlVkaW5lXCIsXCJWQVwiOlwiVmFyZXNlXCIsXCJWRVwiOlwiVmVuZXppYVwiLFwiVkJcIjpcIlZlcmJhbm8tQ3VzaW8tT3Nzb2xhXCIsXCJWQ1wiOlwiVmVyY2VsbGlcIixcIlZSXCI6XCJWZXJvbmFcIixcIlZWXCI6XCJWaWJvIFZhbGVudGlhXCIsXCJWSVwiOlwiVmljZW56YVwiLFwiVlRcIjpcIlZpdGVyYm9cIn0sXCJJTFwiOltdLFwiSU1cIjpbXSxcIkpQXCI6e1wiSlAwMVwiOlwiSG9ra2FpZG9cIixcIkpQMDJcIjpcIkFvbW9yaVwiLFwiSlAwM1wiOlwiSXdhdGVcIixcIkpQMDRcIjpcIk1peWFnaVwiLFwiSlAwNVwiOlwiQWtpdGFcIixcIkpQMDZcIjpcIllhbWFnYXRhXCIsXCJKUDA3XCI6XCJGdWt1c2hpbWFcIixcIkpQMDhcIjpcIkliYXJha2lcIixcIkpQMDlcIjpcIlRvY2hpZ2lcIixcIkpQMTBcIjpcIkd1bm1hXCIsXCJKUDExXCI6XCJTYWl0YW1hXCIsXCJKUDEyXCI6XCJDaGliYVwiLFwiSlAxM1wiOlwiVG9reW9cIixcIkpQMTRcIjpcIkthbmFnYXdhXCIsXCJKUDE1XCI6XCJOaWlnYXRhXCIsXCJKUDE2XCI6XCJUb3lhbWFcIixcIkpQMTdcIjpcIklzaGlrYXdhXCIsXCJKUDE4XCI6XCJGdWt1aVwiLFwiSlAxOVwiOlwiWWFtYW5hc2hpXCIsXCJKUDIwXCI6XCJOYWdhbm9cIixcIkpQMjFcIjpcIkdpZnVcIixcIkpQMjJcIjpcIlNoaXp1b2thXCIsXCJKUDIzXCI6XCJBaWNoaVwiLFwiSlAyNFwiOlwiTWllXCIsXCJKUDI1XCI6XCJTaGlnYVwiLFwiSlAyNlwiOlwiS3lvdG9cIixcIkpQMjdcIjpcIk9zYWthXCIsXCJKUDI4XCI6XCJIeW9nb1wiLFwiSlAyOVwiOlwiTmFyYVwiLFwiSlAzMFwiOlwiV2FrYXlhbWFcIixcIkpQMzFcIjpcIlRvdHRvcmlcIixcIkpQMzJcIjpcIlNoaW1hbmVcIixcIkpQMzNcIjpcIk9rYXlhbWFcIixcIkpQMzRcIjpcIkhpcm9zaGltYVwiLFwiSlAzNVwiOlwiWWFtYWd1Y2hpXCIsXCJKUDM2XCI6XCJUb2t1c2hpbWFcIixcIkpQMzdcIjpcIkthZ2F3YVwiLFwiSlAzOFwiOlwiRWhpbWVcIixcIkpQMzlcIjpcIktvY2hpXCIsXCJKUDQwXCI6XCJGdWt1b2thXCIsXCJKUDQxXCI6XCJTYWdhXCIsXCJKUDQyXCI6XCJOYWdhc2FraVwiLFwiSlA0M1wiOlwiS3VtYW1vdG9cIixcIkpQNDRcIjpcIk9pdGFcIixcIkpQNDVcIjpcIk1peWF6YWtpXCIsXCJKUDQ2XCI6XCJLYWdvc2hpbWFcIixcIkpQNDdcIjpcIk9raW5hd2FcIn0sXCJLUlwiOltdLFwiS1dcIjpbXSxcIkxCXCI6W10sXCJMUlwiOntcIkJNXCI6XCJCb21pXCIsXCJCTlwiOlwiQm9uZ1wiLFwiR0FcIjpcIkdiYXJwb2x1XCIsXCJHQlwiOlwiR3JhbmQgQmFzc2FcIixcIkdDXCI6XCJHcmFuZCBDYXBlIE1vdW50XCIsXCJHR1wiOlwiR3JhbmQgR2VkZWhcIixcIkdLXCI6XCJHcmFuZCBLcnVcIixcIkxPXCI6XCJMb2ZhXCIsXCJNQVwiOlwiTWFyZ2liaVwiLFwiTVlcIjpcIk1hcnlsYW5kXCIsXCJNT1wiOlwiTW9udHNlcnJhZG9cIixcIk5NXCI6XCJOaW1iYVwiLFwiUlZcIjpcIlJpdmVyY2Vzc1wiLFwiUkdcIjpcIlJpdmVyIEdlZVwiLFwiU05cIjpcIlNpbm9lXCJ9LFwiTFVcIjpbXSxcIk1EXCI6e1wiQ1wiOlwiQ2hpXHUwMjE5aW5cdTAxMDN1XCIsXCJCTFwiOlwiQlx1MDEwM2xcdTAyMWJpXCIsXCJBTlwiOlwiQW5lbmlpIE5vaVwiLFwiQlNcIjpcIkJhc2FyYWJlYXNjYVwiLFwiQlJcIjpcIkJyaWNlbmlcIixcIkNIXCI6XCJDYWh1bFwiLFwiQ1RcIjpcIkNhbnRlbWlyXCIsXCJDTFwiOlwiQ1x1MDEwM2xcdTAxMDNyYVx1MDIxOWlcIixcIkNTXCI6XCJDXHUwMTAzdVx1MDIxOWVuaVwiLFwiQ01cIjpcIkNpbWlcdTAyMTlsaWFcIixcIkNSXCI6XCJDcml1bGVuaVwiLFwiRE5cIjpcIkRvbmR1XHUwMjE5ZW5pXCIsXCJEUlwiOlwiRHJvY2hpYVwiLFwiREJcIjpcIkR1Ylx1MDEwM3NhcmlcIixcIkVEXCI6XCJFZGluZVx1MDIxYlwiLFwiRkxcIjpcIkZcdTAxMDNsZVx1MDIxOXRpXCIsXCJGUlwiOlwiRmxvcmVcdTAyMTl0aVwiLFwiR0VcIjpcIlVUQSBHXHUwMTAzZ1x1MDEwM3V6aWFcIixcIkdMXCI6XCJHbG9kZW5pXCIsXCJITlwiOlwiSFx1MDBlZW5jZVx1MDIxOXRpXCIsXCJJTFwiOlwiSWFsb3ZlbmlcIixcIkxWXCI6XCJMZW92YVwiLFwiTlNcIjpcIk5pc3BvcmVuaVwiLFwiT0NcIjpcIk9jbmlcdTAyMWJhXCIsXCJPUlwiOlwiT3JoZWlcIixcIlJaXCI6XCJSZXppbmFcIixcIlJTXCI6XCJSXHUwMGVlXHUwMjE5Y2FuaVwiLFwiU0dcIjpcIlNcdTAwZWVuZ2VyZWlcIixcIlNSXCI6XCJTb3JvY2FcIixcIlNUXCI6XCJTdHJcdTAxMDNcdTAyMTllbmlcIixcIlNEXCI6XCJcdTAyMThvbGRcdTAxMDNuZVx1MDIxOXRpXCIsXCJTVlwiOlwiXHUwMjE4dGVmYW4gVm9kXHUwMTAzXCIsXCJUUlwiOlwiVGFyYWNsaWFcIixcIlRMXCI6XCJUZWxlbmVcdTAyMTl0aVwiLFwiVU5cIjpcIlVuZ2hlbmlcIn0sXCJNUVwiOltdLFwiTVRcIjpbXSxcIk1YXCI6e1wiREZcIjpcIkNpdWRhZCBkZSBNXHUwMGU5eGljb1wiLFwiSkFcIjpcIkphbGlzY29cIixcIk5MXCI6XCJOdWV2byBMZVx1MDBmM25cIixcIkFHXCI6XCJBZ3Vhc2NhbGllbnRlc1wiLFwiQkNcIjpcIkJhamEgQ2FsaWZvcm5pYVwiLFwiQlNcIjpcIkJhamEgQ2FsaWZvcm5pYSBTdXJcIixcIkNNXCI6XCJDYW1wZWNoZVwiLFwiQ1NcIjpcIkNoaWFwYXNcIixcIkNIXCI6XCJDaGlodWFodWFcIixcIkNPXCI6XCJDb2FodWlsYVwiLFwiQ0xcIjpcIkNvbGltYVwiLFwiREdcIjpcIkR1cmFuZ29cIixcIkdUXCI6XCJHdWFuYWp1YXRvXCIsXCJHUlwiOlwiR3VlcnJlcm9cIixcIkhHXCI6XCJIaWRhbGdvXCIsXCJNWFwiOlwiRXN0YWRvIGRlIE1cdTAwZTl4aWNvXCIsXCJNSVwiOlwiTWljaG9hY1x1MDBlMW5cIixcIk1PXCI6XCJNb3JlbG9zXCIsXCJOQVwiOlwiTmF5YXJpdFwiLFwiT0FcIjpcIk9heGFjYVwiLFwiUFVcIjpcIlB1ZWJsYVwiLFwiUVRcIjpcIlF1ZXJcdTAwZTl0YXJvXCIsXCJRUlwiOlwiUXVpbnRhbmEgUm9vXCIsXCJTTFwiOlwiU2FuIEx1aXMgUG90b3NcdTAwZWRcIixcIlNJXCI6XCJTaW5hbG9hXCIsXCJTT1wiOlwiU29ub3JhXCIsXCJUQlwiOlwiVGFiYXNjb1wiLFwiVE1cIjpcIlRhbWF1bGlwYXNcIixcIlRMXCI6XCJUbGF4Y2FsYVwiLFwiVkVcIjpcIlZlcmFjcnV6XCIsXCJZVVwiOlwiWXVjYXRcdTAwZTFuXCIsXCJaQVwiOlwiWmFjYXRlY2FzXCJ9LFwiTVlcIjp7XCJKSFJcIjpcIkpvaG9yXCIsXCJLREhcIjpcIktlZGFoXCIsXCJLVE5cIjpcIktlbGFudGFuXCIsXCJMQk5cIjpcIkxhYnVhblwiLFwiTUxLXCI6XCJNYWxhY2NhIChNZWxha2EpXCIsXCJOU05cIjpcIk5lZ2VyaSBTZW1iaWxhblwiLFwiUEhHXCI6XCJQYWhhbmdcIixcIlBOR1wiOlwiUGVuYW5nIChQdWxhdSBQaW5hbmcpXCIsXCJQUktcIjpcIlBlcmFrXCIsXCJQTFNcIjpcIlBlcmxpc1wiLFwiU0JIXCI6XCJTYWJhaFwiLFwiU1dLXCI6XCJTYXJhd2FrXCIsXCJTR1JcIjpcIlNlbGFuZ29yXCIsXCJUUkdcIjpcIlRlcmVuZ2dhbnVcIixcIlBKWVwiOlwiUHV0cmFqYXlhXCIsXCJLVUxcIjpcIkt1YWxhIEx1bXB1clwifSxcIk5HXCI6e1wiQUJcIjpcIkFiaWFcIixcIkZDXCI6XCJBYnVqYVwiLFwiQURcIjpcIkFkYW1hd2FcIixcIkFLXCI6XCJBa3dhIElib21cIixcIkFOXCI6XCJBbmFtYnJhXCIsXCJCQVwiOlwiQmF1Y2hpXCIsXCJCWVwiOlwiQmF5ZWxzYVwiLFwiQkVcIjpcIkJlbnVlXCIsXCJCT1wiOlwiQm9ybm9cIixcIkNSXCI6XCJDcm9zcyBSaXZlclwiLFwiREVcIjpcIkRlbHRhXCIsXCJFQlwiOlwiRWJvbnlpXCIsXCJFRFwiOlwiRWRvXCIsXCJFS1wiOlwiRWtpdGlcIixcIkVOXCI6XCJFbnVndVwiLFwiR09cIjpcIkdvbWJlXCIsXCJJTVwiOlwiSW1vXCIsXCJKSVwiOlwiSmlnYXdhXCIsXCJLRFwiOlwiS2FkdW5hXCIsXCJLTlwiOlwiS2Fub1wiLFwiS1RcIjpcIkthdHNpbmFcIixcIktFXCI6XCJLZWJiaVwiLFwiS09cIjpcIktvZ2lcIixcIktXXCI6XCJLd2FyYVwiLFwiTEFcIjpcIkxhZ29zXCIsXCJOQVwiOlwiTmFzYXJhd2FcIixcIk5JXCI6XCJOaWdlclwiLFwiT0dcIjpcIk9ndW5cIixcIk9OXCI6XCJPbmRvXCIsXCJPU1wiOlwiT3N1blwiLFwiT1lcIjpcIk95b1wiLFwiUExcIjpcIlBsYXRlYXVcIixcIlJJXCI6XCJSaXZlcnNcIixcIlNPXCI6XCJTb2tvdG9cIixcIlRBXCI6XCJUYXJhYmFcIixcIllPXCI6XCJZb2JlXCIsXCJaQVwiOlwiWmFtZmFyYVwifSxcIk5MXCI6W10sXCJOT1wiOltdLFwiTlBcIjp7XCJCQUdcIjpcIkJhZ21hdGlcIixcIkJIRVwiOlwiQmhlcmlcIixcIkRIQVwiOlwiRGhhdWxhZ2lyaVwiLFwiR0FOXCI6XCJHYW5kYWtpXCIsXCJKQU5cIjpcIkphbmFrcHVyXCIsXCJLQVJcIjpcIkthcm5hbGlcIixcIktPU1wiOlwiS29zaGlcIixcIkxVTVwiOlwiTHVtYmluaVwiLFwiTUFIXCI6XCJNYWhha2FsaVwiLFwiTUVDXCI6XCJNZWNoaVwiLFwiTkFSXCI6XCJOYXJheWFuaVwiLFwiUkFQXCI6XCJSYXB0aVwiLFwiU0FHXCI6XCJTYWdhcm1hdGhhXCIsXCJTRVRcIjpcIlNldGlcIn0sXCJOWlwiOntcIk5MXCI6XCJOb3J0aGxhbmRcIixcIkFLXCI6XCJBdWNrbGFuZFwiLFwiV0FcIjpcIldhaWthdG9cIixcIkJQXCI6XCJCYXkgb2YgUGxlbnR5XCIsXCJUS1wiOlwiVGFyYW5ha2lcIixcIkdJXCI6XCJHaXNib3JuZVwiLFwiSEJcIjpcIkhhd2tlXHUyMDE5cyBCYXlcIixcIk1XXCI6XCJNYW5hd2F0dS1XYW5nYW51aVwiLFwiV0VcIjpcIldlbGxpbmd0b25cIixcIk5TXCI6XCJOZWxzb25cIixcIk1CXCI6XCJNYXJsYm9yb3VnaFwiLFwiVE1cIjpcIlRhc21hblwiLFwiV0NcIjpcIldlc3QgQ29hc3RcIixcIkNUXCI6XCJDYW50ZXJidXJ5XCIsXCJPVFwiOlwiT3RhZ29cIixcIlNMXCI6XCJTb3V0aGxhbmRcIn0sXCJQRVwiOntcIkNBTFwiOlwiRWwgQ2FsbGFvXCIsXCJMTUFcIjpcIk11bmljaXBhbGlkYWQgTWV0cm9wb2xpdGFuYSBkZSBMaW1hXCIsXCJBTUFcIjpcIkFtYXpvbmFzXCIsXCJBTkNcIjpcIkFuY2FzaFwiLFwiQVBVXCI6XCJBcHVyXHUwMGVkbWFjXCIsXCJBUkVcIjpcIkFyZXF1aXBhXCIsXCJBWUFcIjpcIkF5YWN1Y2hvXCIsXCJDQUpcIjpcIkNhamFtYXJjYVwiLFwiQ1VTXCI6XCJDdXNjb1wiLFwiSFVWXCI6XCJIdWFuY2F2ZWxpY2FcIixcIkhVQ1wiOlwiSHVcdTAwZTFudWNvXCIsXCJJQ0FcIjpcIkljYVwiLFwiSlVOXCI6XCJKdW5cdTAwZWRuXCIsXCJMQUxcIjpcIkxhIExpYmVydGFkXCIsXCJMQU1cIjpcIkxhbWJheWVxdWVcIixcIkxJTVwiOlwiTGltYVwiLFwiTE9SXCI6XCJMb3JldG9cIixcIk1ERFwiOlwiTWFkcmUgZGUgRGlvc1wiLFwiTU9RXCI6XCJNb3F1ZWd1YVwiLFwiUEFTXCI6XCJQYXNjb1wiLFwiUElVXCI6XCJQaXVyYVwiLFwiUFVOXCI6XCJQdW5vXCIsXCJTQU1cIjpcIlNhbiBNYXJ0XHUwMGVkblwiLFwiVEFDXCI6XCJUYWNuYVwiLFwiVFVNXCI6XCJUdW1iZXNcIixcIlVDQVwiOlwiVWNheWFsaVwifSxcIlBIXCI6e1wiQUJSXCI6XCJBYnJhXCIsXCJBR05cIjpcIkFndXNhbiBkZWwgTm9ydGVcIixcIkFHU1wiOlwiQWd1c2FuIGRlbCBTdXJcIixcIkFLTFwiOlwiQWtsYW5cIixcIkFMQlwiOlwiQWxiYXlcIixcIkFOVFwiOlwiQW50aXF1ZVwiLFwiQVBBXCI6XCJBcGF5YW9cIixcIkFVUlwiOlwiQXVyb3JhXCIsXCJCQVNcIjpcIkJhc2lsYW5cIixcIkJBTlwiOlwiQmF0YWFuXCIsXCJCVE5cIjpcIkJhdGFuZXNcIixcIkJUR1wiOlwiQmF0YW5nYXNcIixcIkJFTlwiOlwiQmVuZ3VldFwiLFwiQklMXCI6XCJCaWxpcmFuXCIsXCJCT0hcIjpcIkJvaG9sXCIsXCJCVUtcIjpcIkJ1a2lkbm9uXCIsXCJCVUxcIjpcIkJ1bGFjYW5cIixcIkNBR1wiOlwiQ2FnYXlhblwiLFwiQ0FOXCI6XCJDYW1hcmluZXMgTm9ydGVcIixcIkNBU1wiOlwiQ2FtYXJpbmVzIFN1clwiLFwiQ0FNXCI6XCJDYW1pZ3VpblwiLFwiQ0FQXCI6XCJDYXBpelwiLFwiQ0FUXCI6XCJDYXRhbmR1YW5lc1wiLFwiQ0FWXCI6XCJDYXZpdGVcIixcIkNFQlwiOlwiQ2VidVwiLFwiQ09NXCI6XCJDb21wb3N0ZWxhIFZhbGxleVwiLFwiTkNPXCI6XCJDb3RhYmF0b1wiLFwiREFWXCI6XCJEYXZhbyBkZWwgTm9ydGVcIixcIkRBU1wiOlwiRGF2YW8gZGVsIFN1clwiLFwiREFDXCI6XCJEYXZhbyBPY2NpZGVudGFsXCIsXCJEQU9cIjpcIkRhdmFvIE9yaWVudGFsXCIsXCJESU5cIjpcIkRpbmFnYXQgSXNsYW5kc1wiLFwiRUFTXCI6XCJFYXN0ZXJuIFNhbWFyXCIsXCJHVUlcIjpcIkd1aW1hcmFzXCIsXCJJRlVcIjpcIklmdWdhb1wiLFwiSUxOXCI6XCJJbG9jb3MgTm9ydGVcIixcIklMU1wiOlwiSWxvY29zIFN1clwiLFwiSUxJXCI6XCJJbG9pbG9cIixcIklTQVwiOlwiSXNhYmVsYVwiLFwiS0FMXCI6XCJLYWxpbmdhXCIsXCJMVU5cIjpcIkxhIFVuaW9uXCIsXCJMQUdcIjpcIkxhZ3VuYVwiLFwiTEFOXCI6XCJMYW5hbyBkZWwgTm9ydGVcIixcIkxBU1wiOlwiTGFuYW8gZGVsIFN1clwiLFwiTEVZXCI6XCJMZXl0ZVwiLFwiTUFHXCI6XCJNYWd1aW5kYW5hb1wiLFwiTUFEXCI6XCJNYXJpbmR1cXVlXCIsXCJNQVNcIjpcIk1hc2JhdGVcIixcIk1TQ1wiOlwiTWlzYW1pcyBPY2NpZGVudGFsXCIsXCJNU1JcIjpcIk1pc2FtaXMgT3JpZW50YWxcIixcIk1PVVwiOlwiTW91bnRhaW4gUHJvdmluY2VcIixcIk5FQ1wiOlwiTmVncm9zIE9jY2lkZW50YWxcIixcIk5FUlwiOlwiTmVncm9zIE9yaWVudGFsXCIsXCJOU0FcIjpcIk5vcnRoZXJuIFNhbWFyXCIsXCJOVUVcIjpcIk51ZXZhIEVjaWphXCIsXCJOVVZcIjpcIk51ZXZhIFZpemNheWFcIixcIk1EQ1wiOlwiT2NjaWRlbnRhbCBNaW5kb3JvXCIsXCJNRFJcIjpcIk9yaWVudGFsIE1pbmRvcm9cIixcIlBMV1wiOlwiUGFsYXdhblwiLFwiUEFNXCI6XCJQYW1wYW5nYVwiLFwiUEFOXCI6XCJQYW5nYXNpbmFuXCIsXCJRVUVcIjpcIlF1ZXpvblwiLFwiUVVJXCI6XCJRdWlyaW5vXCIsXCJSSVpcIjpcIlJpemFsXCIsXCJST01cIjpcIlJvbWJsb25cIixcIldTQVwiOlwiU2FtYXJcIixcIlNBUlwiOlwiU2FyYW5nYW5pXCIsXCJTSVFcIjpcIlNpcXVpam9yXCIsXCJTT1JcIjpcIlNvcnNvZ29uXCIsXCJTQ09cIjpcIlNvdXRoIENvdGFiYXRvXCIsXCJTTEVcIjpcIlNvdXRoZXJuIExleXRlXCIsXCJTVUtcIjpcIlN1bHRhbiBLdWRhcmF0XCIsXCJTTFVcIjpcIlN1bHVcIixcIlNVTlwiOlwiU3VyaWdhbyBkZWwgTm9ydGVcIixcIlNVUlwiOlwiU3VyaWdhbyBkZWwgU3VyXCIsXCJUQVJcIjpcIlRhcmxhY1wiLFwiVEFXXCI6XCJUYXdpLVRhd2lcIixcIlpNQlwiOlwiWmFtYmFsZXNcIixcIlpBTlwiOlwiWmFtYm9hbmdhIGRlbCBOb3J0ZVwiLFwiWkFTXCI6XCJaYW1ib2FuZ2EgZGVsIFN1clwiLFwiWlNJXCI6XCJaYW1ib2FuZ2EgU2lidWdheVwiLFwiMDBcIjpcIk1ldHJvIE1hbmlsYVwifSxcIlBLXCI6e1wiSktcIjpcIkF6YWQgS2FzaG1pclwiLFwiQkFcIjpcIkJhbG9jaGlzdGFuXCIsXCJUQVwiOlwiRkFUQVwiLFwiR0JcIjpcIkdpbGdpdCBCYWx0aXN0YW5cIixcIklTXCI6XCJJc2xhbWFiYWQgQ2FwaXRhbCBUZXJyaXRvcnlcIixcIktQXCI6XCJLaHliZXIgUGFraHR1bmtod2FcIixcIlBCXCI6XCJQdW5qYWJcIixcIlNEXCI6XCJTaW5kaFwifSxcIlBMXCI6W10sXCJQVFwiOltdLFwiUFlcIjp7XCJQWS1BU1VcIjpcIkFzdW5jaVx1MDBmM25cIixcIlBZLTFcIjpcIkNvbmNlcGNpXHUwMGYzblwiLFwiUFktMlwiOlwiU2FuIFBlZHJvXCIsXCJQWS0zXCI6XCJDb3JkaWxsZXJhXCIsXCJQWS00XCI6XCJHdWFpclx1MDBlMVwiLFwiUFktNVwiOlwiQ2FhZ3Vhelx1MDBmYVwiLFwiUFktNlwiOlwiQ2FhemFwXHUwMGUxXCIsXCJQWS03XCI6XCJJdGFwXHUwMGZhYVwiLFwiUFktOFwiOlwiTWlzaW9uZXNcIixcIlBZLTlcIjpcIlBhcmFndWFyXHUwMGVkXCIsXCJQWS0xMFwiOlwiQWx0byBQYXJhblx1MDBlMVwiLFwiUFktMTFcIjpcIkNlbnRyYWxcIixcIlBZLTEyXCI6XCJcdTAwZDFlZW1idWNcdTAwZmFcIixcIlBZLTEzXCI6XCJBbWFtYmF5XCIsXCJQWS0xNFwiOlwiQ2FuaW5kZXlcdTAwZmFcIixcIlBZLTE1XCI6XCJQcmVzaWRlbnRlIEhheWVzXCIsXCJQWS0xNlwiOlwiQWx0byBQYXJhZ3VheVwiLFwiUFktMTdcIjpcIkJvcXVlclx1MDBmM25cIn0sXCJSRVwiOltdLFwiUk9cIjp7XCJBQlwiOlwiQWxiYVwiLFwiQVJcIjpcIkFyYWRcIixcIkFHXCI6XCJBcmdlXHUwMjE5XCIsXCJCQ1wiOlwiQmFjXHUwMTAzdVwiLFwiQkhcIjpcIkJpaG9yXCIsXCJCTlwiOlwiQmlzdHJpXHUwMjFiYS1OXHUwMTAzc1x1MDEwM3VkXCIsXCJCVFwiOlwiQm90b1x1MDIxOWFuaVwiLFwiQlJcIjpcIkJyXHUwMTAzaWxhXCIsXCJCVlwiOlwiQnJhXHUwMjE5b3ZcIixcIkJcIjpcIkJ1Y3VyZVx1MDIxOXRpXCIsXCJCWlwiOlwiQnV6XHUwMTAzdVwiLFwiQ0xcIjpcIkNcdTAxMDNsXHUwMTAzcmFcdTAyMTlpXCIsXCJDU1wiOlwiQ2FyYVx1MDIxOS1TZXZlcmluXCIsXCJDSlwiOlwiQ2x1alwiLFwiQ1RcIjpcIkNvbnN0YW5cdTAyMWJhXCIsXCJDVlwiOlwiQ292YXNuYVwiLFwiREJcIjpcIkRcdTAwZTJtYm92aVx1MDIxYmFcIixcIkRKXCI6XCJEb2xqXCIsXCJHTFwiOlwiR2FsYVx1MDIxYmlcIixcIkdSXCI6XCJHaXVyZ2l1XCIsXCJHSlwiOlwiR29yalwiLFwiSFJcIjpcIkhhcmdoaXRhXCIsXCJIRFwiOlwiSHVuZWRvYXJhXCIsXCJJTFwiOlwiSWFsb21pXHUwMjFiYVwiLFwiSVNcIjpcIklhXHUwMjE5aVwiLFwiSUZcIjpcIklsZm92XCIsXCJNTVwiOlwiTWFyYW11cmVcdTAyMTlcIixcIk1IXCI6XCJNZWhlZGluXHUwMjFiaVwiLFwiTVNcIjpcIk11cmVcdTAyMTlcIixcIk5UXCI6XCJOZWFtXHUwMjFiXCIsXCJPVFwiOlwiT2x0XCIsXCJQSFwiOlwiUHJhaG92YVwiLFwiU0pcIjpcIlNcdTAxMDNsYWpcIixcIlNNXCI6XCJTYXR1IE1hcmVcIixcIlNCXCI6XCJTaWJpdVwiLFwiU1ZcIjpcIlN1Y2VhdmFcIixcIlRSXCI6XCJUZWxlb3JtYW5cIixcIlRNXCI6XCJUaW1pXHUwMjE5XCIsXCJUTFwiOlwiVHVsY2VhXCIsXCJWTFwiOlwiVlx1MDBlMmxjZWFcIixcIlZTXCI6XCJWYXNsdWlcIixcIlZOXCI6XCJWcmFuY2VhXCJ9LFwiUlNcIjpbXSxcIlNHXCI6W10sXCJTS1wiOltdLFwiU0lcIjpbXSxcIlRIXCI6e1wiVEgtMzdcIjpcIkFtbmF0IENoYXJvZW5cIixcIlRILTE1XCI6XCJBbmcgVGhvbmdcIixcIlRILTE0XCI6XCJBeXV0dGhheWFcIixcIlRILTEwXCI6XCJCYW5na29rXCIsXCJUSC0zOFwiOlwiQnVlbmcgS2FuXCIsXCJUSC0zMVwiOlwiQnVyaSBSYW1cIixcIlRILTI0XCI6XCJDaGFjaG9lbmdzYW9cIixcIlRILTE4XCI6XCJDaGFpIE5hdFwiLFwiVEgtMzZcIjpcIkNoYWl5YXBodW1cIixcIlRILTIyXCI6XCJDaGFudGhhYnVyaVwiLFwiVEgtNTBcIjpcIkNoaWFuZyBNYWlcIixcIlRILTU3XCI6XCJDaGlhbmcgUmFpXCIsXCJUSC0yMFwiOlwiQ2hvbmJ1cmlcIixcIlRILTg2XCI6XCJDaHVtcGhvblwiLFwiVEgtNDZcIjpcIkthbGFzaW5cIixcIlRILTYyXCI6XCJLYW1waGFlbmcgUGhldFwiLFwiVEgtNzFcIjpcIkthbmNoYW5hYnVyaVwiLFwiVEgtNDBcIjpcIktob24gS2FlblwiLFwiVEgtODFcIjpcIktyYWJpXCIsXCJUSC01MlwiOlwiTGFtcGFuZ1wiLFwiVEgtNTFcIjpcIkxhbXBodW5cIixcIlRILTQyXCI6XCJMb2VpXCIsXCJUSC0xNlwiOlwiTG9wYnVyaVwiLFwiVEgtNThcIjpcIk1hZSBIb25nIFNvblwiLFwiVEgtNDRcIjpcIk1haGEgU2FyYWtoYW1cIixcIlRILTQ5XCI6XCJNdWtkYWhhblwiLFwiVEgtMjZcIjpcIk5ha2hvbiBOYXlva1wiLFwiVEgtNzNcIjpcIk5ha2hvbiBQYXRob21cIixcIlRILTQ4XCI6XCJOYWtob24gUGhhbm9tXCIsXCJUSC0zMFwiOlwiTmFraG9uIFJhdGNoYXNpbWFcIixcIlRILTYwXCI6XCJOYWtob24gU2F3YW5cIixcIlRILTgwXCI6XCJOYWtob24gU2kgVGhhbW1hcmF0XCIsXCJUSC01NVwiOlwiTmFuXCIsXCJUSC05NlwiOlwiTmFyYXRoaXdhdFwiLFwiVEgtMzlcIjpcIk5vbmcgQnVhIExhbSBQaHVcIixcIlRILTQzXCI6XCJOb25nIEtoYWlcIixcIlRILTEyXCI6XCJOb250aGFidXJpXCIsXCJUSC0xM1wiOlwiUGF0aHVtIFRoYW5pXCIsXCJUSC05NFwiOlwiUGF0dGFuaVwiLFwiVEgtODJcIjpcIlBoYW5nIE5nYVwiLFwiVEgtOTNcIjpcIlBoYXR0aGFsdW5nXCIsXCJUSC01NlwiOlwiUGhheWFvXCIsXCJUSC02N1wiOlwiUGhldGNoYWJ1blwiLFwiVEgtNzZcIjpcIlBoZXRjaGFidXJpXCIsXCJUSC02NlwiOlwiUGhpY2hpdFwiLFwiVEgtNjVcIjpcIlBoaXRzYW51bG9rXCIsXCJUSC01NFwiOlwiUGhyYWVcIixcIlRILTgzXCI6XCJQaHVrZXRcIixcIlRILTI1XCI6XCJQcmFjaGluIEJ1cmlcIixcIlRILTc3XCI6XCJQcmFjaHVhcCBLaGlyaSBLaGFuXCIsXCJUSC04NVwiOlwiUmFub25nXCIsXCJUSC03MFwiOlwiUmF0Y2hhYnVyaVwiLFwiVEgtMjFcIjpcIlJheW9uZ1wiLFwiVEgtNDVcIjpcIlJvaSBFdFwiLFwiVEgtMjdcIjpcIlNhIEthZW9cIixcIlRILTQ3XCI6XCJTYWtvbiBOYWtob25cIixcIlRILTExXCI6XCJTYW11dCBQcmFrYW5cIixcIlRILTc0XCI6XCJTYW11dCBTYWtob25cIixcIlRILTc1XCI6XCJTYW11dCBTb25na2hyYW1cIixcIlRILTE5XCI6XCJTYXJhYnVyaVwiLFwiVEgtOTFcIjpcIlNhdHVuXCIsXCJUSC0xN1wiOlwiU2luZyBCdXJpXCIsXCJUSC0zM1wiOlwiU2lzYWtldFwiLFwiVEgtOTBcIjpcIlNvbmdraGxhXCIsXCJUSC02NFwiOlwiU3VraG90aGFpXCIsXCJUSC03MlwiOlwiU3VwaGFuIEJ1cmlcIixcIlRILTg0XCI6XCJTdXJhdCBUaGFuaVwiLFwiVEgtMzJcIjpcIlN1cmluXCIsXCJUSC02M1wiOlwiVGFrXCIsXCJUSC05MlwiOlwiVHJhbmdcIixcIlRILTIzXCI6XCJUcmF0XCIsXCJUSC0zNFwiOlwiVWJvbiBSYXRjaGF0aGFuaVwiLFwiVEgtNDFcIjpcIlVkb24gVGhhbmlcIixcIlRILTYxXCI6XCJVdGhhaSBUaGFuaVwiLFwiVEgtNTNcIjpcIlV0dGFyYWRpdFwiLFwiVEgtOTVcIjpcIllhbGFcIixcIlRILTM1XCI6XCJZYXNvdGhvblwifSxcIlRSXCI6e1wiVFIwMVwiOlwiQWRhbmFcIixcIlRSMDJcIjpcIkFkXHUwMTMxeWFtYW5cIixcIlRSMDNcIjpcIkFmeW9uXCIsXCJUUjA0XCI6XCJBXHUwMTFmclx1MDEzMVwiLFwiVFIwNVwiOlwiQW1hc3lhXCIsXCJUUjA2XCI6XCJBbmthcmFcIixcIlRSMDdcIjpcIkFudGFseWFcIixcIlRSMDhcIjpcIkFydHZpblwiLFwiVFIwOVwiOlwiQXlkXHUwMTMxblwiLFwiVFIxMFwiOlwiQmFsXHUwMTMxa2VzaXJcIixcIlRSMTFcIjpcIkJpbGVjaWtcIixcIlRSMTJcIjpcIkJpbmdcdTAwZjZsXCIsXCJUUjEzXCI6XCJCaXRsaXNcIixcIlRSMTRcIjpcIkJvbHVcIixcIlRSMTVcIjpcIkJ1cmR1clwiLFwiVFIxNlwiOlwiQnVyc2FcIixcIlRSMTdcIjpcIlx1MDBjN2FuYWtrYWxlXCIsXCJUUjE4XCI6XCJcdTAwYzdhbmtcdTAxMzFyXHUwMTMxXCIsXCJUUjE5XCI6XCJcdTAwYzdvcnVtXCIsXCJUUjIwXCI6XCJEZW5pemxpXCIsXCJUUjIxXCI6XCJEaXlhcmJha1x1MDEzMXJcIixcIlRSMjJcIjpcIkVkaXJuZVwiLFwiVFIyM1wiOlwiRWxhelx1MDEzMVx1MDExZlwiLFwiVFIyNFwiOlwiRXJ6aW5jYW5cIixcIlRSMjVcIjpcIkVyenVydW1cIixcIlRSMjZcIjpcIkVza2lcdTAxNWZlaGlyXCIsXCJUUjI3XCI6XCJHYXppYW50ZXBcIixcIlRSMjhcIjpcIkdpcmVzdW5cIixcIlRSMjlcIjpcIkdcdTAwZmNtXHUwMGZjXHUwMTVmaGFuZVwiLFwiVFIzMFwiOlwiSGFra2FyaVwiLFwiVFIzMVwiOlwiSGF0YXlcIixcIlRSMzJcIjpcIklzcGFydGFcIixcIlRSMzNcIjpcIlx1MDEzMFx1MDBlN2VsXCIsXCJUUjM0XCI6XCJcdTAxMzBzdGFuYnVsXCIsXCJUUjM1XCI6XCJcdTAxMzB6bWlyXCIsXCJUUjM2XCI6XCJLYXJzXCIsXCJUUjM3XCI6XCJLYXN0YW1vbnVcIixcIlRSMzhcIjpcIktheXNlcmlcIixcIlRSMzlcIjpcIktcdTAxMzFya2xhcmVsaVwiLFwiVFI0MFwiOlwiS1x1MDEzMXJcdTAxNWZlaGlyXCIsXCJUUjQxXCI6XCJLb2NhZWxpXCIsXCJUUjQyXCI6XCJLb255YVwiLFwiVFI0M1wiOlwiS1x1MDBmY3RhaHlhXCIsXCJUUjQ0XCI6XCJNYWxhdHlhXCIsXCJUUjQ1XCI6XCJNYW5pc2FcIixcIlRSNDZcIjpcIkthaHJhbWFubWFyYVx1MDE1ZlwiLFwiVFI0N1wiOlwiTWFyZGluXCIsXCJUUjQ4XCI6XCJNdVx1MDExZmxhXCIsXCJUUjQ5XCI6XCJNdVx1MDE1ZlwiLFwiVFI1MFwiOlwiTmV2XHUwMTVmZWhpclwiLFwiVFI1MVwiOlwiTmlcdTAxMWZkZVwiLFwiVFI1MlwiOlwiT3JkdVwiLFwiVFI1M1wiOlwiUml6ZVwiLFwiVFI1NFwiOlwiU2FrYXJ5YVwiLFwiVFI1NVwiOlwiU2Ftc3VuXCIsXCJUUjU2XCI6XCJTaWlydFwiLFwiVFI1N1wiOlwiU2lub3BcIixcIlRSNThcIjpcIlNpdmFzXCIsXCJUUjU5XCI6XCJUZWtpcmRhXHUwMTFmXCIsXCJUUjYwXCI6XCJUb2thdFwiLFwiVFI2MVwiOlwiVHJhYnpvblwiLFwiVFI2MlwiOlwiVHVuY2VsaVwiLFwiVFI2M1wiOlwiXHUwMTVlYW5sXHUwMTMxdXJmYVwiLFwiVFI2NFwiOlwiVVx1MDE1ZmFrXCIsXCJUUjY1XCI6XCJWYW5cIixcIlRSNjZcIjpcIllvemdhdFwiLFwiVFI2N1wiOlwiWm9uZ3VsZGFrXCIsXCJUUjY4XCI6XCJBa3NhcmF5XCIsXCJUUjY5XCI6XCJCYXlidXJ0XCIsXCJUUjcwXCI6XCJLYXJhbWFuXCIsXCJUUjcxXCI6XCJLXHUwMTMxclx1MDEzMWtrYWxlXCIsXCJUUjcyXCI6XCJCYXRtYW5cIixcIlRSNzNcIjpcIlx1MDE1ZVx1MDEzMXJuYWtcIixcIlRSNzRcIjpcIkJhcnRcdTAxMzFuXCIsXCJUUjc1XCI6XCJBcmRhaGFuXCIsXCJUUjc2XCI6XCJJXHUwMTFmZFx1MDEzMXJcIixcIlRSNzdcIjpcIllhbG92YVwiLFwiVFI3OFwiOlwiS2FyYWJcdTAwZmNrXCIsXCJUUjc5XCI6XCJLaWxpc1wiLFwiVFI4MFwiOlwiT3NtYW5peWVcIixcIlRSODFcIjpcIkRcdTAwZmN6Y2VcIn0sXCJUWlwiOntcIlRaMDFcIjpcIkFydXNoYVwiLFwiVFowMlwiOlwiRGFyIGVzIFNhbGFhbVwiLFwiVFowM1wiOlwiRG9kb21hXCIsXCJUWjA0XCI6XCJJcmluZ2FcIixcIlRaMDVcIjpcIkthZ2VyYVwiLFwiVFowNlwiOlwiUGVtYmEgTm9ydGhcIixcIlRaMDdcIjpcIlphbnppYmFyIE5vcnRoXCIsXCJUWjA4XCI6XCJLaWdvbWFcIixcIlRaMDlcIjpcIktpbGltYW5qYXJvXCIsXCJUWjEwXCI6XCJQZW1iYSBTb3V0aFwiLFwiVFoxMVwiOlwiWmFuemliYXIgU291dGhcIixcIlRaMTJcIjpcIkxpbmRpXCIsXCJUWjEzXCI6XCJNYXJhXCIsXCJUWjE0XCI6XCJNYmV5YVwiLFwiVFoxNVwiOlwiWmFuemliYXIgV2VzdFwiLFwiVFoxNlwiOlwiTW9yb2dvcm9cIixcIlRaMTdcIjpcIk10d2FyYVwiLFwiVFoxOFwiOlwiTXdhbnphXCIsXCJUWjE5XCI6XCJDb2FzdFwiLFwiVFoyMFwiOlwiUnVrd2FcIixcIlRaMjFcIjpcIlJ1dnVtYVwiLFwiVFoyMlwiOlwiU2hpbnlhbmdhXCIsXCJUWjIzXCI6XCJTaW5naWRhXCIsXCJUWjI0XCI6XCJUYWJvcmFcIixcIlRaMjVcIjpcIlRhbmdhXCIsXCJUWjI2XCI6XCJNYW55YXJhXCIsXCJUWjI3XCI6XCJHZWl0YVwiLFwiVFoyOFwiOlwiS2F0YXZpXCIsXCJUWjI5XCI6XCJOam9tYmVcIixcIlRaMzBcIjpcIlNpbWl5dVwifSxcIkxLXCI6W10sXCJTRVwiOltdLFwiVVNcIjp7XCJBTFwiOlwiQWxhYmFtYVwiLFwiQUtcIjpcIkFsYXNrYVwiLFwiQVpcIjpcIkFyaXpvbmFcIixcIkFSXCI6XCJBcmthbnNhc1wiLFwiQ0FcIjpcIkNhbGlmb3JuaWFcIixcIkNPXCI6XCJDb2xvcmFkb1wiLFwiQ1RcIjpcIkNvbm5lY3RpY3V0XCIsXCJERVwiOlwiRGVsYXdhcmVcIixcIkRDXCI6XCJEaXN0cmljdCBPZiBDb2x1bWJpYVwiLFwiRkxcIjpcIkZsb3JpZGFcIixcIkdBXCI6XCJHZW9yZ2lhXCIsXCJISVwiOlwiSGF3YWlpXCIsXCJJRFwiOlwiSWRhaG9cIixcIklMXCI6XCJJbGxpbm9pc1wiLFwiSU5cIjpcIkluZGlhbmFcIixcIklBXCI6XCJJb3dhXCIsXCJLU1wiOlwiS2Fuc2FzXCIsXCJLWVwiOlwiS2VudHVja3lcIixcIkxBXCI6XCJMb3Vpc2lhbmFcIixcIk1FXCI6XCJNYWluZVwiLFwiTURcIjpcIk1hcnlsYW5kXCIsXCJNQVwiOlwiTWFzc2FjaHVzZXR0c1wiLFwiTUlcIjpcIk1pY2hpZ2FuXCIsXCJNTlwiOlwiTWlubmVzb3RhXCIsXCJNU1wiOlwiTWlzc2lzc2lwcGlcIixcIk1PXCI6XCJNaXNzb3VyaVwiLFwiTVRcIjpcIk1vbnRhbmFcIixcIk5FXCI6XCJOZWJyYXNrYVwiLFwiTlZcIjpcIk5ldmFkYVwiLFwiTkhcIjpcIk5ldyBIYW1wc2hpcmVcIixcIk5KXCI6XCJOZXcgSmVyc2V5XCIsXCJOTVwiOlwiTmV3IE1leGljb1wiLFwiTllcIjpcIk5ldyBZb3JrXCIsXCJOQ1wiOlwiTm9ydGggQ2Fyb2xpbmFcIixcIk5EXCI6XCJOb3J0aCBEYWtvdGFcIixcIk9IXCI6XCJPaGlvXCIsXCJPS1wiOlwiT2tsYWhvbWFcIixcIk9SXCI6XCJPcmVnb25cIixcIlBBXCI6XCJQZW5uc3lsdmFuaWFcIixcIlJJXCI6XCJSaG9kZSBJc2xhbmRcIixcIlNDXCI6XCJTb3V0aCBDYXJvbGluYVwiLFwiU0RcIjpcIlNvdXRoIERha290YVwiLFwiVE5cIjpcIlRlbm5lc3NlZVwiLFwiVFhcIjpcIlRleGFzXCIsXCJVVFwiOlwiVXRhaFwiLFwiVlRcIjpcIlZlcm1vbnRcIixcIlZBXCI6XCJWaXJnaW5pYVwiLFwiV0FcIjpcIldhc2hpbmd0b25cIixcIldWXCI6XCJXZXN0IFZpcmdpbmlhXCIsXCJXSVwiOlwiV2lzY29uc2luXCIsXCJXWVwiOlwiV3lvbWluZ1wiLFwiQUFcIjpcIkFybWVkIEZvcmNlcyAoQUEpXCIsXCJBRVwiOlwiQXJtZWQgRm9yY2VzIChBRSlcIixcIkFQXCI6XCJBcm1lZCBGb3JjZXMgKEFQKVwifSxcIlZOXCI6W10sXCJZVFwiOltdLFwiWkFcIjp7XCJFQ1wiOlwiRWFzdGVybiBDYXBlXCIsXCJGU1wiOlwiRnJlZSBTdGF0ZVwiLFwiR1BcIjpcIkdhdXRlbmdcIixcIktaTlwiOlwiS3dhWnVsdS1OYXRhbFwiLFwiTFBcIjpcIkxpbXBvcG9cIixcIk1QXCI6XCJNcHVtYWxhbmdhXCIsXCJOQ1wiOlwiTm9ydGhlcm4gQ2FwZVwiLFwiTldcIjpcIk5vcnRoIFdlc3RcIixcIldDXCI6XCJXZXN0ZXJuIENhcGVcIn19IiwicGFzc3dvcmRfc3RyZW5ndGgiOnsibWluX3Bhc3N3b3JkX3N0cmVuZ3RoIjozLCJpMThuX3Bhc3N3b3JkX2Vycm9yIjoiVmV1aWxsZXogc2Fpc2lyIHVuIG1vdCBkZSBwYXNzZSBwbHVzIGNvbXBsZXhlLiIsImkxOG5fcGFzc3dvcmRfaGludCI6IkNvbnNlaWxcdTAwYTA6IExlIG1vdCBkZSBwYXNzZSBkZXZyYWl0IGNvbnRlbmlyIGF1IG1vaW5zIGRvdXplIGNhcmFjdFx1MDBlOHJlcy4gUG91ciBsZSByZW5kcmUgcGx1cyBzXHUwMGZiciwgdXRpbGlzZXogZGVzIGxldHRyZXMgZW4gbWFqdXNjdWxlcyBldCBtaW51c2N1bGVzLCBkZXMgbm9tYnJlcywgZXQgZGVzIHN5bWJvbGVzIHRlbHMgcXVlICEgJnF1b3Q7ID8gJCAlIF4gJmFtcDsgKS4ifX07Ci8qIF1dPiAqLwo="></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/cache/autoptimize/js/autoptimize_single_c8aa826a0f0204b88ea9477ccdc162ed.js?ver=2.0.2" id="xoo-aff-js-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/plugins/woocommerce-status-actions/assets/plugins/Flot/jquery.flot.min.js?ver=2.3.7" id="flot-js"></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/plugins/woocommerce-status-actions/assets/plugins/Flot/jquery.flot.pie.min.js?ver=2.3.7" id="flot-pie-js"></script>
+<script defer id="wc_sa-frontend-js-extra" src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgd2Nfc2Ffb3B0ID0geyJpMThfcHJvbXB0X2NhbmNlbCI6IkFyZSB5b3Ugc3VyZSB5b3Ugd2FudCB0byBjYW5jZWwgdGhpcyBvcmRlcj8iLCJpMThfcHJvbXB0X2NoYW5nZSI6IkFyZSB5b3Ugc3VyZSB5b3Ugd2FudCB0byBjaGFuZ2UgdGhlIHN0YXR1cyBvZiB0aGlzIG9yZGVyPyJ9OwovKiBdXT4gKi8K"></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/cache/autoptimize/js/autoptimize_single_306c00946b78958a93887623239989d6.js?ver=2.3.7" id="wc_sa-frontend-js"></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.9.7.1" id="jquery-blockui-js" data-wp-strategy="defer"></script>
+<script defer id="wc-add-to-cart-js-extra" src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgd2NfYWRkX3RvX2NhcnRfcGFyYW1zID0geyJhamF4X3VybCI6Ilwvd3AtYWRtaW5cL2FkbWluLWFqYXgucGhwIiwid2NfYWpheF91cmwiOiJcLz93Yy1hamF4PSUlZW5kcG9pbnQlJSIsImkxOG5fdmlld19jYXJ0IjoiVm9pciBsZSBwYW5pZXIiLCJjYXJ0X3VybCI6Imh0dHBzOlwvXC93d3cuZGVsaXppb2NhZmZlLmNvbVwvY2FydFwvIiwiaXNfY2FydCI6IiIsImNhcnRfcmVkaXJlY3RfYWZ0ZXJfYWRkIjoibm8ifTsKLyogXV0+ICovCg=="></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=9.7.1" id="wc-add-to-cart-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/plugins/woocommerce/assets/js/zoom/jquery.zoom.min.js?ver=1.7.21-wc.9.7.1" id="zoom-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/plugins/woocommerce/assets/js/flexslider/jquery.flexslider.min.js?ver=2.7.2-wc.9.7.1" id="flexslider-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe.min.js?ver=4.1.1-wc.9.7.1" id="photoswipe-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe-ui-default.min.js?ver=4.1.1-wc.9.7.1" id="photoswipe-ui-default-js" defer="defer" data-wp-strategy="defer"></script>
+<script defer id="wc-single-product-js-extra" src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgd2Nfc2luZ2xlX3Byb2R1Y3RfcGFyYW1zID0geyJpMThuX3JlcXVpcmVkX3JhdGluZ190ZXh0IjoiVmV1aWxsZXogc1x1MDBlOWxlY3Rpb25uZXIgdW5lIG5vdGUiLCJpMThuX3JhdGluZ19vcHRpb25zIjpbIjFcdTAwYTBcdTAwZTl0b2lsZSBzdXIgNSIsIjJcdTAwYTBcdTAwZTl0b2lsZXMgc3VyIDUiLCIzXHUwMGEwXHUwMGU5dG9pbGVzIHN1ciA1IiwiNFx1MDBhMFx1MDBlOXRvaWxlcyBzdXIgNSIsIjVcdTAwYTBcdTAwZTl0b2lsZXMgc3VyIDUiXSwiaTE4bl9wcm9kdWN0X2dhbGxlcnlfdHJpZ2dlcl90ZXh0IjoiVm9pciBsYSBnYWxlcmllIGRcdTIwMTlpbWFnZXMgZW4gcGxlaW4gXHUwMGU5Y3JhbiIsInJldmlld19yYXRpbmdfcmVxdWlyZWQiOiJ5ZXMiLCJmbGV4c2xpZGVyIjp7InJ0bCI6ZmFsc2UsImFuaW1hdGlvbiI6InNsaWRlIiwic21vb3RoSGVpZ2h0Ijp0cnVlLCJkaXJlY3Rpb25OYXYiOmZhbHNlLCJjb250cm9sTmF2IjoidGh1bWJuYWlscyIsInNsaWRlc2hvdyI6ZmFsc2UsImFuaW1hdGlvblNwZWVkIjo1MDAsImFuaW1hdGlvbkxvb3AiOmZhbHNlLCJhbGxvd09uZVNsaWRlIjpmYWxzZX0sInpvb21fZW5hYmxlZCI6IjEiLCJ6b29tX29wdGlvbnMiOltdLCJwaG90b3N3aXBlX2VuYWJsZWQiOiIxIiwicGhvdG9zd2lwZV9vcHRpb25zIjp7InNoYXJlRWwiOmZhbHNlLCJjbG9zZU9uU2Nyb2xsIjpmYWxzZSwiaGlzdG9yeSI6ZmFsc2UsImhpZGVBbmltYXRpb25EdXJhdGlvbiI6MCwic2hvd0FuaW1hdGlvbkR1cmF0aW9uIjowfSwiZmxleHNsaWRlcl9lbmFibGVkIjoiMSJ9OwovKiBdXT4gKi8K"></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/plugins/woocommerce/assets/js/frontend/single-product.min.js?ver=9.7.1" id="wc-single-product-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.9.7.1" id="js-cookie-js" defer="defer" data-wp-strategy="defer"></script>
+<script defer id="woocommerce-js-extra" src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgd29vY29tbWVyY2VfcGFyYW1zID0geyJhamF4X3VybCI6Ilwvd3AtYWRtaW5cL2FkbWluLWFqYXgucGhwIiwid2NfYWpheF91cmwiOiJcLz93Yy1hamF4PSUlZW5kcG9pbnQlJSIsImkxOG5fcGFzc3dvcmRfc2hvdyI6IkFmZmljaGVyIGxlIG1vdCBkZSBwYXNzZSIsImkxOG5fcGFzc3dvcmRfaGlkZSI6Ik1hc3F1ZXIgbGUgbW90IGRlIHBhc3NlIn07Ci8qIF1dPiAqLwo="></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=9.7.1" id="woocommerce-js" defer="defer" data-wp-strategy="defer"></script>
+
+<!-- Extrait de code de la balise Google (gtag.js) ajouté par Site Kit -->
+
+<!-- Extrait Google Analytics ajouté par Site Kit -->
+<script type="text/javascript" defer='defer' src="https://www.googletagmanager.com/gtag/js?id=G-CLLNNECTWF" id="google_gtagjs-js" async></script>
+<script defer id="google_gtagjs-js-after" src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp3aW5kb3cuZGF0YUxheWVyID0gd2luZG93LmRhdGFMYXllciB8fCBbXTtmdW5jdGlvbiBndGFnKCl7ZGF0YUxheWVyLnB1c2goYXJndW1lbnRzKTt9Cmd0YWcoInNldCIsImxpbmtlciIseyJkb21haW5zIjpbInd3dy5kZWxpemlvY2FmZmUuY29tIl19KTsKZ3RhZygianMiLCBuZXcgRGF0ZSgpKTsKZ3RhZygic2V0IiwgImRldmVsb3Blcl9pZC5kWlROaU1UIiwgdHJ1ZSk7Cmd0YWcoImNvbmZpZyIsICJHLUNMTE5ORUNUV0YiKTsKLyogXV0+ICovCg=="></script>
+
+<!-- Extrait de code de la balise Google de fin (gtag.js) ajouté par Site Kit -->
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-includes/js/underscore.min.js?ver=1.13.7" id="underscore-js"></script>
+<script defer id="wp-util-js-extra" src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgX3dwVXRpbFNldHRpbmdzID0geyJhamF4Ijp7InVybCI6Ilwvd3AtYWRtaW5cL2FkbWluLWFqYXgucGhwIn19OwovKiBdXT4gKi8K"></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-includes/js/wp-util.min.js?ver=6.7.2" id="wp-util-js"></script>
+<script defer id="wc-add-to-cart-variation-js-extra" src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgd2NfYWRkX3RvX2NhcnRfdmFyaWF0aW9uX3BhcmFtcyA9IHsid2NfYWpheF91cmwiOiJcLz93Yy1hamF4PSUlZW5kcG9pbnQlJSIsImkxOG5fbm9fbWF0Y2hpbmdfdmFyaWF0aW9uc190ZXh0IjoiRFx1MDBlOXNvbFx1MDBlOSwgYXVjdW4gcHJvZHVpdCBuZSByXHUwMGU5cG9uZCBcdTAwZTAgdm9zIGNyaXRcdTAwZThyZXMuIFZldWlsbGV6IGNob2lzaXIgdW5lIGNvbWJpbmFpc29uIGRpZmZcdTAwZTlyZW50ZS4iLCJpMThuX21ha2VfYV9zZWxlY3Rpb25fdGV4dCI6IlZldWlsbGV6IHNcdTAwZTlsZWN0aW9ubmVyIGRlcyBvcHRpb25zIGR1IHByb2R1aXQgYXZhbnQgZGUgbFx1MjAxOWFqb3V0ZXIgXHUwMGUwIHZvdHJlIHBhbmllci4iLCJpMThuX3VuYXZhaWxhYmxlX3RleHQiOiJEXHUwMGU5c29sXHUwMGU5LCBjZSBwcm9kdWl0IG5cdTIwMTllc3QgcGFzIGRpc3BvbmlibGUuIFZldWlsbGV6IGNob2lzaXIgdW5lIGNvbWJpbmFpc29uIGRpZmZcdTAwZTlyZW50ZS4iLCJpMThuX3Jlc2V0X2FsZXJ0X3RleHQiOiJWb3RyZSBzXHUwMGU5bGVjdGlvbiBhIFx1MDBlOXRcdTAwZTkgclx1MDBlOWluaXRpYWxpc1x1MDBlOWUuIFZldWlsbGV6IHNcdTAwZTlsZWN0aW9ubmVyIGRlcyBvcHRpb25zIGR1IHByb2R1aXQgYXZhbnQgZGUgbFx1MjAxOWFqb3V0ZXIgXHUwMGUwIHZvdHJlIHBhbmllci4ifTsKLyogXV0+ICovCg=="></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.min.js?ver=9.7.1" id="wc-add-to-cart-variation-js" data-wp-strategy="defer"></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/cache/autoptimize/js/autoptimize_single_9fb56e92e2474431aa33dfe354611e48.js?ver=3.0.5" id="psfw-isotope-script-js"></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/plugins/product-slider-for-woocommerce/js/imagesloaded.min.js?ver=3.0.5" id="psfw-imageloaded-script-js"></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/cache/autoptimize/js/autoptimize_single_a0ba2e0b4d090075ab8870b5ef332674.js?ver=3.0.5" id="psfw-scroll-script-js"></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/plugins/product-slider-for-woocommerce/js/jquery.bxslider.min.js?ver=3.0.5" id="psfw-bxslider-script-js"></script>
+<script defer id="psfw-frontend-script-js-extra" src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgcHNmd19mcm9udGVuZF9qc19wYXJhbXMgPSB7ImFqYXhfdXJsIjoiaHR0cHM6XC9cL3d3dy5kZWxpemlvY2FmZmUuY29tXC93cC1hZG1pblwvYWRtaW4tYWpheC5waHAiLCJhamF4X25vbmNlIjoiNGYwYjViMDQyYiJ9OwovKiBdXT4gKi8K"></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/cache/autoptimize/js/autoptimize_single_09f21689fb4f1e216f8beb85848b697e.js?ver=3.0.5" id="psfw-frontend-script-js"></script>
+<script defer id="psfw-woo-script-js-extra" src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgcHNmd19vYmplY3RfbmFtZSA9IHsidGVtcGxhdGVVcmwiOiJodHRwczpcL1wvd3d3LmRlbGl6aW9jYWZmZS5jb21cL3dwLWNvbnRlbnRcL3BsdWdpbnNcL3dvb2NvbW1lcmNlIn07Ci8qIF1dPiAqLwo="></script>
+<link rel="https://api.w.org/" href="https://www.deliziocaffe.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.deliziocaffe.com/wp-json/wp/v2/product/3635" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.deliziocaffe.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.7.2" />
+<meta name="generator" content="WooCommerce 9.7.1" />
+<link rel='shortlink' href='https://www.deliziocaffe.com/?p=3635' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.deliziocaffe.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.deliziocaffe.com%2Fproduct%2Fmachine-a-capsules-compatible-nespresso%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.deliziocaffe.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.deliziocaffe.com%2Fproduct%2Fmachine-a-capsules-compatible-nespresso%2F&#038;format=xml" />
+<meta name="generator" content="Site Kit by Google 1.150.0" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	
+<!-- Meta Pixel Code -->
+<script defer src="data:text/javascript;base64,CiFmdW5jdGlvbihmLGIsZSx2LG4sdCxzKXtpZihmLmZicSlyZXR1cm47bj1mLmZicT1mdW5jdGlvbigpe24uY2FsbE1ldGhvZD8Kbi5jYWxsTWV0aG9kLmFwcGx5KG4sYXJndW1lbnRzKTpuLnF1ZXVlLnB1c2goYXJndW1lbnRzKX07aWYoIWYuX2ZicSlmLl9mYnE9bjsKbi5wdXNoPW47bi5sb2FkZWQ9ITA7bi52ZXJzaW9uPScyLjAnO24ucXVldWU9W107dD1iLmNyZWF0ZUVsZW1lbnQoZSk7dC5hc3luYz0hMDsKdC5zcmM9djtzPWIuZ2V0RWxlbWVudHNCeVRhZ05hbWUoZSlbMF07cy5wYXJlbnROb2RlLmluc2VydEJlZm9yZSh0LHMpfSh3aW5kb3csCmRvY3VtZW50LCdzY3JpcHQnLCdodHRwczovL2Nvbm5lY3QuZmFjZWJvb2submV0L2VuX1VTL2ZiZXZlbnRzLmpzP3Y9bmV4dCcpOwo="></script>
+<!-- End Meta Pixel Code -->
+
+      <script defer src="data:text/javascript;base64,CiAgICAgICAgdmFyIHVybCA9IHdpbmRvdy5sb2NhdGlvbi5vcmlnaW4gKyAnP29iPW9wZW4tYnJpZGdlJzsKICAgICAgICBmYnEoJ3NldCcsICdvcGVuYnJpZGdlJywgJzE2NTY1ODM4ODQ3NDMxMTYnLCB1cmwpOwogICAgICA="></script>
+    <script defer src="data:text/javascript;base64,ZmJxKCdpbml0JywgJzE2NTY1ODM4ODQ3NDMxMTYnLCB7fSwgewogICAgImFnZW50IjogIndvcmRwcmVzcy02LjcuMi0zLjAuMTUiCn0p"></script><script defer src="data:text/javascript;base64,CiAgICBmYnEoJ3RyYWNrJywgJ1BhZ2VWaWV3JywgW10pOwogIA=="></script>
+<!-- Meta Pixel Code -->
+<noscript>
+<img height="1" width="1" style="display:none" alt="fbpx"
+src="https://www.facebook.com/tr?id=1656583884743116&ev=PageView&noscript=1" />
+</noscript>
+<!-- End Meta Pixel Code -->
+<noscript><style>.lazyload[data-src]{display:none !important;}</style></noscript>
+	
+<link rel="icon" href="https://www.deliziocaffe.com/wp-content/uploads/2022/02/cropped-512px512px@3x-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.deliziocaffe.com/wp-content/uploads/2022/02/cropped-512px512px@3x-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.deliziocaffe.com/wp-content/uploads/2022/02/cropped-512px512px@3x-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.deliziocaffe.com/wp-content/uploads/2022/02/cropped-512px512px@3x-270x270.png" />
+</head>
+<body class="product-template-default single single-product postid-3635 custom-background wp-custom-logo theme-Divi et-tb-has-template et-tb-has-footer woocommerce woocommerce-page woocommerce-no-js et_bloom et_pb_button_helper_class et_fullwidth_nav et_fixed_nav et_show_nav et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_cover_background et_pb_gutter windows et_pb_gutters3 et_right_sidebar et_divi_theme et-db">
+<script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">if(typeof ewww_webp_supported==="undefined"){var ewww_webp_supported=!1}if(ewww_webp_supported){document.body.classList.add("webp-support")}</script>
+	<div id="page-container">
+<div id="et-boc" class="et-boc">
+			
+		
+
+	<header id="main-header" data-height-onload="60">
+		<div class="container clearfix et_menu_container">
+					<div class="logo_container">
+				<span class="logo_helper"></span>
+				<a href="https://www.deliziocaffe.com/">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAALLAQMAAAAiyw2NAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAL1JREFUGBntwQEBAAAAgqD+r3ZIwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACABwGhOQABlULT2AAAAABJRU5ErkJggg==" width="13732" height="5111" alt="Delizio Caffè &amp; Stores" id="logo" data-height-percentage="40" data-src="https://www.deliziocaffe.com/wp-content/uploads/2023/10/Asset-2@4x.png" decoding="async" class="lazyload" data-eio-rwidth="13732" data-eio-rheight="5111" /><noscript><img src="https://www.deliziocaffe.com/wp-content/uploads/2023/10/Asset-2@4x.png" width="13732" height="5111" alt="Delizio Caffè &amp; Stores" id="logo" data-height-percentage="40" data-eio="l" /></noscript>
+				</a>
+			</div>
+					<div id="et-top-navigation" data-height="60" data-fixed-height="40">
+									<nav id="top-menu-nav">
+					<ul id="top-menu" class="nav"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3584"><a href="https://www.deliziocaffe.com/actualites/">Actualités</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-336"><a href="#">À propos de nous</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-333"><a href="https://www.deliziocaffe.com/our-story/">Notre histoire</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-332"><a href="https://www.deliziocaffe.com/our-coffee/">Notre Café</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-341"><a href="https://www.deliziocaffe.com/nos-coffeeshops/">Nos Coffee Shops</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-331"><a href="https://www.deliziocaffe.com/our-services/">Nos Services</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-345"><a href="https://www.deliziocaffe.com/distribution/">Distribution</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-329"><a href="https://www.deliziocaffe.com/blog/">Blog</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-622"><a href="https://www.deliziocaffe.com/category/le-cafe-la-sante/">Le café &amp; la santé</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-623"><a href="https://www.deliziocaffe.com/category/recettes-de-cafe/">Recettes de café</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-624"><a href="https://www.deliziocaffe.com/category/astuces-conseils/">Astuces &amp; conseils</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-334"><a href="https://www.deliziocaffe.com/shop/">Boutique</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3585"><a href="https://www.deliziocaffe.com/franchise/">franchise</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1886"><a href="https://www.deliziocaffe.com/my-account/">Mon compte</a></li>
+</ul>					</nav>
+				
+				<a href="https://www.deliziocaffe.com/cart/" class="et-cart-info">
+				<span></span>
+			</a>
+				
+									<div id="et_top_search">
+						<span id="et_search_icon"></span>
+					</div>
+				
+				<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Sélectionner une page</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>			</div> <!-- #et-top-navigation -->
+		</div> <!-- .container -->
+				<div class="et_search_outer">
+			<div class="container et_search_form_container">
+				<form role="search" method="get" class="et-search-form" action="https://www.deliziocaffe.com/">
+				<input type="search" class="et-search-field" placeholder="Rechercher &hellip;" value="" name="s" title="Rechercher:" />				</form>
+				<span class="et_close_search_field"></span>
+			</div>
+		</div>
+			</header> <!-- #main-header -->
+<div id="et-main-area">
+	
+	
+		<div id="main-content">
+			<div class="container">
+				<div id="content-area" class="clearfix">
+					<div id="left-area"><nav class="woocommerce-breadcrumb" aria-label="Breadcrumb"><a href="https://www.deliziocaffe.com">Accueil</a>&nbsp;&#47;&nbsp;<a href="https://www.deliziocaffe.com/product-category/uncategorized/">Uncategorized</a>&nbsp;&#47;&nbsp;Machine à Capsules Compatible Nespresso</nav><div data-slug="" class="wpf-search-container">
+					
+			<div class="woocommerce-notices-wrapper"></div><div id="product-3635" class="product type-product post-3635 status-publish first instock product_cat-uncategorized has-post-thumbnail shipping-taxable purchasable product-type-simple">
+
+	<div class="clearfix"><div class="woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images" data-columns="4" style="opacity: 0; transition: opacity .25s ease-in-out;">
+	<div class="woocommerce-product-gallery__wrapper">
+		<div data-thumb="https://www.deliziocaffe.com/wp-content/uploads/2023/04/KRUPS-100x100.png" data-thumb-alt="Machine à Capsules Compatible Nespresso" data-thumb-srcset=""  data-thumb-sizes="" class="woocommerce-product-gallery__image"><a href="https://www.deliziocaffe.com/wp-content/uploads/2023/04/KRUPS.png"><img width="600" height="750" src="https://www.deliziocaffe.com/wp-content/uploads/2023/04/KRUPS-600x750.png" class="wp-post-image" alt="Machine à Capsules Compatible Nespresso" data-caption="" data-src="https://www.deliziocaffe.com/wp-content/uploads/2023/04/KRUPS.png" data-large_image="https://www.deliziocaffe.com/wp-content/uploads/2023/04/KRUPS.png" data-large_image_width="800" data-large_image_height="1000" decoding="async" fetchpriority="high" srcset="https://www.deliziocaffe.com/wp-content/uploads/2023/04/KRUPS-600x750.png 600w, https://www.deliziocaffe.com/wp-content/uploads/2023/04/KRUPS-480x600.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 600px, 100vw" /></a></div><div data-thumb="https://www.deliziocaffe.com/wp-content/uploads/2023/04/magimix-pixie-m110-nespresso-100x100.webp" data-thumb-alt="Machine à Capsules Compatible Nespresso – Image 2" data-thumb-srcset="https://www.deliziocaffe.com/wp-content/uploads/2023/04/magimix-pixie-m110-nespresso-100x100.webp 100w, https://www.deliziocaffe.com/wp-content/uploads/2023/04/magimix-pixie-m110-nespresso-150x150.webp 150w, https://www.deliziocaffe.com/wp-content/uploads/2023/04/magimix-pixie-m110-nespresso.webp 300w"  data-thumb-sizes="(max-width: 100px) 100vw, 100px" class="woocommerce-product-gallery__image"><a href="https://www.deliziocaffe.com/wp-content/uploads/2023/04/magimix-pixie-m110-nespresso.webp"><img width="300" height="300" src="https://www.deliziocaffe.com/wp-content/uploads/2023/04/magimix-pixie-m110-nespresso.webp" class="" alt="Machine à Capsules Compatible Nespresso – Image 2" data-caption="" data-src="https://www.deliziocaffe.com/wp-content/uploads/2023/04/magimix-pixie-m110-nespresso.webp" data-large_image="https://www.deliziocaffe.com/wp-content/uploads/2023/04/magimix-pixie-m110-nespresso.webp" data-large_image_width="300" data-large_image_height="300" decoding="async" srcset="https://www.deliziocaffe.com/wp-content/uploads/2023/04/magimix-pixie-m110-nespresso.webp 300w, https://www.deliziocaffe.com/wp-content/uploads/2023/04/magimix-pixie-m110-nespresso-150x150.webp 150w, https://www.deliziocaffe.com/wp-content/uploads/2023/04/magimix-pixie-m110-nespresso-100x100.webp 100w" sizes="(max-width: 300px) 100vw, 300px" /></a></div>	</div>
+</div>
+
+	<div class="summary entry-summary">
+		<h1 class="product_title entry-title">Machine à Capsules Compatible Nespresso</h1>
+	<div class="woocommerce-product-rating">
+		<div class="star-rating" role="img" aria-label="Note 5.00 sur 5"><span style="width:100%">Noté <strong class="rating">5.00</strong> sur 5 basé sur <span class="rating">1</span> notation client</span></div>								<a href="#reviews" class="woocommerce-review-link" rel="nofollow">(<span class="count">1</span> avis client)</a>
+						</div>
+
+<p class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#x62f;.&#x645;.</span>&nbsp;600,00</bdi></span></p>
+
+	
+	<form class="cart" action="https://www.deliziocaffe.com/product/machine-a-capsules-compatible-nespresso/" method="post" enctype='multipart/form-data'>
+		
+		<div class="quantity">
+		<label class="screen-reader-text" for="quantity_67f9700e1c64d">quantité de Machine à Capsules Compatible Nespresso</label>
+	<input
+		type="number"
+				id="quantity_67f9700e1c64d"
+		class="input-text qty text"
+		name="quantity"
+		value="1"
+		aria-label="Quantité de produits"
+				min="1"
+		max=""
+					step="1"
+			placeholder=""
+			inputmode="numeric"
+			autocomplete="off"
+			/>
+	</div>
+
+		<button type="submit" name="add-to-cart" value="3635" class="single_add_to_cart_button button alt">Ajouter au panier</button>
+
+			</form>
+
+	
+<div class="product_meta">
+
+	
+	
+	<span class="posted_in">Catégorie : <a href="https://www.deliziocaffe.com/product-category/uncategorized/" rel="tag">Uncategorized</a></span>
+	
+	
+</div>
+	</div>
+
+	</div>
+	<div class="woocommerce-tabs wc-tabs-wrapper">
+		<ul class="tabs wc-tabs" role="tablist">
+							<li class="reviews_tab" id="tab-title-reviews">
+					<a href="#tab-reviews" role="tab" aria-controls="tab-reviews">
+						Avis (1)					</a>
+				</li>
+					</ul>
+					<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--reviews panel entry-content wc-tab" id="tab-reviews" role="tabpanel" aria-labelledby="tab-title-reviews">
+				<div id="reviews" class="woocommerce-Reviews">
+	<div id="comments">
+		<h2 class="woocommerce-Reviews-title">
+			1 avis pour <span>Machine à Capsules Compatible Nespresso</span>		</h2>
+
+					<ol class="commentlist">
+				<li class="review even thread-even depth-1" id="li-comment-2033">
+
+	<div id="comment-2033" class="comment_container">
+
+		<noscript><img alt='' src='https://secure.gravatar.com/avatar/8b7edbcb5d05596e49b7536f6cca4e3f?s=80&#038;d=robohash&#038;r=g' srcset='https://secure.gravatar.com/avatar/8b7edbcb5d05596e49b7536f6cca4e3f?s=160&#038;d=robohash&#038;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' decoding='async'/></noscript><img alt='' src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2080%2080%22%3E%3C/svg%3E' data-src='https://secure.gravatar.com/avatar/8b7edbcb5d05596e49b7536f6cca4e3f?s=80&#038;d=robohash&#038;r=g' data-srcset='https://secure.gravatar.com/avatar/8b7edbcb5d05596e49b7536f6cca4e3f?s=160&#038;d=robohash&#038;r=g 2x' class='lazyload avatar avatar-80 photo' height='80' width='80' decoding='async'/>
+		<div class="comment-text">
+
+			<div class="star-rating" role="img" aria-label="Note 5 sur 5"><span style="width:100%">Note <strong class="rating">5</strong> sur 5</span></div>
+	<p class="meta">
+		<strong class="woocommerce-review__author">Oussama elbal </strong>
+				<span class="woocommerce-review__dash">&ndash;</span> <time class="woocommerce-review__published-date" datetime="2023-04-30T17:15:17+01:00">04/30/2023</time>
+	</p>
+
+	<div class="description"><p>Q</p>
+</div>
+		</div>
+	</div>
+</li><!-- #comment-## -->
+			</ol>
+
+						</div>
+
+			<div id="review_form_wrapper">
+			<div id="review_form">
+					<div id="respond" class="comment-respond">
+		<span id="reply-title" class="comment-reply-title" role="heading" aria-level="3">Ajouter un Avis <small><a rel="nofollow" id="cancel-comment-reply-link" href="/product/machine-a-capsules-compatible-nespresso/#respond" style="display:none;">Annuler la réponse</a></small></span><form action="https://www.deliziocaffe.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Votre adresse e-mail ne sera pas publiée.</span> <span class="required-field-message">Les champs obligatoires sont indiqués avec <span class="required">*</span></span></p><div class="comment-form-rating"><label for="rating" id="comment-form-rating-label">Votre note&nbsp;<span class="required">*</span></label><select name="rating" id="rating" required>
+						<option value="">Évaluation...</option>
+						<option value="5">Parfait</option>
+						<option value="4">Bon</option>
+						<option value="3">Moyen</option>
+						<option value="2">Pas mal</option>
+						<option value="1">Très mauvais</option>
+					</select></div><p class="comment-form-comment"><label for="comment">Votre avis&nbsp;<span class="required">*</span></label><textarea id="comment" name="comment" cols="45" rows="8" required></textarea></p><p class="comment-form-author"><label for="author">Nom&nbsp;<span class="required">*</span></label><input id="author" name="author" type="text" autocomplete="name" value="" size="30" required /></p>
+<p class="comment-form-email"><label for="email">E-mail&nbsp;<span class="required">*</span></label><input id="email" name="email" type="email" autocomplete="email" value="" size="30" required /></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Enregistrer mon nom, mon e-mail et mon site dans le navigateur pour mon prochain commentaire.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Soumettre" /> <input type='hidden' name='comment_post_ID' value='3635' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="235"/><script defer src="data:text/javascript;base64,ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoICJha19qc18xIiApLnNldEF0dHJpYnV0ZSggInZhbHVlIiwgKCBuZXcgRGF0ZSgpICkuZ2V0VGltZSgpICk7"></script></p></form>	</div><!-- #respond -->
+				</div>
+		</div>
+	
+	<div class="clear"></div>
+</div>
+			</div>
+		
+			</div>
+
+</div>
+
+
+		
+	</div></div>	<div id="sidebar">
+		<div id="block-8" class="et_pb_widget widget_block"><div data-block-name="woocommerce/product-categories" class="wp-block-woocommerce-product-categories wc-block-product-categories is-list " style=""><ul class="wc-block-product-categories-list wc-block-product-categories-list--depth-0">				<li class="wc-block-product-categories-list-item">					<a style="" href="https://www.deliziocaffe.com/product-category/uncategorized/"><span class="wc-block-product-categories-list-item__name">Uncategorized</span></a><span class="wc-block-product-categories-list-item-count"><span aria-hidden="true">1</span><span class="screen-reader-text">1 produit</span></span>				</li>							<li class="wc-block-product-categories-list-item">					<a style="" href="https://www.deliziocaffe.com/product-category/accessoires/"><span class="wc-block-product-categories-list-item__name">Accessoires</span></a><span class="wc-block-product-categories-list-item-count"><span aria-hidden="true">20</span><span class="screen-reader-text">20 produits</span></span><ul class="wc-block-product-categories-list wc-block-product-categories-list--depth-1">				<li class="wc-block-product-categories-list-item">					<a style="" href="https://www.deliziocaffe.com/product-category/accessoires/cafetieres-domestiques/"><span class="wc-block-product-categories-list-item__name">Cafetières domestiques</span></a><span class="wc-block-product-categories-list-item-count"><span aria-hidden="true">1</span><span class="screen-reader-text">1 produit</span></span>				</li>							<li class="wc-block-product-categories-list-item">					<a style="" href="https://www.deliziocaffe.com/product-category/accessoires/outils-barista/"><span class="wc-block-product-categories-list-item__name">Outils Barista</span></a><span class="wc-block-product-categories-list-item-count"><span aria-hidden="true">7</span><span class="screen-reader-text">7 produits</span></span>				</li>							<li class="wc-block-product-categories-list-item">					<a style="" href="https://www.deliziocaffe.com/product-category/accessoires/verres-tasses-goblets/"><span class="wc-block-product-categories-list-item__name">Verres, Tasses &amp; Goblets</span></a><span class="wc-block-product-categories-list-item-count"><span aria-hidden="true">12</span><span class="screen-reader-text">12 produits</span></span>				</li>			</ul>				</li>							<li class="wc-block-product-categories-list-item">					<a style="" href="https://www.deliziocaffe.com/product-category/cafe/"><span class="wc-block-product-categories-list-item__name">Café</span></a><span class="wc-block-product-categories-list-item-count"><span aria-hidden="true">17</span><span class="screen-reader-text">17 produits</span></span><ul class="wc-block-product-categories-list wc-block-product-categories-list--depth-1">				<li class="wc-block-product-categories-list-item">					<a style="" href="https://www.deliziocaffe.com/product-category/cafe/cafe-en-grains/"><span class="wc-block-product-categories-list-item__name">Café en grains Gamme EsspressoBar 1 Kg</span></a><span class="wc-block-product-categories-list-item-count"><span aria-hidden="true">5</span><span class="screen-reader-text">5 produits</span></span>				</li>							<li class="wc-block-product-categories-list-item">					<a style="" href="https://www.deliziocaffe.com/product-category/cafe/cafe-en-grains-gamme-esspressobar-250g/"><span class="wc-block-product-categories-list-item__name">Café en grains Gamme EsspressoBar 250g</span></a><span class="wc-block-product-categories-list-item-count"><span aria-hidden="true">6</span><span class="screen-reader-text">6 produits</span></span>				</li>							<li class="wc-block-product-categories-list-item">					<a style="" href="https://www.deliziocaffe.com/product-category/cafe/delizio-fit/"><span class="wc-block-product-categories-list-item__name">Delizio Fit</span></a><span class="wc-block-product-categories-list-item-count"><span aria-hidden="true">1</span><span class="screen-reader-text">1 produit</span></span>				</li>							<li class="wc-block-product-categories-list-item">					<a style="" href="https://www.deliziocaffe.com/product-category/cafe/specialty-cafe/"><span class="wc-block-product-categories-list-item__name">Specialty</span></a><span class="wc-block-product-categories-list-item-count"><span aria-hidden="true">5</span><span class="screen-reader-text">5 produits</span></span>				</li>			</ul>				</li>							<li class="wc-block-product-categories-list-item">					<a style="" href="https://www.deliziocaffe.com/product-category/capsules-pre-dosees/"><span class="wc-block-product-categories-list-item__name">Capsules pré-dosées</span></a><span class="wc-block-product-categories-list-item-count"><span aria-hidden="true">1</span><span class="screen-reader-text">1 produit</span></span>				</li>							<li class="wc-block-product-categories-list-item">					<a style="" href="https://www.deliziocaffe.com/product-category/chocolat/"><span class="wc-block-product-categories-list-item__name">Chocolat</span></a><span class="wc-block-product-categories-list-item-count"><span aria-hidden="true">2</span><span class="screen-reader-text">2 produits</span></span>				</li>							<li class="wc-block-product-categories-list-item">					<a style="" href="https://www.deliziocaffe.com/product-category/sirops-toppings-purees/"><span class="wc-block-product-categories-list-item__name">Sirops Toppings &amp; purées</span></a><span class="wc-block-product-categories-list-item-count"><span aria-hidden="true">6</span><span class="screen-reader-text">6 produits</span></span>				</li>							<li class="wc-block-product-categories-list-item">					<a style="" href="https://www.deliziocaffe.com/product-category/sucre/"><span class="wc-block-product-categories-list-item__name">sucre</span></a><span class="wc-block-product-categories-list-item-count"><span aria-hidden="true">1</span><span class="screen-reader-text">1 produit</span></span>				</li>			</ul></div></div><div id="block-3" class="et_pb_widget widget_block"><div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow"><div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex"><div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><p></p></div></div></div></div><div id="block-4" class="et_pb_widget widget_block"><div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow"></div></div>	</div>
+
+				</div>
+			</div>
+		</div>
+	
+	<footer class="et-l et-l--footer">
+			<div class="et_builder_inner_content et_pb_gutters3 product"><div class="et_pb_section et_pb_section_0_tb_footer et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0_tb_footer">
+				<div class="et_pb_column et_pb_column_1_5 et_pb_column_0_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_image et_pb_image_0_tb_footer">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><noscript><img decoding="async" width="13732" height="5111" src="https://www.deliziocaffe.com/wp-content/uploads/2023/10/Asset-2@4x.png" alt="Logo Delizio" title="Asset 2@4x" srcset="https://www.deliziocaffe.com/wp-content/uploads/2023/10/Asset-2@4x.png 13732w, https://www.deliziocaffe.com/wp-content/uploads/2023/10/Asset-2@4x-1280x476.png 1280w, https://www.deliziocaffe.com/wp-content/uploads/2023/10/Asset-2@4x-980x365.png 980w, https://www.deliziocaffe.com/wp-content/uploads/2023/10/Asset-2@4x-480x179.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) and (max-width: 1280px) 1280px, (min-width: 1281px) 13732px, 100vw" class="wp-image-4301" /></noscript><img decoding="async" width="13732" height="5111" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%204999%201860.609452374%22%3E%3C/svg%3E' data-src="https://www.deliziocaffe.com/wp-content/uploads/2023/10/Asset-2@4x.png" alt="Logo Delizio" title="Asset 2@4x" data-srcset="https://www.deliziocaffe.com/wp-content/uploads/2023/10/Asset-2@4x.png 13732w, https://www.deliziocaffe.com/wp-content/uploads/2023/10/Asset-2@4x-1280x476.png 1280w, https://www.deliziocaffe.com/wp-content/uploads/2023/10/Asset-2@4x-980x365.png 980w, https://www.deliziocaffe.com/wp-content/uploads/2023/10/Asset-2@4x-480x179.png 480w" data-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) and (max-width: 1280px) 1280px, (min-width: 1281px) 13732px, 100vw" class="lazyload wp-image-4301" /></span>
+			</div><ul class="et_pb_module et_pb_social_media_follow et_pb_social_media_follow_0_tb_footer clearfix  et_pb_text_align_center et_pb_bg_layout_light">
+				
+				
+				
+				
+				<li
+            class='et_pb_social_media_follow_network_0_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-facebook'><a
+              href='https://www.facebook.com/Deliziocoffee'
+              class='icon et_pb_with_border'
+              title='Suivez sur Facebook'
+               target="_blank"><span
+                class='et_pb_social_media_follow_network_name'
+                aria-hidden='true'
+                >Suivre</span></a></li><li
+            class='et_pb_social_media_follow_network_1_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-instagram'><a
+              href='https://instagram.com/deliziocaffe'
+              class='icon et_pb_with_border'
+              title='Suivez sur Instagram'
+               target="_blank"><span
+                class='et_pb_social_media_follow_network_name'
+                aria-hidden='true'
+                >Suivre</span></a></li><li
+            class='et_pb_social_media_follow_network_2_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-whatsapp et-pb-social-fa-icon'><a
+              href='https://api.whatsapp.com/send?phone=212644140000'
+              class='icon et_pb_with_border'
+              title='Suivez sur WhatsApp'
+               target="_blank"><span
+                class='et_pb_social_media_follow_network_name'
+                aria-hidden='true'
+                >Suivre</span></a></li><li
+            class='et_pb_social_media_follow_network_3_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-telegram et-pb-social-fa-icon'><a
+              href='https://t.me/deliziocaffe'
+              class='icon et_pb_with_border'
+              title='Suivez sur Telegram'
+               target="_blank"><span
+                class='et_pb_social_media_follow_network_name'
+                aria-hidden='true'
+                >Suivre</span></a></li>
+			</ul>
+			</div><div class="et_pb_column et_pb_column_1_5 et_pb_column_1_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h4 style="text-align: left;"><strong>PRODUITS</strong></h4></div>
+			</div><div class="et_pb_module et_pb_text et_pb_text_1_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p><a href="https://www.deliziocaffe.com/product-category/uncategorized/?wpf=tags&amp;wpf_cols=5&amp;wpf_categories=cafe">Café en grains</a></p>
+<p><a href="https://www.deliziocaffe.com/product-category/uncategorized/?wpf=tags&amp;wpf_cols=5&amp;wpf_categories=capsules-pre-dosees">Café capsules</a></p>
+<p><a href="https://www.deliziocaffe.com/product-category/uncategorized/?wpf=tags&amp;wpf_cols=5&amp;wpf_categories=outils-barista">Outils Barista</a></p></div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_5 et_pb_column_2_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_2_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h4 style="text-align: left;"><strong>COMPANY</strong></h4></div>
+			</div><div class="et_pb_module et_pb_text et_pb_text_3_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p><a href="https://www.deliziocaffe.com/our-story/">Notre histoire</a></p>
+<p><a href="https://www.deliziocaffe.com/our-coffee/">Notre Café</a></p>
+<p><a href="https://www.deliziocaffe.com/nos-coffeeshops/">Nos Coffee Shops</a></p></div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_5 et_pb_column_3_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_4_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h4 style="text-align: left;"><strong>ASSISTANCE</strong></h4></div>
+			</div><div class="et_pb_module et_pb_text et_pb_text_5_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p><a href="https://www.deliziocaffe.com/our-services/">Service Clients</a></p>
+<p><a href="https://www.deliziocaffe.com/distribution/">Livraisons</a></p>
+<p><a href="Paiement%20et Tarifs  Retours">Paiement et Tarifs</a></p>
+<p><a href="Paiement%20et Tarifs  Retours">Retours</a></p>
+<p><a href="https://www.deliziocaffe.com/"><span style="color: #9d7447;"></span></a><a href="https://www.deliziocaffe.com/"><span style="color: #9d7447;"></span></a></p></div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_5 et_pb_column_4_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_6_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h4 style="text-align: left;"><strong>UTILISATION DU SITE</strong></h4></div>
+			</div><div class="et_pb_module et_pb_text et_pb_text_7_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p><a href="https://www.deliziocaffe.com/">Conditions d&rsquo;utilisation</a><br /><a href="https://www.deliziocaffe.com/privacypolicy/">Politique de confidentialité</a></p>
+<p><a href="https://www.deliziocaffe.com/">Politique relative aux cookies</a></p></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</footer>
+		</div>
+
+			
+		</div>
+		</div>
+
+			<div id="cpops-floating-cart" class="cpops-toggle-drawer">
+
+	<button aria-label="Open CartPops popover" aria-expanded="false" class="cpops-floating-cart__button">
+		<div class="cpops-floating-cart__animation"></div>
+		<div class="cpops-floating-cart__count">
+			<span>0</span>
+		</div>
+		<span class="cpops-floating-cart__icon">
+			<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 3l-.743 2h-1.929l-3.474 12h-13.239l-4.615-11h16.812l-.564 2h-13.24l2.937 7h10.428l3.432-12h4.195zm-15.5 15c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm6.9-7-1.9 7c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z"/></svg>
+		</span>
+	</button>
+
+</div>
+<div class="psfw-lightbox-loader" style="display:none;">
+    <noscript><img src="https://www.deliziocaffe.com/wp-content/plugins/product-slider-for-woocommerce/images/loader/ajax-loader.gif" alt=""></noscript><img class="lazyload" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E' data-src="https://www.deliziocaffe.com/wp-content/plugins/product-slider-for-woocommerce/images/loader/ajax-loader.gif" alt="">
+</div>
+<div class="psfw-display-popup">
+</div>
+<div class="psfw-attributes-container">
+
+</div>
+<div class="xoo-el-container xoo-el-style-popup" style="visibility: hidden;">
+    <div class="xoo-el-opac"></div>
+    <div class="xoo-el-modal">
+        <div class="xoo-el-inmodal">
+            <span class="xoo-el-close xoo-el-icon-cross"></span>
+            <div class="xoo-el-wrap">
+                <div class="xoo-el-sidebar"></div>
+                <div class="xoo-el-srcont">
+                    <div class="xoo-el-main">
+<div class="xoo-el-form-container xoo-el-form-popup" data-active="login">
+
+	
+	
+	
+<div class="xoo-el-header">
+	<ul class="xoo-el-tabs">
+		
+        		  <li data-tab="login" class="xoo-el-login-tgr" style="order: 0 ">Se connecter</li>
+        
+		 
+			<li data-tab="register" class="xoo-el-reg-tgr" style="order: 1">S’inscrire</li>
+		
+	</ul>
+</div>
+	
+	
+		
+			
+		<div data-section="login" class="xoo-el-section">
+
+			<div class="xoo-el-fields">
+
+				<div class="xoo-el-notice"></div>
+				<form class="xoo-el-action-form xoo-el-form-login">
+
+					
+					<div class="xoo-el-fields-cont"><div class="xoo-aff-group xoo-aff-cont-text one xoo-aff-cont-required xoo-el-username_cont"><div class="xoo-aff-input-group"><span class="xoo-aff-input-icon fas fa-user-plus"></span><input type="text" class="xoo-aff-required xoo-aff-text" name="xoo-el-username" placeholder="Identifiant/e-mail"  value="" required="	" autocomplete="username"/></div></div><div class="xoo-aff-group xoo-aff-cont-password one xoo-aff-cont-required xoo-el-password_cont"><div class="xoo-aff-input-group"><span class="xoo-aff-input-icon fas fa-key"></span><input type="password" class="xoo-aff-required xoo-aff-password" name="xoo-el-password" placeholder="Mot de passe"  value="" required="	" autocomplete="current-password"/><div class="xoo-aff-pw-toggle">
+					<span class="xoo-aff-pwtog-show"><i class="far fa-eye"></i></span>
+					<span class="xoo-aff-pwtog-hide"><i class="far fa-eye-slash"></i></span>
+					</div></div></div></div>
+<div class="xoo-aff-group xoo-el-login-btm-fields">
+	<label class="xoo-el-form-label">
+		<input type="checkbox" name="xoo-el-rememberme" value="forever" />
+		<span>Se souvenir de moi</span>
+	</label>
+	<a class="xoo-el-lostpw-tgr" rel="nofollow" href="#">Mot de passe oublié ?</a>
+</div>
+
+
+<input type="hidden" name="_xoo_el_form" value="login">
+
+<button type="submit" class="button btn xoo-el-action-btn xoo-el-login-btn" >Sign in</button>
+
+<input type="hidden" name="xoo_el_redirect" value="/product/machine-a-capsules-compatible-nespresso/">
+					
+				</form>
+
+				
+	
+	
+
+	
+	
+			</div>
+
+		</div>
+
+	
+			
+		<div data-section="register" class="xoo-el-section">
+
+			<div class="xoo-el-fields">
+
+				<div class="xoo-el-notice"></div>
+				<form class="xoo-el-action-form xoo-el-form-register">
+
+					
+					<div class="xoo-el-fields-cont"><div class="xoo-aff-group xoo-aff-cont-email one xoo-aff-cont-required xoo_el_reg_email_cont"><div class="xoo-aff-input-group"><span class="xoo-aff-input-icon fas fa-at"></span><input type="email" class="xoo-aff-required xoo-aff-email" name="xoo_el_reg_email" placeholder="Email"  value="" required="	" autocomplete="email"/></div></div><div class="xoo-aff-group xoo-aff-cont-text onehalf xoo-aff-cont-required xoo_el_reg_fname_cont"><div class="xoo-aff-input-group"><span class="xoo-aff-input-icon far fa-user"></span><input type="text" class="xoo-aff-required xoo-aff-text" name="xoo_el_reg_fname" placeholder="First Name"  value="" required="	"/></div></div><div class="xoo-aff-group xoo-aff-cont-text onehalf xoo-aff-cont-required xoo_el_reg_lname_cont"><div class="xoo-aff-input-group"><span class="xoo-aff-input-icon far fa-user"></span><input type="text" class="xoo-aff-required xoo-aff-text" name="xoo_el_reg_lname" placeholder="Last Name"  value="" required="	"/></div></div><div class="xoo-aff-group xoo-aff-cont-password one xoo-aff-cont-required xoo_el_reg_pass_cont"><div class="xoo-aff-input-group"><span class="xoo-aff-input-icon fas fa-key"></span><input type="password" class="xoo-aff-required xoo-aff-password" name="xoo_el_reg_pass" placeholder="Password"  value="" maxlength="20" minlength="6" required="	" autocomplete="new-password"/><div class="xoo-aff-pw-toggle">
+					<span class="xoo-aff-pwtog-show"><i class="far fa-eye"></i></span>
+					<span class="xoo-aff-pwtog-hide"><i class="far fa-eye-slash"></i></span>
+					</div></div></div><div class="xoo-aff-group xoo-aff-cont-password one xoo-aff-cont-required xoo_el_reg_pass_again_cont"><div class="xoo-aff-input-group"><span class="xoo-aff-input-icon fas fa-key"></span><input type="password" class="xoo-aff-required xoo-aff-password" name="xoo_el_reg_pass_again" placeholder="Confirm Password"  value="" required="	" autocomplete="new-password"/><div class="xoo-aff-pw-toggle">
+					<span class="xoo-aff-pwtog-show"><i class="far fa-eye"></i></span>
+					<span class="xoo-aff-pwtog-hide"><i class="far fa-eye-slash"></i></span>
+					</div></div></div><div class="xoo-aff-group xoo-aff-cont-checkbox_single one mailchimp_woocommerce_newsletter_cont"><div class="xoo-aff-checkbox_single"><label><input type="checkbox" name="mailchimp_woocommerce_newsletter" class="xoo-aff-checkbox_single" value="yes" >Subscribe to our newsletter</label></div></div><div class="xoo-aff-group xoo-aff-cont-checkbox_single one xoo-aff-cont-required xoo_el_reg_terms_cont"><div class="xoo-aff-required xoo-aff-checkbox_single"><label><input type="checkbox" name="xoo_el_reg_terms" class="xoo-aff-required xoo-aff-checkbox_single" value="yes" >I accept the <a href="https://www.deliziocaffe.com/?page_id=" target="_blank"> Terms of Service and Privacy Policy </a></label></div></div></div>
+<input type="hidden" name="_xoo_el_form" value="register">
+
+
+<button type="submit" class="button btn xoo-el-action-btn xoo-el-register-btn">S’inscrire</button>
+
+<input type="hidden" name="xoo_el_redirect" value="/product/machine-a-capsules-compatible-nespresso/">
+					
+				</form>
+
+				
+	
+	
+
+	
+	
+			</div>
+
+		</div>
+
+	
+			
+		<div data-section="lostpw" class="xoo-el-section">
+
+			<div class="xoo-el-fields">
+
+				<div class="xoo-el-notice"></div>
+				<form class="xoo-el-action-form xoo-el-form-lostpw">
+
+					
+					
+
+<span class="xoo-el-form-txt">Mot de passe perdu ? Veuillez saisir votre identifiant ou adresse e-mail. Vous recevrez un lien par e-mail pour créer un nouveau mot de passe.</span>
+
+<div class="xoo-el-fields-cont"><div class="xoo-aff-group xoo-aff-cont-text one xoo-aff-cont-required user_login_cont"><div class="xoo-aff-input-group"><span class="xoo-aff-input-icon fas fa-user-plus"></span><input type="text" class="xoo-aff-required xoo-aff-text" name="user_login" placeholder="Identifiant/e-mail"  value="" required="	"/></div></div></div>
+
+<input type="hidden" name="_xoo_el_form" value="lostPassword">
+
+<input type="hidden" name="_wp_http_referer" value="/product/machine-a-capsules-compatible-nespresso/" />
+<button type="submit" class="button btn xoo-el-action-btn xoo-el-lostpw-btn">Envoyer l’e-mail de réinitialisation</button>
+					
+				</form>
+
+				
+	
+	
+
+	
+	
+			</div>
+
+		</div>
+
+	
+	
+</div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="xoo-el-popup-notice" style="visibility: hidden;">
+    <div class="xoo-el-notice-opac"></div>
+    <div class="xoo-el-notice-modal">
+        <div class="xoo-el-notice-inmodal">
+            <span class="xoo-el-notice-close xoo-el-icon-cross"></span>
+            <div class="xoo-el-notice-wrap">
+               <iframe></iframe>
+               <div class="xoo-el-notice-iframestyle" style="display: none;">
+                   body::-webkit-scrollbar {
+                        width: 7px;
+                    }
+
+                    body::-webkit-scrollbar-track {
+                        border-radius: 10px;
+                        background: #f0f0f0;
+                    }
+
+                    body::-webkit-scrollbar-thumb {
+                        border-radius: 50px;
+                        background: #dfdbdb
+                    }
+               </div>
+            </div>
+        </div>
+    </div>
+</div><div 
+	id="pum-2537" 
+	role="dialog" 
+	aria-modal="false"
+	aria-labelledby="pum_popup_title_2537"
+	class="pum pum-overlay pum-theme-2501 pum-theme-theme-par-defaut popmake-overlay click_open" 
+	data-popmake="{&quot;id&quot;:2537,&quot;slug&quot;:&quot;magasin&quot;,&quot;theme_id&quot;:2501,&quot;cookies&quot;:[],&quot;triggers&quot;:[{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;extra_selectors&quot;:&quot;&quot;,&quot;cookie_name&quot;:null}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;stackable&quot;:false,&quot;overlay_disabled&quot;:false,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;medium&quot;,&quot;responsive_min_width&quot;:&quot;0%&quot;,&quot;responsive_min_width_unit&quot;:false,&quot;responsive_max_width&quot;:&quot;100%&quot;,&quot;responsive_max_width_unit&quot;:false,&quot;custom_width&quot;:&quot;640px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:false,&quot;location&quot;:&quot;center top&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;100&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_bottom&quot;:&quot;0&quot;,&quot;position_right&quot;:&quot;0&quot;,&quot;position_fixed&quot;:false,&quot;animation_type&quot;:&quot;fade&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;center top&quot;,&quot;overlay_zindex&quot;:false,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;&quot;,&quot;button_delay&quot;:&quot;0&quot;,&quot;overlay_click&quot;:false,&quot;esc_press&quot;:false,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}">
+
+	<div id="popmake-2537" class="pum-container popmake theme-2501 pum-responsive pum-responsive-medium responsive size-medium">
+
+				
+							<div id="pum_popup_title_2537" class="pum-title popmake-title">
+				PRENDRE DU MAGASIN			</div>
+		
+		
+				<div class="pum-content popmake-content" tabindex="0">
+			<div class="et_pb_section et_pb_section_0 et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0">
+				<div class="et_pb_column et_pb_column_1_2 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_blurb et_pb_blurb_0  et_pb_text_align_center  et_pb_blurb_position_top et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><a href="https://www.google.com/maps/dir//Delizio+Caff%C3%A8+sala+aljadida,+Sal%C3%A9/@33.9955147,-6.7738148,13z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0xda741ec3ffdf901:0xa099aac8da767750!2m2!1d-6.7387953!2d33.9955197!3e2" target="_blank"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><noscript><img src="https://www.deliziocaffe.com/wp-content/uploads/2023/01/mahaj-sala.jpg" alt="" srcset="https://www.deliziocaffe.com/wp-content/uploads/2023/01/mahaj-sala.jpg 1181w, https://www.deliziocaffe.com/wp-content/uploads/2023/01/mahaj-sala-980x581.jpg 980w, https://www.deliziocaffe.com/wp-content/uploads/2023/01/mahaj-sala-480x285.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1181px, 100vw" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-3172" /></noscript><img src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E' data-src="https://www.deliziocaffe.com/wp-content/uploads/2023/01/mahaj-sala.jpg" alt="" data-srcset="https://www.deliziocaffe.com/wp-content/uploads/2023/01/mahaj-sala.jpg 1181w, https://www.deliziocaffe.com/wp-content/uploads/2023/01/mahaj-sala-980x581.jpg 980w, https://www.deliziocaffe.com/wp-content/uploads/2023/01/mahaj-sala-480x285.jpg 480w" data-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1181px, 100vw" class="lazyload et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-3172" /></span></a></div>
+					<div class="et_pb_blurb_container">
+						<h1 class="et_pb_module_header"><a href="https://www.google.com/maps/dir//Delizio+Caff%C3%A8+sala+aljadida,+Sal%C3%A9/@33.9955147,-6.7738148,13z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0xda741ec3ffdf901:0xa099aac8da767750!2m2!1d-6.7387953!2d33.9955197!3e2" target="_blank">SALA AL-JADIDA</a></h1>
+						<div class="et_pb_blurb_description"><p>MAHAJ SALA</p></div>
+					</div>
+				</div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_2 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_blurb et_pb_blurb_1  et_pb_text_align_center  et_pb_blurb_position_top et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><a href="https://www.google.com/maps/dir//Delizio+Caff%C3%A8+Rabat,+1+Rue+El+Ghazali+centre,+commercial,+Rabat+10000/@34.0152021,-6.8483865,17z/data=!4m16!1m6!3m5!1s0xda76de4eb954323:0xb8ac0dae1ca9d02d!2sDelizio+Caff%C3%A8+Rabat!8m2!3d34.0152021!4d-6.8461978!4m8!1m0!1m5!1m1!1s0xda76de4eb954323:0xb8ac0dae1ca9d02d!2m2!1d-6.8461978!2d34.0152021!3e2" target="_blank"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><noscript><img src="http://www.deliziocaffe.org/wp-content/uploads/2022/03/rbt.jpg" alt="" srcset="https://www.deliziocaffe.com/wp-content/uploads/2022/03/rbt.jpg 1181w, https://www.deliziocaffe.com/wp-content/uploads/2022/03/rbt-980x581.jpg 980w, https://www.deliziocaffe.com/wp-content/uploads/2022/03/rbt-480x285.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1181px, 100vw" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-688" /></noscript><img src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E' data-src="http://www.deliziocaffe.org/wp-content/uploads/2022/03/rbt.jpg" alt="" data-srcset="https://www.deliziocaffe.com/wp-content/uploads/2022/03/rbt.jpg 1181w, https://www.deliziocaffe.com/wp-content/uploads/2022/03/rbt-980x581.jpg 980w, https://www.deliziocaffe.com/wp-content/uploads/2022/03/rbt-480x285.jpg 480w" data-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1181px, 100vw" class="lazyload et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-688 ewww_webp_lazy_load" data-srcset-webp="https://www.deliziocaffe.com/wp-content/uploads/2022/03/rbt.jpg.webp 1181w, https://www.deliziocaffe.com/wp-content/uploads/2022/03/rbt-980x581.jpg.webp 980w, https://www.deliziocaffe.com/wp-content/uploads/2022/03/rbt-480x285.jpg.webp 480w" /></span></a></div>
+					<div class="et_pb_blurb_container">
+						<h1 class="et_pb_module_header"><a href="https://www.google.com/maps/dir//Delizio+Caff%C3%A8+Rabat,+1+Rue+El+Ghazali+centre,+commercial,+Rabat+10000/@34.0152021,-6.8483865,17z/data=!4m16!1m6!3m5!1s0xda76de4eb954323:0xb8ac0dae1ca9d02d!2sDelizio+Caff%C3%A8+Rabat!8m2!3d34.0152021!4d-6.8461978!4m8!1m0!1m5!1m1!1s0xda76de4eb954323:0xb8ac0dae1ca9d02d!2m2!1d-6.8461978!2d34.0152021!3e2" target="_blank">RABAT</a></h1>
+						<div class="et_pb_blurb_description"><p>LES ORANGERS</p></div>
+					</div>
+				</div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_1">
+				<div class="et_pb_column et_pb_column_1_3 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_blurb et_pb_blurb_2 et_animated  et_pb_text_align_center  et_pb_blurb_position_top et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><a href="https://www.google.com/maps/dir//Rue+Ghandi%E2%80%AC%E2%80%8E,+Kenitra/@34.264401,-6.5900916,20.78z/data=!4m9!4m8!1m0!1m5!1m1!1s0xda759e81a4a4ebf:0x90161a303f491c8f!2m2!1d-6.5899838!2d34.2644832!3e2" target="_blank"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><noscript><img src="https://www.deliziocaffe.com/wp-content/uploads/2023/01/whirehouse.jpg" alt="" srcset="https://www.deliziocaffe.com/wp-content/uploads/2023/01/whirehouse.jpg 1181w, https://www.deliziocaffe.com/wp-content/uploads/2023/01/whirehouse-980x581.jpg 980w, https://www.deliziocaffe.com/wp-content/uploads/2023/01/whirehouse-480x285.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1181px, 100vw" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-3176" /></noscript><img src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E' data-src="https://www.deliziocaffe.com/wp-content/uploads/2023/01/whirehouse.jpg" alt="" data-srcset="https://www.deliziocaffe.com/wp-content/uploads/2023/01/whirehouse.jpg 1181w, https://www.deliziocaffe.com/wp-content/uploads/2023/01/whirehouse-980x581.jpg 980w, https://www.deliziocaffe.com/wp-content/uploads/2023/01/whirehouse-480x285.jpg 480w" data-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1181px, 100vw" class="lazyload et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-3176" /></span></a></div>
+					<div class="et_pb_blurb_container">
+						<h1 class="et_pb_module_header"><a href="https://www.google.com/maps/dir//Rue+Ghandi%E2%80%AC%E2%80%8E,+Kenitra/@34.264401,-6.5900916,20.78z/data=!4m9!4m8!1m0!1m5!1m1!1s0xda759e81a4a4ebf:0x90161a303f491c8f!2m2!1d-6.5899838!2d34.2644832!3e2" target="_blank">KENITRA</a></h1>
+						<div class="et_pb_blurb_description"><p>GHANDI</p></div>
+					</div>
+				</div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_3 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_blurb et_pb_blurb_3  et_pb_text_align_center  et_pb_blurb_position_top et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><a href="https://www.google.com/maps/dir//num%C3%A9ro+10,+Delizio+Caff%C3%A9+Le+Vallon,+Magasin,+Kenitra/@34.2641944,-6.6385353,13z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0xda759f50996804f:0xbf77b8f4e419ed8!2m2!1d-6.6035158!2d34.2641994!3e2" target="_blank"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><noscript><img src="https://www.deliziocaffe.com/wp-content/uploads/2023/01/le-valon.jpg" alt="" srcset="https://www.deliziocaffe.com/wp-content/uploads/2023/01/le-valon.jpg 1181w, https://www.deliziocaffe.com/wp-content/uploads/2023/01/le-valon-980x581.jpg 980w, https://www.deliziocaffe.com/wp-content/uploads/2023/01/le-valon-480x285.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1181px, 100vw" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-3171" /></noscript><img src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E' data-src="https://www.deliziocaffe.com/wp-content/uploads/2023/01/le-valon.jpg" alt="" data-srcset="https://www.deliziocaffe.com/wp-content/uploads/2023/01/le-valon.jpg 1181w, https://www.deliziocaffe.com/wp-content/uploads/2023/01/le-valon-980x581.jpg 980w, https://www.deliziocaffe.com/wp-content/uploads/2023/01/le-valon-480x285.jpg 480w" data-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1181px, 100vw" class="lazyload et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-3171" /></span></a></div>
+					<div class="et_pb_blurb_container">
+						<h1 class="et_pb_module_header"><a href="https://www.google.com/maps/dir//num%C3%A9ro+10,+Delizio+Caff%C3%A9+Le+Vallon,+Magasin,+Kenitra/@34.2641944,-6.6385353,13z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0xda759f50996804f:0xbf77b8f4e419ed8!2m2!1d-6.6035158!2d34.2641994!3e2" target="_blank">KENITRA</a></h1>
+						<div class="et_pb_blurb_description"><p>LE VALLON</p></div>
+					</div>
+				</div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_3 et_pb_column_4  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_blurb et_pb_blurb_4  et_pb_text_align_center  et_pb_blurb_position_top et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><a href="https://www.google.com/maps/dir//Delizio+Caff%C3%A8+k%C3%A9nitra,+Rue+Ghandi%E2%80%AC%E2%80%8E,+Kenitra/@34.264549,-6.6253415,13z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0xda759865bf143df:0x777d35307848aba5!2m2!1d-6.5903221!2d34.2645587!3e2" target="_blank"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><noscript><img src="https://www.deliziocaffe.com/wp-content/uploads/2023/01/la-ville-haute.jpg" alt="" srcset="https://www.deliziocaffe.com/wp-content/uploads/2023/01/la-ville-haute.jpg 1181w, https://www.deliziocaffe.com/wp-content/uploads/2023/01/la-ville-haute-980x581.jpg 980w, https://www.deliziocaffe.com/wp-content/uploads/2023/01/la-ville-haute-480x285.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1181px, 100vw" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-3170" /></noscript><img src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E' data-src="https://www.deliziocaffe.com/wp-content/uploads/2023/01/la-ville-haute.jpg" alt="" data-srcset="https://www.deliziocaffe.com/wp-content/uploads/2023/01/la-ville-haute.jpg 1181w, https://www.deliziocaffe.com/wp-content/uploads/2023/01/la-ville-haute-980x581.jpg 980w, https://www.deliziocaffe.com/wp-content/uploads/2023/01/la-ville-haute-480x285.jpg 480w" data-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1181px, 100vw" class="lazyload et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-3170" /></span></a></div>
+					<div class="et_pb_blurb_container">
+						<h1 class="et_pb_module_header"><a href="https://www.google.com/maps/dir//Delizio+Caff%C3%A8+k%C3%A9nitra,+Rue+Ghandi%E2%80%AC%E2%80%8E,+Kenitra/@34.264549,-6.6253415,13z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0xda759865bf143df:0x777d35307848aba5!2m2!1d-6.5903221!2d34.2645587!3e2" target="_blank">KENITRA</a></h1>
+						<div class="et_pb_blurb_description"><p>LA VILLE HAUTE</p></div>
+					</div>
+				</div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>
+		</div>
+
+				
+							<button type="button" class="pum-close popmake-close" aria-label="Fermer">
+			X			</button>
+		
+	</div>
+
+</div>
+<div 
+	id="pum-2510" 
+	role="dialog" 
+	aria-modal="false"
+	aria-labelledby="pum_popup_title_2510"
+	class="pum pum-overlay pum-theme-2501 pum-theme-theme-par-defaut popmake-overlay click_open" 
+	data-popmake="{&quot;id&quot;:2510,&quot;slug&quot;:&quot;livraison&quot;,&quot;theme_id&quot;:2501,&quot;cookies&quot;:[{&quot;event&quot;:&quot;form_submission&quot;,&quot;settings&quot;:{&quot;name&quot;:&quot;pum-2510&quot;,&quot;key&quot;:&quot;&quot;,&quot;session&quot;:false,&quot;path&quot;:&quot;1&quot;,&quot;time&quot;:&quot;1 month&quot;,&quot;form&quot;:&quot;any&quot;,&quot;only_in_popup&quot;:&quot;1&quot;}}],&quot;triggers&quot;:[{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;cookie_name&quot;:[&quot;pum-2510&quot;],&quot;extra_selectors&quot;:&quot;.popup&quot;}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;stackable&quot;:false,&quot;overlay_disabled&quot;:false,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;medium&quot;,&quot;responsive_min_width&quot;:&quot;0%&quot;,&quot;responsive_min_width_unit&quot;:false,&quot;responsive_max_width&quot;:&quot;100%&quot;,&quot;responsive_max_width_unit&quot;:false,&quot;custom_width&quot;:&quot;640px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:false,&quot;location&quot;:&quot;center top&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;100&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_bottom&quot;:&quot;0&quot;,&quot;position_right&quot;:&quot;0&quot;,&quot;position_fixed&quot;:false,&quot;animation_type&quot;:&quot;fade&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;center top&quot;,&quot;overlay_zindex&quot;:false,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;&quot;,&quot;button_delay&quot;:&quot;0&quot;,&quot;overlay_click&quot;:false,&quot;esc_press&quot;:false,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}">
+
+	<div id="popmake-2510" class="pum-container popmake theme-2501 pum-responsive pum-responsive-medium responsive size-medium">
+
+				
+							<div id="pum_popup_title_2510" class="pum-title popmake-title">
+				COMMANDEZ MAINTENANT			</div>
+		
+		
+				<div class="pum-content popmake-content" tabindex="0">
+			<div class="et_pb_section et_pb_section_1 et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_2">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_5  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				
+			<div id="et_pb_contact_form_0" class="et_pb_module et_pb_contact_form_0 et_pb_contact_form_container clearfix" data-form_unique_num="0" data-form_unique_id="a608ef29-6bd3-4130-88c2-9ad848e34c46">
+				
+				
+				
+				
+				
+				<div class="et-pb-contact-message"></div>
+				
+				<div class="et_pb_contact">
+					<form class="et_pb_contact_form clearfix" method="post" action="https://www.deliziocaffe.com/product/machine-a-capsules-compatible-nespresso/">
+						<p class="et_pb_contact_field et_pb_contact_field_0 et_pb_contact_field_half" data-id="name" data-type="input">
+				
+				
+				
+				
+				<label for="et_pb_contact_name_0" class="et_pb_contact_form_label">Nom Complet</label>
+				<input type="text" id="et_pb_contact_name_0" class="input" value="" name="et_pb_contact_name_0" data-required_mark="required" data-field_type="input" data-original_id="name" placeholder="Nom Complet">
+			</p><p class="et_pb_contact_field et_pb_contact_field_1 et_pb_contact_field_half et_pb_contact_field_last" data-id="num" data-type="input">
+				
+				
+				
+				
+				<label for="et_pb_contact_num_0" class="et_pb_contact_form_label">Numero de telephone </label>
+				<input type="text" id="et_pb_contact_num_0" class="input" value="" name="et_pb_contact_num_0" data-required_mark="required" data-field_type="input" data-original_id="num" placeholder="Numero de telephone " pattern="[0-9\s-]*" title="Nombres acceptés uniquement.">
+			</p><p class="et_pb_contact_field et_pb_contact_field_2 et_pb_contact_field_last" data-id="adresse" data-type="input">
+				
+				
+				
+				
+				<label for="et_pb_contact_adresse_0" class="et_pb_contact_form_label">Adresse + Ville</label>
+				<input type="text" id="et_pb_contact_adresse_0" class="input" value="" name="et_pb_contact_adresse_0" data-required_mark="required" data-field_type="input" data-original_id="adresse" placeholder="Adresse + Ville">
+			</p>
+						<input type="hidden" value="et_contact_proccess" name="et_pb_contactform_submit_0"/>
+						<div class="et_contact_bottom_container">
+							
+							<button type="submit" name="et_builder_submit_button" class="et_pb_contact_submit et_pb_button" data-icon="&#xf07a;">J&#039;achète</button>
+						</div>
+						<input type="hidden" id="_wpnonce-et-pb-contact-form-submitted-0" name="_wpnonce-et-pb-contact-form-submitted-0" value="79f0c22690" /><input type="hidden" name="_wp_http_referer" value="/product/machine-a-capsules-compatible-nespresso/" />
+					</form>
+				</div>
+			</div>
+			
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>
+		</div>
+
+				
+							<button type="button" class="pum-close popmake-close" aria-label="Fermer">
+			X			</button>
+		
+	</div>
+
+</div>
+<div id="wa"></div><script defer id="mcjs" src="data:text/javascript;base64,IWZ1bmN0aW9uKGMsaCxpLG0scCl7bT1jLmNyZWF0ZUVsZW1lbnQoaCkscD1jLmdldEVsZW1lbnRzQnlUYWdOYW1lKGgpWzBdLG0uYXN5bmM9MSxtLnNyYz1pLHAucGFyZW50Tm9kZS5pbnNlcnRCZWZvcmUobSxwKX0oZG9jdW1lbnQsInNjcmlwdCIsImh0dHBzOi8vY2hpbXBzdGF0aWMuY29tL21janMtY29ubmVjdGVkL2pzL3VzZXJzL2Q4OTc5Yzc3NWMyOGM3OWQxNDMyZDcyZGMvYTdhNzZiYjAwNjQ0NGQ0MmZmZDQyNTQxYi5qcyIpOw=="></script>    <!-- Meta Pixel Event Code -->
+    <script defer src="data:text/javascript;base64,CiAgICAgICAgZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lciggJ3dwY2Y3bWFpbHNlbnQnLCBmdW5jdGlvbiggZXZlbnQgKSB7CiAgICAgICAgaWYoICJmYl9weGxfY29kZSIgaW4gZXZlbnQuZGV0YWlsLmFwaVJlc3BvbnNlKXsKICAgICAgICAgIGV2YWwoZXZlbnQuZGV0YWlsLmFwaVJlc3BvbnNlLmZiX3B4bF9jb2RlKTsKICAgICAgICB9CiAgICAgIH0sIGZhbHNlICk7CiAgICA="></script>
+    <!-- End Meta Pixel Event Code -->
+    <script type="application/ld+json">{"@context":"https:\/\/schema.org\/","@graph":[{"@context":"https:\/\/schema.org\/","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"name":"Accueil","@id":"https:\/\/www.deliziocaffe.com"}},{"@type":"ListItem","position":2,"item":{"name":"Uncategorized","@id":"https:\/\/www.deliziocaffe.com\/product-category\/uncategorized\/"}},{"@type":"ListItem","position":3,"item":{"name":"Machine \u00e0 Capsules Compatible Nespresso","@id":"https:\/\/www.deliziocaffe.com\/product\/machine-a-capsules-compatible-nespresso\/"}}]},{"@context":"https:\/\/schema.org\/","@type":"Product","@id":"https:\/\/www.deliziocaffe.com\/product\/machine-a-capsules-compatible-nespresso\/#product","name":"Machine \u00e0 Capsules Compatible Nespresso","url":"https:\/\/www.deliziocaffe.com\/product\/machine-a-capsules-compatible-nespresso\/","description":"","image":"https:\/\/www.deliziocaffe.com\/wp-content\/uploads\/2023\/04\/KRUPS.png","sku":3635,"offers":[{"@type":"Offer","priceSpecification":[{"@type":"UnitPriceSpecification","price":"600.00","priceCurrency":"MAD","valueAddedTaxIncluded":false,"validThrough":"2026-12-31"}],"priceValidUntil":"2026-12-31","availability":"http:\/\/schema.org\/InStock","url":"https:\/\/www.deliziocaffe.com\/product\/machine-a-capsules-compatible-nespresso\/","seller":{"@type":"Organization","name":"Delizio Caff\u00e8 &amp;amp; Stores","url":"https:\/\/www.deliziocaffe.com"}}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.00","reviewCount":1},"review":[{"@type":"Review","reviewRating":{"@type":"Rating","bestRating":"5","ratingValue":"5","worstRating":"1"},"author":{"@type":"Person","name":"Oussama elbal"},"reviewBody":"Q","datePublished":"2023-04-30T17:15:17+01:00"}]}]}</script>	<script defer src="data:text/javascript;base64,CgkJCQl2YXIgZXRfYW5pbWF0aW9uX2RhdGEgPSBbeyJjbGFzcyI6ImV0X3BiX2JsdXJiXzIiLCJzdHlsZSI6ImZvbGRMZWZ0IiwicmVwZWF0Ijoib25jZSIsImR1cmF0aW9uIjoiMTAwMG1zIiwiZGVsYXkiOiIwbXMiLCJpbnRlbnNpdHkiOiI1MCUiLCJzdGFydGluZ19vcGFjaXR5IjoiMCUiLCJzcGVlZF9jdXJ2ZSI6ImVhc2UtaW4tb3V0In1dOwoJCQkJ"></script>
+	<noscript><style>.lazyload{display:none;}</style></noscript><script data-noptimize="1">window.lazySizesConfig=window.lazySizesConfig||{};window.lazySizesConfig.loadMode=1;</script><script defer data-noptimize="1" src='https://www.deliziocaffe.com/wp-content/plugins/autoptimize/classes/external/js/lazysizes.min.js?ao_version=3.1.13'></script>	<script defer src="data:text/javascript;base64,CgkJKGZ1bmN0aW9uICgpIHsKCQkJdmFyIGMgPSBkb2N1bWVudC5ib2R5LmNsYXNzTmFtZTsKCQkJYyA9IGMucmVwbGFjZSgvd29vY29tbWVyY2Utbm8tanMvLCAnd29vY29tbWVyY2UtanMnKTsKCQkJZG9jdW1lbnQuYm9keS5jbGFzc05hbWUgPSBjOwoJCX0pKCk7Cgk="></script>
+	
+<div class="pswp" tabindex="-1" role="dialog" aria-modal="true" aria-hidden="true">
+	<div class="pswp__bg"></div>
+	<div class="pswp__scroll-wrap">
+		<div class="pswp__container">
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+		</div>
+		<div class="pswp__ui pswp__ui--hidden">
+			<div class="pswp__top-bar">
+				<div class="pswp__counter"></div>
+				<button class="pswp__button pswp__button--zoom" aria-label="Zoomer/Dézoomer"></button>
+				<button class="pswp__button pswp__button--fs" aria-label="Basculer en plein écran"></button>
+				<button class="pswp__button pswp__button--share" aria-label="Partagez"></button>
+				<button class="pswp__button pswp__button--close" aria-label="Fermer (Echap)"></button>
+				<div class="pswp__preloader">
+					<div class="pswp__preloader__icn">
+						<div class="pswp__preloader__cut">
+							<div class="pswp__preloader__donut"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+				<div class="pswp__share-tooltip"></div>
+			</div>
+			<button class="pswp__button pswp__button--arrow--left" aria-label="Précédent (flèche  gauche)"></button>
+			<button class="pswp__button pswp__button--arrow--right" aria-label="Suivant (flèche droite)"></button>
+			<div class="pswp__caption">
+				<div class="pswp__caption__center"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="cpops-drawer-modal" class="cpops-modal">
+
+	
+	<div id="cartpops-drawer" class="cpops-default-drawer cpops-modal-wrap cpops-animation__simple" tabindex=&quot;-1&quot; role=&quot;dialog&quot;>
+
+		<div class="cpops-drawer-notices-wrapper"></div>
+		<div class="cpops-panel">
+			
+<div class="cpops-drawer-header">
+
+	
+	<div class="cpops-drawer-header__heading">
+		<div class="cpops-drawer-header__title">
+			<span>Mon panier</span>
+		</div>
+		<button type="button" class="cpops-drawer-header__close" data-dismiss="cpops-modal">
+			<svg aria-hidden="true" focusable="false" role="presentation" class="cpops-icon"  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 11.293l10.293-10.293.707.707-10.293 10.293 10.293 10.293-.707.707-10.293-10.293-10.293 10.293-.707-.707 10.293-10.293-10.293-10.293.707-.707 10.293 10.293z"/></svg>
+			<span class="cpops-sr-only" aria-hidden="true">Fermer le panier</span>
+		</button>
+	</div>
+
+	
+</div>
+		<div class="cpops-drawer-cart">
+		
+<div class="cpops-empty-cart">
+	<span>Votre panier est vide.</span>
+	<p>Il semble que vous n&#039;ayez pas encore fait de choix.</p>
+</div>
+		</div>
+		
+<div class="cpops-drawer-footer">
+
+	
+	
+
+<div class="cpops-drawer-coupon">
+
+	<span>Vous avez reçu un code de réduction ?</span>
+
+	
+	<form class="cpops-coupon-form">
+		<div class="cpops-drawer-coupon__input">
+			<input type="text" id="cpops-coupon-input" placeholder="Saisir le code de réduction" required>
+			<button type="submit" class="cpops-drawer-form__button cpops-button">Appliquer</button>
+		</div>
+	</form>
+
+			<div class="cpops-coupon-remove">
+				</div>
+		
+</div>
+
+
+<div class="cpops-cart-total">
+
+	<div class="cpops-cart-line-items">
+		
+		
+		
+					<div class="cpops-cart-line-items__item cpops-cart-line-items__shipping"><span class="cpops-cart-line-items__label cpops-cart-line-items__shipping-label">Expédition</span><span class="cpops-cart-line-items__value cpops-cart-line-items__shipping-value"></span></div>		
+					<div class="cpops-cart-line-items__item cpops-cart-line-items__total"><span class="cpops-cart-line-items__label cpops-cart-line-items__total-label">Total</span><span class="cpops-cart-line-items__value cpops-cart-line-items__total-value"><strong><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#x62f;.&#x645;.</span>&nbsp;0,00</span></strong> </span></div>			</div>
+
+				
+	
+	<div class="wc-proceed-to-checkout">
+		<a class="checkout-button wc-forward" href="https://www.deliziocaffe.com/shop/">Votre panier est vide. Acheter maintenant</a>
+	</div>
+
+	
+</div>
+
+	
+</div>
+		</div>
+
+		
+	</div>
+
+	
+</div>
+
+
+<style id='core-block-supports-inline-css' type='text/css'>
+.wp-container-core-columns-is-layout-1{flex-wrap:nowrap;}
+</style>
+<script defer id="ce4wp_form_submit-js-extra" src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgY2U0d3BfZm9ybV9zdWJtaXRfZGF0YSA9IHsic2l0ZVVybCI6Imh0dHBzOlwvXC93d3cuZGVsaXppb2NhZmZlLmNvbSIsInVybCI6Imh0dHBzOlwvXC93d3cuZGVsaXppb2NhZmZlLmNvbVwvd3AtYWRtaW5cL2FkbWluLWFqYXgucGhwIiwibm9uY2UiOiJkNTM5Y2JmZTliIiwibGlzdE5vbmNlIjoiNzkxM2E5M2UyOCIsImFjdGl2YXRlZE5vbmNlIjoiY2M3ODA1N2Y1OSJ9OwovKiBdXT4gKi8K"></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/cache/autoptimize/js/autoptimize_single_c0473d0e60c97a23d9bd27ba166e1c5f.js?ver=1732782249" id="ce4wp_form_submit-js"></script>
+<script defer id="eio-lazy-load-js-before" src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgZWlvX2xhenlfdmFycyA9IHsiZXhhY3Rkbl9kb21haW4iOiIiLCJza2lwX2F1dG9zY2FsZSI6MCwidGhyZXNob2xkIjowLCJ1c2VfZHByIjoxfTsKLyogXV0+ICovCg=="></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/plugins/ewww-image-optimizer/includes/lazysizes.min.js?ver=812" id="eio-lazy-load-js" async="async" data-wp-strategy="async"></script>
+<script defer id="xoo-el-js-js-extra" src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgeG9vX2VsX2xvY2FsaXplID0geyJhZG1pbnVybCI6Imh0dHBzOlwvXC93d3cuZGVsaXppb2NhZmZlLmNvbVwvd3AtYWRtaW5cL2FkbWluLWFqYXgucGhwIiwicmVkaXJlY3REZWxheSI6IjMwMCIsImh0bWwiOnsic3Bpbm5lciI6IjxpIGNsYXNzPVwieG9vLWVsLWljb24tc3Bpbm5lcjggeG9vLWVsLXNwaW5uZXJcIj48XC9pPiIsImVkaXRGaWVsZCI6IjxzcGFuIGNsYXNzPVwieG9vLWVsLWVkaXQtZW1cIj5DaGFuZ2U/PFwvc3Bhbj4iLCJub3RpY2UiOnsiZXJyb3IiOiI8ZGl2IGNsYXNzPVwieG9vLWVsLW5vdGljZS1lcnJvciBcIj4lczxcL2Rpdj4iLCJzdWNjZXNzIjoiPGRpdiBjbGFzcz1cInhvby1lbC1ub3RpY2Utc3VjY2VzcyBcIj4lczxcL2Rpdj4ifX0sImF1dG9PcGVuUG9wdXAiOiJubyIsImF1dG9PcGVuUG9wdXBPbmNlIjoibm8iLCJhb0RlbGF5IjoiNTAwIiwibG9naW5DbGFzcyI6IiIsInJlZ2lzdGVyQ2xhc3MiOiIiLCJlcnJvckxvZyI6InllcyIsImNoZWNrb3V0Ijp7ImxvZ2luRW5hYmxlZCI6InllcyIsImxvZ2luUmVkaXJlY3QiOiJcL3Byb2R1Y3RcL21hY2hpbmUtYS1jYXBzdWxlcy1jb21wYXRpYmxlLW5lc3ByZXNzb1wvIn19OwovKiBdXT4gKi8K"></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/cache/autoptimize/js/autoptimize_single_faac889490945273a54cea6b039d7c9b.js?ver=2.8.6" id="xoo-el-js-js"></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/plugins/dg-divi-carousel//scripts/swiper.min.js?ver=1.0.0" id="swipe-script-js"></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/cache/autoptimize/js/autoptimize_single_d3fc493223626870773113944fc5b15a.js?ver=3.7.0" id="nta-wa-libs-js"></script>
+<script defer id="nta-js-global-js-extra" src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgbmp0X3dhX2dsb2JhbCA9IHsiYWpheF91cmwiOiJodHRwczpcL1wvd3d3LmRlbGl6aW9jYWZmZS5jb21cL3dwLWFkbWluXC9hZG1pbi1hamF4LnBocCIsIm5vbmNlIjoiZDAzOGY3NmEzOSIsImRlZmF1bHRBdmF0YXJTVkciOiI8c3ZnIHdpZHRoPVwiNDhweFwiIGhlaWdodD1cIjQ4cHhcIiBjbGFzcz1cIm50YS13aGF0c2FwcC1kZWZhdWx0LWF2YXRhclwiIHZlcnNpb249XCIxLjFcIiBpZD1cIkxheWVyXzFcIiB4bWxucz1cImh0dHA6XC9cL3d3dy53My5vcmdcLzIwMDBcL3N2Z1wiIHhtbG5zOnhsaW5rPVwiaHR0cDpcL1wvd3d3LnczLm9yZ1wvMTk5OVwveGxpbmtcIiB4PVwiMHB4XCIgeT1cIjBweFwiXG4gICAgICAgICAgICB2aWV3Qm94PVwiMCAwIDUxMiA1MTJcIiBzdHlsZT1cImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjtcIiB4bWw6c3BhY2U9XCJwcmVzZXJ2ZVwiPlxuICAgICAgICAgICAgPHBhdGggc3R5bGU9XCJmaWxsOiNFREVERUQ7XCIgZD1cIk0wLDUxMmwzNS4zMS0xMjhDMTIuMzU5LDM0NC4yNzYsMCwzMDAuMTM4LDAsMjU0LjIzNEMwLDExNC43NTksMTE0Ljc1OSwwLDI1NS4xMTcsMFxuICAgICAgICAgICAgUzUxMiwxMTQuNzU5LDUxMiwyNTQuMjM0UzM5NS40NzYsNTEyLDI1NS4xMTcsNTEyYy00NC4xMzgsMC04Ni41MS0xNC4xMjQtMTI0LjQ2OS0zNS4zMUwwLDUxMnpcIlwvPlxuICAgICAgICAgICAgPHBhdGggc3R5bGU9XCJmaWxsOiM1NUNENkM7XCIgZD1cIk0xMzcuNzEsNDMwLjc4Nmw3Ljk0NSw0LjQxNGMzMi42NjIsMjAuMzAzLDcwLjYyMSwzMi42NjIsMTEwLjM0NSwzMi42NjJcbiAgICAgICAgICAgIGMxMTUuNjQxLDAsMjExLjg2Mi05Ni4yMjEsMjExLjg2Mi0yMTMuNjI4UzM3MS42NDEsNDQuMTM4LDI1NS4xMTcsNDQuMTM4UzQ0LjEzOCwxMzcuNzEsNDQuMTM4LDI1NC4yMzRcbiAgICAgICAgICAgIGMwLDQwLjYwNywxMS40NzYsODAuMzMxLDMyLjY2MiwxMTMuODc2bDUuMjk3LDcuOTQ1bC0yMC4zMDMsNzQuMTUyTDEzNy43MSw0MzAuNzg2elwiXC8+XG4gICAgICAgICAgICA8cGF0aCBzdHlsZT1cImZpbGw6I0ZFRkVGRTtcIiBkPVwiTTE4Ny4xNDUsMTM1Ljk0NWwtMTYuNzcyLTAuODgzYy01LjI5NywwLTEwLjU5MywxLjc2Ni0xNC4xMjQsNS4yOTdcbiAgICAgICAgICAgIGMtNy45NDUsNy4wNjItMjEuMTg2LDIwLjMwMy0yNC43MTcsMzcuOTU5Yy02LjE3OSwyNi40ODMsMy41MzEsNTguMjYyLDI2LjQ4Myw5MC4wNDFzNjcuMDksODIuOTc5LDE0NC43NzIsMTA1LjA0OFxuICAgICAgICAgICAgYzI0LjcxNyw3LjA2Miw0NC4xMzgsMi42NDgsNjAuMDI4LTcuMDYyYzEyLjM1OS03Ljk0NSwyMC4zMDMtMjAuMzAzLDIyLjk1Mi0zMy41NDVsMi42NDgtMTIuMzU5XG4gICAgICAgICAgICBjMC44ODMtMy41MzEtMC44ODMtNy45NDUtNC40MTQtOS43MWwtNTUuNjE0LTI1LjZjLTMuNTMxLTEuNzY2LTcuOTQ1LTAuODgzLTEwLjU5MywyLjY0OGwtMjIuMDY5LDI4LjI0OFxuICAgICAgICAgICAgYy0xLjc2NiwxLjc2Ni00LjQxNCwyLjY0OC03LjA2MiwxLjc2NmMtMTUuMDA3LTUuMjk3LTY1LjMyNC0yNi40ODMtOTIuNjktNzkuNDQ4Yy0wLjg4My0yLjY0OC0wLjg4My01LjI5NywwLjg4My03LjA2MlxuICAgICAgICAgICAgbDIxLjE4Ni0yMy44MzRjMS43NjYtMi42NDgsMi42NDgtNi4xNzksMS43NjYtOC44MjhsLTI1LjYtNTcuMzc5QzE5My4zMjQsMTM4LjU5MywxOTAuNjc2LDEzNS45NDUsMTg3LjE0NSwxMzUuOTQ1XCJcLz5cbiAgICAgICAgPFwvc3ZnPiIsImRlZmF1bHRBdmF0YXJVcmwiOiJodHRwczpcL1wvd3d3LmRlbGl6aW9jYWZmZS5jb21cL3dwLWNvbnRlbnRcL3BsdWdpbnNcL3dwLXdoYXRzYXBwXC9hc3NldHNcL2ltZ1wvd2hhdHNhcHBfbG9nby5zdmciLCJ0aW1lem9uZSI6IiswMTowMCIsImkxOG4iOnsib25saW5lIjoiT25saW5lIiwib2ZmbGluZSI6Ik9mZmxpbmUifSwidXJsU2V0dGluZ3MiOnsib25EZXNrdG9wIjoiYXBpIiwib25Nb2JpbGUiOiJhcGkiLCJvcGVuSW5OZXdUYWIiOiJPTiJ9fTsKLyogXV0+ICovCg=="></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/cache/autoptimize/js/autoptimize_single_211d80171f64d99ab3049a06e55c595e.js?ver=3.7.0" id="nta-js-global-js"></script>
+<script defer id="mailchimp-woocommerce-js-extra" src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgbWFpbGNoaW1wX3B1YmxpY19kYXRhID0geyJzaXRlX3VybCI6Imh0dHBzOlwvXC93d3cuZGVsaXppb2NhZmZlLmNvbSIsImFqYXhfdXJsIjoiaHR0cHM6XC9cL3d3dy5kZWxpemlvY2FmZmUuY29tXC93cC1hZG1pblwvYWRtaW4tYWpheC5waHAiLCJkaXNhYmxlX2NhcnRzIjoiIiwic3Vic2NyaWJlcnNfb25seSI6IiIsImxhbmd1YWdlIjoiZnIiLCJhbGxvd2VkX3RvX3NldF9jb29raWVzIjoiMSJ9OwovKiBdXT4gKi8K"></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/plugins/mailchimp-for-woocommerce/public/js/mailchimp-woocommerce-public.min.js?ver=5.2.07" id="mailchimp-woocommerce-js"></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-includes/js/comment-reply.min.js?ver=6.7.2" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script defer id="divi-custom-script-js-extra" src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgRElWSSA9IHsiaXRlbV9jb3VudCI6IiVkIEl0ZW0iLCJpdGVtc19jb3VudCI6IiVkIEl0ZW1zIn07CnZhciBldF9idWlsZGVyX3V0aWxzX3BhcmFtcyA9IHsiY29uZGl0aW9uIjp7ImRpdmlUaGVtZSI6dHJ1ZSwiZXh0cmFUaGVtZSI6ZmFsc2V9LCJzY3JvbGxMb2NhdGlvbnMiOlsiYXBwIiwidG9wIl0sImJ1aWxkZXJTY3JvbGxMb2NhdGlvbnMiOnsiZGVza3RvcCI6ImFwcCIsInRhYmxldCI6ImFwcCIsInBob25lIjoiYXBwIn0sIm9ubG9hZFNjcm9sbExvY2F0aW9uIjoiYXBwIiwiYnVpbGRlclR5cGUiOiJmZSJ9Owp2YXIgZXRfZnJvbnRlbmRfc2NyaXB0cyA9IHsiYnVpbGRlckNzc0NvbnRhaW5lclByZWZpeCI6IiNldC1ib2MiLCJidWlsZGVyQ3NzTGF5b3V0UHJlZml4IjoiI2V0LWJvYyAuZXQtbCJ9Owp2YXIgZXRfcGJfY3VzdG9tID0geyJhamF4dXJsIjoiaHR0cHM6XC9cL3d3dy5kZWxpemlvY2FmZmUuY29tXC93cC1hZG1pblwvYWRtaW4tYWpheC5waHAiLCJpbWFnZXNfdXJpIjoiaHR0cHM6XC9cL3d3dy5kZWxpemlvY2FmZmUuY29tXC93cC1jb250ZW50XC90aGVtZXNcL0RpdmlcL2ltYWdlcyIsImJ1aWxkZXJfaW1hZ2VzX3VyaSI6Imh0dHBzOlwvXC93d3cuZGVsaXppb2NhZmZlLmNvbVwvd3AtY29udGVudFwvdGhlbWVzXC9EaXZpXC9pbmNsdWRlc1wvYnVpbGRlclwvaW1hZ2VzIiwiZXRfZnJvbnRlbmRfbm9uY2UiOiJmNjc1MTQwYjcxIiwic3Vic2NyaXB0aW9uX2ZhaWxlZCI6IlZldWlsbGV6IHZcdTAwZTlyaWZpZXIgbGVzIGNoYW1wcyBjaS1kZXNzb3VzIHBvdXIgdm91cyBhc3N1cmVyIHF1ZSB2b3VzIGF2ZXogZW50clx1MDBlOSBsZXMgaW5mb3JtYXRpb25zIGNvcnJlY3Rlcy4iLCJldF9hYl9sb2dfbm9uY2UiOiJhNDI1YTgyMTVjIiwiZmlsbF9tZXNzYWdlIjoiUydpbCB2b3VzIHBsYVx1MDBlZXQsIHJlbXBsaXNzZXogbGVzIGNoYW1wcyBzdWl2YW50czoiLCJjb250YWN0X2Vycm9yX21lc3NhZ2UiOiJWZXVpbGxleiBjb3JyaWdlciBsZXMgZXJyZXVycyBzdWl2YW50ZXMgOiIsImludmFsaWQiOiJFLW1haWwgbm9uIHZhbGlkZSIsImNhcHRjaGEiOiJDYXB0Y2hhIiwicHJldiI6IlByXHUwMGU5Y1x1MDBlOWRlbnQiLCJwcmV2aW91cyI6IlByXHUwMGU5Y1x1MDBlOWRlbnRlIiwibmV4dCI6IlByb2NoYWluZSIsIndyb25nX2NhcHRjaGEiOiJWb3VzIGF2ZXogZW50clx1MDBlOSBsZSBtYXV2YWlzIG51bVx1MDBlOXJvIGRhbnMgbGUgY2FwdGNoYS4iLCJ3cm9uZ19jaGVja2JveCI6IkNoZWNrYm94IiwiaWdub3JlX3dheXBvaW50cyI6Im5vIiwiaXNfZGl2aV90aGVtZV91c2VkIjoiMSIsIndpZGdldF9zZWFyY2hfc2VsZWN0b3IiOiIud2lkZ2V0X3NlYXJjaCIsImFiX3Rlc3RzIjpbXSwiaXNfYWJfdGVzdGluZ19hY3RpdmUiOiIiLCJwYWdlX2lkIjoiMzYzNSIsInVuaXF1ZV90ZXN0X2lkIjoiIiwiYWJfYm91bmNlX3JhdGUiOiI1IiwiaXNfY2FjaGVfcGx1Z2luX2FjdGl2ZSI6InllcyIsImlzX3Nob3J0Y29kZV90cmFja2luZyI6IiIsInRpbnltY2VfdXJpIjoiaHR0cHM6XC9cL3d3dy5kZWxpemlvY2FmZmUuY29tXC93cC1jb250ZW50XC90aGVtZXNcL0RpdmlcL2luY2x1ZGVzXC9idWlsZGVyXC9mcm9udGVuZC1idWlsZGVyXC9hc3NldHNcL3ZlbmRvcnMiLCJ3YXlwb2ludHNfb3B0aW9ucyI6eyJjb250ZXh0IjpbIi5wdW0tb3ZlcmxheSJdfX07CnZhciBldF9wYl9ib3hfc2hhZG93X2VsZW1lbnRzID0gW107Ci8qIF1dPiAqLwo="></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.18.0" id="divi-custom-script-js"></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/cache/autoptimize/js/autoptimize_single_fa07f10043b891dacdb82f26fd2b42bc.js?ver=4.18.0" id="fitvids-js"></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/plugins/dg-divi-carousel/scripts/frontend-bundle.min.js?ver=2.0.14" id="divi-carousel-frontend-bundle-js"></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=9.7.1" id="sourcebuster-js-js"></script>
+<script defer id="wc-order-attribution-js-extra" src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgd2Nfb3JkZXJfYXR0cmlidXRpb24gPSB7InBhcmFtcyI6eyJsaWZldGltZSI6MS4wZS01LCJzZXNzaW9uIjozMCwiYmFzZTY0IjpmYWxzZSwiYWpheHVybCI6Imh0dHBzOlwvXC93d3cuZGVsaXppb2NhZmZlLmNvbVwvd3AtYWRtaW5cL2FkbWluLWFqYXgucGhwIiwicHJlZml4Ijoid2Nfb3JkZXJfYXR0cmlidXRpb25fIiwiYWxsb3dUcmFja2luZyI6dHJ1ZX0sImZpZWxkcyI6eyJzb3VyY2VfdHlwZSI6ImN1cnJlbnQudHlwIiwicmVmZXJyZXIiOiJjdXJyZW50X2FkZC5yZiIsInV0bV9jYW1wYWlnbiI6ImN1cnJlbnQuY21wIiwidXRtX3NvdXJjZSI6ImN1cnJlbnQuc3JjIiwidXRtX21lZGl1bSI6ImN1cnJlbnQubWRtIiwidXRtX2NvbnRlbnQiOiJjdXJyZW50LmNudCIsInV0bV9pZCI6ImN1cnJlbnQuaWQiLCJ1dG1fdGVybSI6ImN1cnJlbnQudHJtIiwidXRtX3NvdXJjZV9wbGF0Zm9ybSI6ImN1cnJlbnQucGx0IiwidXRtX2NyZWF0aXZlX2Zvcm1hdCI6ImN1cnJlbnQuZm10IiwidXRtX21hcmtldGluZ190YWN0aWMiOiJjdXJyZW50LnRjdCIsInNlc3Npb25fZW50cnkiOiJjdXJyZW50X2FkZC5lcCIsInNlc3Npb25fc3RhcnRfdGltZSI6ImN1cnJlbnRfYWRkLmZkIiwic2Vzc2lvbl9wYWdlcyI6InNlc3Npb24ucGdzIiwic2Vzc2lvbl9jb3VudCI6InVkYXRhLnZzdCIsInVzZXJfYWdlbnQiOiJ1ZGF0YS51YWcifX07Ci8qIF1dPiAqLwo="></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=9.7.1" id="wc-order-attribution-js"></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script defer id="popup-maker-site-js-extra" src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgcHVtX3ZhcnMgPSB7InZlcnNpb24iOiIxLjIwLjQiLCJwbV9kaXJfdXJsIjoiaHR0cHM6XC9cL3d3dy5kZWxpemlvY2FmZmUuY29tXC93cC1jb250ZW50XC9wbHVnaW5zXC9wb3B1cC1tYWtlclwvIiwiYWpheHVybCI6Imh0dHBzOlwvXC93d3cuZGVsaXppb2NhZmZlLmNvbVwvd3AtYWRtaW5cL2FkbWluLWFqYXgucGhwIiwicmVzdGFwaSI6Imh0dHBzOlwvXC93d3cuZGVsaXppb2NhZmZlLmNvbVwvd3AtanNvblwvcHVtXC92MSIsInJlc3Rfbm9uY2UiOm51bGwsImRlZmF1bHRfdGhlbWUiOiIyNTAxIiwiZGVidWdfbW9kZSI6IiIsImRpc2FibGVfdHJhY2tpbmciOiIiLCJob21lX3VybCI6IlwvIiwibWVzc2FnZV9wb3NpdGlvbiI6InRvcCIsImNvcmVfc3ViX2Zvcm1zX2VuYWJsZWQiOiIxIiwicG9wdXBzIjpbXSwiY29va2llX2RvbWFpbiI6IiIsImFuYWx5dGljc19yb3V0ZSI6ImFuYWx5dGljcyIsImFuYWx5dGljc19hcGkiOiJodHRwczpcL1wvd3d3LmRlbGl6aW9jYWZmZS5jb21cL3dwLWpzb25cL3B1bVwvdjEifTsKdmFyIHB1bV9zdWJfdmFycyA9IHsiYWpheHVybCI6Imh0dHBzOlwvXC93d3cuZGVsaXppb2NhZmZlLmNvbVwvd3AtYWRtaW5cL2FkbWluLWFqYXgucGhwIiwibWVzc2FnZV9wb3NpdGlvbiI6InRvcCJ9Owp2YXIgcHVtX3BvcHVwcyA9IHsicHVtLTI1MzciOnsidHJpZ2dlcnMiOltdLCJjb29raWVzIjpbXSwiZGlzYWJsZV9vbl9tb2JpbGUiOmZhbHNlLCJkaXNhYmxlX29uX3RhYmxldCI6ZmFsc2UsImF0Y19wcm9tb3Rpb24iOm51bGwsImV4cGxhaW4iOm51bGwsInR5cGVfc2VjdGlvbiI6bnVsbCwidGhlbWVfaWQiOiIyNTAxIiwic2l6ZSI6Im1lZGl1bSIsInJlc3BvbnNpdmVfbWluX3dpZHRoIjoiMCUiLCJyZXNwb25zaXZlX21heF93aWR0aCI6IjEwMCUiLCJjdXN0b21fd2lkdGgiOiI2NDBweCIsImN1c3RvbV9oZWlnaHRfYXV0byI6ZmFsc2UsImN1c3RvbV9oZWlnaHQiOiIzODBweCIsInNjcm9sbGFibGVfY29udGVudCI6ZmFsc2UsImFuaW1hdGlvbl90eXBlIjoiZmFkZSIsImFuaW1hdGlvbl9zcGVlZCI6IjM1MCIsImFuaW1hdGlvbl9vcmlnaW4iOiJjZW50ZXIgdG9wIiwib3Blbl9zb3VuZCI6Im5vbmUiLCJjdXN0b21fc291bmQiOiIiLCJsb2NhdGlvbiI6ImNlbnRlciB0b3AiLCJwb3NpdGlvbl90b3AiOiIxMDAiLCJwb3NpdGlvbl9ib3R0b20iOiIwIiwicG9zaXRpb25fbGVmdCI6IjAiLCJwb3NpdGlvbl9yaWdodCI6IjAiLCJwb3NpdGlvbl9mcm9tX3RyaWdnZXIiOmZhbHNlLCJwb3NpdGlvbl9maXhlZCI6ZmFsc2UsIm92ZXJsYXlfZGlzYWJsZWQiOmZhbHNlLCJzdGFja2FibGUiOmZhbHNlLCJkaXNhYmxlX3JlcG9zaXRpb24iOmZhbHNlLCJ6aW5kZXgiOiIxOTk5OTk5OTk5IiwiY2xvc2VfYnV0dG9uX2RlbGF5IjoiMCIsImZpX3Byb21vdGlvbiI6bnVsbCwiY2xvc2Vfb25fZm9ybV9zdWJtaXNzaW9uIjpmYWxzZSwiY2xvc2Vfb25fZm9ybV9zdWJtaXNzaW9uX2RlbGF5IjoiMCIsImNsb3NlX29uX292ZXJsYXlfY2xpY2siOmZhbHNlLCJjbG9zZV9vbl9lc2NfcHJlc3MiOmZhbHNlLCJjbG9zZV9vbl9mNF9wcmVzcyI6ZmFsc2UsImRpc2FibGVfZm9ybV9yZW9wZW4iOmZhbHNlLCJkaXNhYmxlX2FjY2Vzc2liaWxpdHkiOmZhbHNlLCJ0aGVtZV9zbHVnIjoidGhlbWUtcGFyLWRlZmF1dCIsImlkIjoyNTM3LCJzbHVnIjoibWFnYXNpbiJ9LCJwdW0tMjUxMCI6eyJ0cmlnZ2VycyI6W3sidHlwZSI6ImNsaWNrX29wZW4iLCJzZXR0aW5ncyI6eyJjb29raWVfbmFtZSI6WyJwdW0tMjUxMCJdLCJleHRyYV9zZWxlY3RvcnMiOiIucG9wdXAifX1dLCJjb29raWVzIjpbeyJldmVudCI6ImZvcm1fc3VibWlzc2lvbiIsInNldHRpbmdzIjp7Im5hbWUiOiJwdW0tMjUxMCIsImtleSI6IiIsInNlc3Npb24iOmZhbHNlLCJwYXRoIjoiMSIsInRpbWUiOiIxIG1vbnRoIiwiZm9ybSI6ImFueSIsIm9ubHlfaW5fcG9wdXAiOiIxIn19XSwiZGlzYWJsZV9vbl9tb2JpbGUiOmZhbHNlLCJkaXNhYmxlX29uX3RhYmxldCI6ZmFsc2UsImF0Y19wcm9tb3Rpb24iOm51bGwsImV4cGxhaW4iOm51bGwsInR5cGVfc2VjdGlvbiI6bnVsbCwidGhlbWVfaWQiOiIyNTAxIiwic2l6ZSI6Im1lZGl1bSIsInJlc3BvbnNpdmVfbWluX3dpZHRoIjoiMCUiLCJyZXNwb25zaXZlX21heF93aWR0aCI6IjEwMCUiLCJjdXN0b21fd2lkdGgiOiI2NDBweCIsImN1c3RvbV9oZWlnaHRfYXV0byI6ZmFsc2UsImN1c3RvbV9oZWlnaHQiOiIzODBweCIsInNjcm9sbGFibGVfY29udGVudCI6ZmFsc2UsImFuaW1hdGlvbl90eXBlIjoiZmFkZSIsImFuaW1hdGlvbl9zcGVlZCI6IjM1MCIsImFuaW1hdGlvbl9vcmlnaW4iOiJjZW50ZXIgdG9wIiwib3Blbl9zb3VuZCI6Im5vbmUiLCJjdXN0b21fc291bmQiOiIiLCJsb2NhdGlvbiI6ImNlbnRlciB0b3AiLCJwb3NpdGlvbl90b3AiOiIxMDAiLCJwb3NpdGlvbl9ib3R0b20iOiIwIiwicG9zaXRpb25fbGVmdCI6IjAiLCJwb3NpdGlvbl9yaWdodCI6IjAiLCJwb3NpdGlvbl9mcm9tX3RyaWdnZXIiOmZhbHNlLCJwb3NpdGlvbl9maXhlZCI6ZmFsc2UsIm92ZXJsYXlfZGlzYWJsZWQiOmZhbHNlLCJzdGFja2FibGUiOmZhbHNlLCJkaXNhYmxlX3JlcG9zaXRpb24iOmZhbHNlLCJ6aW5kZXgiOiIxOTk5OTk5OTk5IiwiY2xvc2VfYnV0dG9uX2RlbGF5IjoiMCIsImZpX3Byb21vdGlvbiI6bnVsbCwiY2xvc2Vfb25fZm9ybV9zdWJtaXNzaW9uIjpmYWxzZSwiY2xvc2Vfb25fZm9ybV9zdWJtaXNzaW9uX2RlbGF5IjoiMCIsImNsb3NlX29uX292ZXJsYXlfY2xpY2siOmZhbHNlLCJjbG9zZV9vbl9lc2NfcHJlc3MiOmZhbHNlLCJjbG9zZV9vbl9mNF9wcmVzcyI6ZmFsc2UsImRpc2FibGVfZm9ybV9yZW9wZW4iOmZhbHNlLCJkaXNhYmxlX2FjY2Vzc2liaWxpdHkiOmZhbHNlLCJ0aGVtZV9zbHVnIjoidGhlbWUtcGFyLWRlZmF1dCIsImlkIjoyNTEwLCJzbHVnIjoibGl2cmFpc29uIn19OwovKiBdXT4gKi8K"></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/cache/autoptimize/js/autoptimize_single_32238e17820181dfe2dfc7e90e911317.js?defer&amp;generated=1741783488&amp;ver=1.20.4" id="popup-maker-site-js"></script>
+<script defer id="et-builder-cpt-modules-wrapper-js-extra" src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgZXRfbW9kdWxlc193cmFwcGVyID0geyJidWlsZGVyQ3NzQ29udGFpbmVyUHJlZml4IjoiI2V0LWJvYyIsImJ1aWxkZXJDc3NMYXlvdXRQcmVmaXgiOiIjZXQtYm9jIC5ldC1sIn07Ci8qIF1dPiAqLwo="></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/cache/autoptimize/js/autoptimize_single_37def7a06a8c95dea2f10621457b4bf3.js?ver=4.18.0" id="et-builder-cpt-modules-wrapper-js"></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/cache/autoptimize/js/autoptimize_single_d71b75b2327258b1d01d50590c1f67ca.js?ver=4.18.0" id="et-core-common-js"></script>
+<script defer id="cartpops-frontend-js-extra" src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgQ2FydFBvcHNDb25maWcgPSB7InNjcmlwdF9kZWJ1ZyI6IiIsImFqYXhfdXJsIjoiaHR0cHM6XC9cL3d3dy5kZWxpemlvY2FmZmUuY29tXC93cC1hZG1pblwvYWRtaW4tYWpheC5waHAiLCJwcm8iOiJmYWxzZSIsIm5vbmNlIjoiMzI2ZmFmNWZiOCIsInRyaWdnZXIiOiJkcmF3ZXIiLCJmb3JjZVJlZnJlc2giOiJmYWxzZSIsInJlZnJlc2hEZWxheSI6IjE1MCIsImFqYXhBZGRUb0NhcnQiOiIxIiwiaXNDaGVja291dFBhZ2UiOiJmYWxzZSIsImlzQ2FydFBhZ2UiOiJmYWxzZSIsImdlbmVyaWNBZGRUb0NhcnRNZXNzYWdlIjoiUHJvZHVpdCBham91dFx1MDBlOSBhdmVjIHN1Y2NcdTAwZThzIFx1MDBlMCB2b3RyZSBwYW5pZXIuIiwibm90aWZpY2F0aW9uRGVsYXkiOiI0MjAwIiwibG9hZGluZ1N0YXRlRGVsYXkiOnsiZGVsZXRlUHJvZHVjdCI6NTAwLCJ1cGRhdGVQcm9kdWN0Ijo1MDAsImFkZFByb2R1Y3QiOjI1MCwicmVzdG9yZVByb2R1Y3QiOjE1MDAsImFkZENvdXBvbiI6MTAwLCJkZWxldGVDb3Vwb24iOjEwMH0sInJlY29tbWVuZGF0aW9uRW5naW5lIjoiZmFsc2UifTsKLyogXV0+ICovCg=="></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/plugins/cartpops/public/dist/js/frontend.min.js?ver=1.5.33" id="cartpops-frontend-js"></script>
+<script defer id="nta-js-popup-js-extra" src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgbmp0X3dhID0geyJnZHByU3RhdHVzIjoiIiwiYWNjb3VudHMiOlt7ImFjY291bnRJZCI6MzM0OCwiYWNjb3VudE5hbWUiOiIiLCJhdmF0YXIiOiIiLCJudW1iZXIiOiIrMjEyNjQ0MTQwMDAwIiwidGl0bGUiOiJCYXNtYSIsInByZWRlZmluZWRUZXh0IjoiIiwid2lsbEJlQmFja1RleHQiOiJJIHdpbGwgYmUgYmFjayBpbiBbbmp3YV90aW1lX3dvcmtdIiwiZGF5T2Zmc1RleHQiOiJJIHdpbGwgYmUgYmFjayBzb29uIiwiaXNBbHdheXNBdmFpbGFibGUiOiJPTiIsImRheXNPZldlZWtXb3JraW5nIjp7InN1bmRheSI6eyJpc1dvcmtpbmdPbkRheSI6Ik9GRiIsIndvcmtIb3VycyI6W3sic3RhcnRUaW1lIjoiMDg6MDAiLCJlbmRUaW1lIjoiMTc6MzAifV19LCJtb25kYXkiOnsiaXNXb3JraW5nT25EYXkiOiJPRkYiLCJ3b3JrSG91cnMiOlt7InN0YXJ0VGltZSI6IjA4OjAwIiwiZW5kVGltZSI6IjE3OjMwIn1dfSwidHVlc2RheSI6eyJpc1dvcmtpbmdPbkRheSI6Ik9GRiIsIndvcmtIb3VycyI6W3sic3RhcnRUaW1lIjoiMDg6MDAiLCJlbmRUaW1lIjoiMTc6MzAifV19LCJ3ZWRuZXNkYXkiOnsiaXNXb3JraW5nT25EYXkiOiJPRkYiLCJ3b3JrSG91cnMiOlt7InN0YXJ0VGltZSI6IjA4OjAwIiwiZW5kVGltZSI6IjE3OjMwIn1dfSwidGh1cnNkYXkiOnsiaXNXb3JraW5nT25EYXkiOiJPRkYiLCJ3b3JrSG91cnMiOlt7InN0YXJ0VGltZSI6IjA4OjAwIiwiZW5kVGltZSI6IjE3OjMwIn1dfSwiZnJpZGF5Ijp7ImlzV29ya2luZ09uRGF5IjoiT0ZGIiwid29ya0hvdXJzIjpbeyJzdGFydFRpbWUiOiIwODowMCIsImVuZFRpbWUiOiIxNzozMCJ9XX0sInNhdHVyZGF5Ijp7ImlzV29ya2luZ09uRGF5IjoiT0ZGIiwid29ya0hvdXJzIjpbeyJzdGFydFRpbWUiOiIwODowMCIsImVuZFRpbWUiOiIxNzozMCJ9XX19fV0sIm9wdGlvbnMiOnsiZGlzcGxheSI6eyJkaXNwbGF5Q29uZGl0aW9uIjoiZXhjbHVkZVBhZ2VzIiwiaW5jbHVkZVBhZ2VzIjpbXSwiZXhjbHVkZVBhZ2VzIjpbIjgiLCI0NyIsIjQ4IiwiNDkiLCI1MCIsIjEwNyIsIjI0OSIsIjMxNiIsIjMxOCIsIjMyMCIsIjMyMiIsIjMzOCIsIjM0MyIsIjYwOCIsIjYxMCIsIjYxMiIsIjEwNTQiLCIxODMzIiwiMTg1NSIsIjIwODIiLCIyNDk0IiwiMjg2MiIsIjI5MTciLCIzMTg1IiwiMzE5NCIsIjMyMjAiLCIzMjQ4IiwiMzI1NCIsIjMzMTUiXSwiaW5jbHVkZVBvc3RzIjpbXSwic2hvd09uRGVza3RvcCI6Ik9OIiwic2hvd09uTW9iaWxlIjoiT04iLCJ0aW1lX3N5bWJvbHMiOiJoOm0ifSwic3R5bGVzIjp7InRpdGxlIjoiU3RhcnQgYSBDb252ZXJzYXRpb24iLCJyZXNwb25zZVRleHQiOiJUaGUgdGVhbSB0eXBpY2FsbHkgcmVwbGllcyBpbiBhIGZldyBtaW51dGVzLiIsImRlc2NyaXB0aW9uIjoiSGkhIENsaWNrIG9uZSBvZiBvdXIgbWVtYmVyIGJlbG93IHRvIGNoYXQgb24gPHN0cm9uZz5XaGF0c0FwcDxcL3N0cm9uZz4iLCJiYWNrZ3JvdW5kQ29sb3IiOiIjMmRiNzQyIiwidGV4dENvbG9yIjoiI2ZmZiIsInRpdGxlU2l6ZSI6MTgsImFjY291bnROYW1lU2l6ZSI6MTQsImRlc2NyaXB0aW9uVGV4dFNpemUiOjEyLCJyZWd1bGFyVGV4dFNpemUiOjExLCJzY3JvbGxIZWlnaHQiOiI1MDAiLCJpc1Nob3dTY3JvbGwiOiJPRkYiLCJpc1Nob3dSZXNwb25zZVRleHQiOiJPRkYiLCJpc1Nob3dQb3dlcmVkQnkiOiJPTiIsImJ0bkxhYmVsIjoiTmVlZCBIZWxwPyA8c3Ryb25nPkNoYXQgd2l0aCB1czxcL3N0cm9uZz4iLCJidG5MYWJlbFdpZHRoIjoiMTU2IiwiYnRuUG9zaXRpb24iOiJyaWdodCIsImJ0bkxlZnREaXN0YW5jZSI6IjMwIiwiYnRuUmlnaHREaXN0YW5jZSI6IjI5IiwiYnRuQm90dG9tRGlzdGFuY2UiOiIxMzAiLCJpc1Nob3dCdG5MYWJlbCI6Ik9OIiwiaXNTaG93R0RQUiI6Ik9GRiIsImdkcHJDb250ZW50IjoiUGxlYXNlIGFjY2VwdCBvdXIgPGEgaHJlZj1cImh0dHBzOlwvXC9uaW5qYXRlYW0ub3JnXC9wcml2YWN5LXBvbGljeVwvXCI+cHJpdmFjeSBwb2xpY3k8XC9hPiBmaXJzdCB0byBzdGFydCBhIGNvbnZlcnNhdGlvbi4ifSwiYW5hbHl0aWNzIjp7ImVuYWJsZWRHb29nbGUiOiJPRkYiLCJlbmFibGVkRmFjZWJvb2siOiJPRkYiLCJlbmFibGVkR29vZ2xlR0E0IjoiT0ZGIn19fTsKLyogXV0+ICovCg=="></script>
+<script type="text/javascript" defer='defer' src="https://www.deliziocaffe.com/wp-content/cache/autoptimize/js/autoptimize_single_0df57bc209206b983e4223792fabc4e7.js?ver=3.7.0" id="nta-js-popup-js"></script>
+	
+	</body>
+</html>
