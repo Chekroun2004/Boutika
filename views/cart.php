@@ -1,226 +1,72 @@
 <?php
-//cart
+//cart.php
 session_start();
 require_once '../db/connection.php';
 require_once '../models/Product.php';
 require_once '../models/Cart.php';
 
-// Identifier l'utilisateur
 $userId = isset($_SESSION['user']) ? $_SESSION['user']['id'] : null;
 $cartItems = [];
 $totalCartPrice = 0;
 
-// Synchroniser la session avec la base de données si l'utilisateur est connecté
+// Gestion des actions
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $productId = intval($_POST['product_id']);
+
+    if (isset($_POST['remove_from_cart'])) {
+        if ($userId) {
+            Cart::removeFromCart($userId, $productId);
+        } else {
+            unset($_SESSION['cart'][$productId]);
+        }
+    } elseif (isset($_POST['update_quantity'])) {
+        $newQuantity = intval($_POST['quantity']);
+        if ($newQuantity > 0) {
+            if ($userId) {
+                $stmt = $conn->prepare("UPDATE cart SET quantity = ? WHERE user_id = ? AND product_id = ?");
+                $stmt->bind_param("iii", $newQuantity, $userId, $productId);
+                $stmt->execute();
+            } else {
+                $_SESSION['cart'][$productId] = $newQuantity;
+            }
+        }
+    }
+
+    header("Location: cart.php");
+    exit;
+}
+
+// Récupération du panier
 if ($userId) {
     $cartItems = Cart::getCartByUserId($userId);
-
-    // 🚨 Correction : Recalculer le totalCartPrice
-    foreach ($cartItems as $item) {
-        $totalCartPrice += $item['price'] * $item['quantity'];
-    }
-} else {
-    if (!empty($_SESSION['cart'])) {
-        foreach ($_SESSION['cart'] as $productId => $quantity) {
-            $product = Product::getProductById($productId);
-            if ($product) {
-                $cartItems[] = [
-                    'id' => $product['id'],
-                    'name' => $product['name'],
-                    'price' => $product['price'],
-                    'quantity' => $quantity,
-                    'total_price' => $product['price'] * $quantity
-                ];
-                $totalCartPrice += $product['price'] * $quantity;
-            }
+} else if (!empty($_SESSION['cart'])) {
+    foreach ($_SESSION['cart'] as $productId => $quantity) {
+        $product = Product::getProductById($productId);
+        if ($product) {
+            $cartItems[] = [
+                'id' => $product['id'],
+                'name' => $product['name'],
+                'price' => $product['price'],
+                'quantity' => $quantity,
+                'total_price' => $product['price'] * $quantity
+            ];
         }
     }
 }
 
-// Supprimer un produit
-if (isset($_POST['remove_from_cart'])) {
-    $productId = intval($_POST['product_id']);
-    if ($userId) {
-        Cart::removeFromCart($userId, $productId);
-    } else {
-        unset($_SESSION['cart'][$productId]);
-    }
-    header("Location: cart.php");
-    exit;
+// Calcul du total
+foreach ($cartItems as $item) {
+    $totalCartPrice += $item['price'] * $item['quantity'];
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <title>Votre Panier</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-bottom: 20px;
-        }
-
-        header a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        header a:hover {
-            text-decoration: underline;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        th,
-        td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
-        }
-
-        th {
-            background: #007bff;
-            color: white;
-        }
-
-        button {
-            background: #dc3545;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background: #c82333;
-        }
-
-        h1 {
-            color: #333;
-            text-align: center;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-        }
-
-        header {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-bottom: 20px;
-        }
-
-        header a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        header a:hover {
-            text-decoration: underline;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        .product {
-            border: 1px solid #ddd;
-            background: #fff;
-            border-radius: 8px;
-            margin: 10px 0;
-            padding: 15px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .product h3 {
-            color: #007bff;
-            margin: 0 0 10px;
-        }
-
-        .product p {
-            color: #555;
-        }
-
-        .product strong {
-            display: block;
-            margin: 10px 0;
-            font-size: 1.2em;
-        }
-
-        form {
-            margin-top: 10px;
-        }
-
-        input[type="number"] {
-            width: 50px;
-            padding: 5px;
-            margin-right: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        button {
-            background: #007bff;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background: #0056b3;
-        }
-
-        .alert {
-            background: #28a745;
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
+        /* Reset et styles de base */
         * {
             margin: 0;
             padding: 0;
@@ -228,97 +74,232 @@ if (isset($_POST['remove_from_cart'])) {
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-        }
-
-        header {
-            background-color: #ffffff;
-            padding: 15px 20px;
-            text-align: center;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        header a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        header a:hover {
-            color: #5c6bc0;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #74ebd5, #9face6);
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #e4e8f0);
             min-height: 100vh;
             padding-top: 80px;
-            /* espace pour le header */
+            color: #2d3748;
         }
 
+        /* Header */
         header {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            background-color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.98);
             padding: 15px 20px;
-            text-align: center;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
             z-index: 1000;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            backdrop-filter: blur(5px);
         }
 
         header a {
-            margin: 0 10px;
+            color: #4a5568;
             text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            transition: color 0.3s ease;
+            font-weight: 600;
+            padding: 8px 15px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 5px;
         }
 
         header a:hover {
-            color: #5c6bc0;
+            background-color: #ebf4ff;
+            color: #2b6cb0;
+            transform: translateY(-2px);
         }
 
-        .home-container {
-            background-color: white;
-            padding: 30px 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-            width: 90%;
-            max-width: 500px;
-            margin: auto;
+        /* Conteneur principal */
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Titre */
+        h1 {
             text-align: center;
+            margin-bottom: 30px;
+            color: #2d3748;
+            font-size: 2.2rem;
+            position: relative;
         }
 
-        .home-container h1 {
-            margin-bottom: 10px;
-            color: #333;
+        h1::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, #667eea, #5a67d8);
+            margin: 15px auto 0;
+            border-radius: 2px;
         }
 
-        .home-container p {
-            font-size: 15px;
-            color: #555;
+        h2 {
+            text-align: right;
+            margin-top: 20px;
+            color: #2d3748;
+            font-size: 1.5rem;
+        }
+
+        /* Tableau */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th {
+            background: linear-gradient(135deg, #667eea, #5a67d8);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 12px 15px;
+            text-align: center;
+            border-bottom: 1px solid #edf2f7;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover {
+            background-color: #f8fafc;
+        }
+
+        /* Contrôle de quantité */
+        .quantity-control {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .quantity-input {
+            width: 60px;
+            padding: 8px 10px;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+
+        .quantity-input:focus {
+            outline: none;
+            border-color: #5c6bc0;
+            box-shadow: 0 0 0 2px rgba(92, 107, 192, 0.2);
+        }
+
+        /* Boutons */
+        .btn {
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: none;
+        }
+
+        .update-btn {
+            background: linear-gradient(135deg, #48bb78, #38a169);
+            color: white;
+        }
+
+        .update-btn:hover {
+            background: linear-gradient(135deg, #38a169, #2f855a);
+            transform: translateY(-2px);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .remove-btn {
+            background: linear-gradient(135deg, #e53e3e, #c53030);
+            color: white;
+            padding: 8px 12px;
+        }
+
+        .remove-btn:hover {
+            background: linear-gradient(135deg, #c53030, #9b2c2c);
+            transform: translateY(-2px);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .action-cell {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        /* Message panier vide */
+        .empty-cart {
+            text-align: center;
+            padding: 40px;
+            color: #718096;
+            font-size: 1.1em;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header {
+                padding: 10px;
+                gap: 8px;
+            }
+
+            header a {
+                padding: 6px 10px;
+                font-size: 0.9rem;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            table {
+                font-size: 0.8em;
+            }
+
+            td,
+            th {
+                padding: 8px 10px;
+            }
+
+            .quantity-control {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .quantity-input {
+                width: 50px;
+            }
         }
     </style>
 </head>
 
 <body>
     <header>
-        <a href="product_list.php">🛒 Voir les produits</a> |
-        <a href="home.php">🏠 Page Principale</a> |
-        <a href="checkout.php">Finaliser la commande</a> |
+        <a href="product_list.php">🛒 Voir les produits</a>
+        <a href="home.php">🏠 Page Principale</a>
+        <a href="checkout.php">Finaliser la commande</a>
         <?php if (isset($_SESSION['user'])): ?>
-            <a href="order_history.php">📜 Historique des achats</a> |
+            <a href="order_history.php">📜 Historique des achats</a>
             <a href="../controllers/logout.php">Déconnexion</a>
         <?php else: ?>
             <a href="login.php">Se connecter</a>
@@ -327,26 +308,33 @@ if (isset($_POST['remove_from_cart'])) {
     <div class="container">
         <h1>Votre Panier</h1>
         <?php if (empty($cartItems)): ?>
-            <p>Votre panier est vide.</p>
+            <p class="empty-cart">Votre panier est vide.</p>
         <?php else: ?>
             <table>
                 <tr>
                     <th>Produit</th>
-                    <th>Prix</th>
+                    <th>Prix unitaire</th>
                     <th>Quantité</th>
                     <th>Total</th>
-                    <th>Action</th>
+                    <th>Actions</th>
                 </tr>
                 <?php foreach ($cartItems as $item): ?>
                     <tr>
-                        <td><?= $item['name'] ?></td>
+                        <td><?= htmlspecialchars($item['name']) ?></td>
                         <td><?= number_format($item['price'], 2) ?> €</td>
-                        <td><?= $item['quantity'] ?></td>
-                        <td><?= number_format($item['total_price'], 2) ?> €</td>
                         <td>
+                            <form method="POST" action="" class="quantity-control">
+                                <input type="hidden" name="product_id" value="<?= $item['id'] ?>">
+                                <input type="number" name="quantity" value="<?= $item['quantity'] ?>"
+                                    min="1" class="quantity-input">
+                                <button type="submit" name="update_quantity" class="btn update-btn">✓</button>
+                            </form>
+                        </td>
+                        <td><?= number_format($item['total_price'], 2) ?> €</td>
+                        <td class="action-cell">
                             <form method="POST" action="">
                                 <input type="hidden" name="product_id" value="<?= $item['id'] ?>">
-                                <button type="submit" name="remove_from_cart">Supprimer</button>
+                                <button type="submit" name="remove_from_cart" class="btn remove-btn">🗑️</button>
                             </form>
                         </td>
                     </tr>

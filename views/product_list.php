@@ -69,100 +69,7 @@ $products = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
     <title>Liste des Produits</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <style>
-        /* Styles existants */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-        }
-
-        header {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-bottom: 20px;
-        }
-
-        header a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        header a:hover {
-            text-decoration: underline;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        .product {
-            border: 1px solid #ddd;
-            background: #fff;
-            border-radius: 8px;
-            margin: 10px 0;
-            padding: 15px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .product h3 {
-            color: #007bff;
-            margin: 0 0 10px;
-        }
-
-        .product p {
-            color: #555;
-        }
-
-        .product strong {
-            display: block;
-            margin: 10px 0;
-            font-size: 1.2em;
-        }
-
-        form {
-            margin-top: 10px;
-        }
-
-        input[type="number"] {
-            width: 50px;
-            padding: 5px;
-            margin-right: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        button {
-            background: #007bff;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background: #0056b3;
-        }
-
-        .alert {
-            background: #28a745;
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
+        /* Reset et styles de base */
         * {
             margin: 0;
             padding: 0;
@@ -170,86 +77,274 @@ $products = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-        }
-
-        header {
-            background-color: #ffffff;
-            padding: 15px 20px;
-            text-align: center;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        header a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        header a:hover {
-            color: #5c6bc0;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #74ebd5, #9face6);
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #e4e8f0);
             min-height: 100vh;
             padding-top: 80px;
-            /* espace pour le header */
+            color: #2d3748;
         }
 
+        /* Header */
         header {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            background-color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.98);
             padding: 15px 20px;
-            text-align: center;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
             z-index: 1000;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            backdrop-filter: blur(5px);
         }
 
         header a {
-            margin: 0 10px;
+            color: #4a5568;
             text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            transition: color 0.3s ease;
+            font-weight: 600;
+            padding: 8px 15px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 5px;
         }
 
         header a:hover {
-            color: #5c6bc0;
+            background-color: #ebf4ff;
+            color: #2b6cb0;
+            transform: translateY(-2px);
         }
 
-        .home-container {
-            background-color: white;
-            padding: 30px 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-            width: 90%;
-            max-width: 500px;
-            margin: auto;
+        /* Contenu principal */
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Titre */
+        h1 {
+            text-align: center;
+            margin: 30px 0;
+            color: #2d3748;
+            font-size: 2.2rem;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, #667eea, #5a67d8);
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        /* Message d'alerte */
+        .alert {
+            background: #48bb78;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            margin: 20px auto;
+            text-align: center;
+            max-width: 600px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Formulaire de filtrage */
+        form[method="GET"] {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            margin: 30px auto;
+            max-width: 800px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        form[method="GET"] label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            color: #4a5568;
+        }
+
+        form[method="GET"] select,
+        form[method="GET"] input[type="number"],
+        form[method="GET"] input[type="checkbox"] {
+            padding: 8px 12px;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            background-color: #f8fafc;
+            transition: all 0.3s ease;
+        }
+
+        form[method="GET"] select:focus,
+        form[method="GET"] input:focus {
+            outline: none;
+            border-color: #4299e1;
+            box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+        }
+
+        form[method="GET"] button {
+            background: linear-gradient(135deg, #667eea, #5a67d8);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        form[method="GET"] button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Grille de produits */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        /* Carte de produit - MODIFICATIONS PRINCIPALES ICI */
+        .product {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* Centre horizontalement tous les éléments enfants */
+            text-align: center;
+            /* Centre le texte */
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .product h3 {
+            color: #2d3748;
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            width: 100%;
+            /* Prend toute la largeur pour un centrage correct */
+        }
+
+        .product img {
+            width: 100%;
+            height: 180px;
+            object-fit: contain;
+            margin: 10px 0;
+            border-radius: 8px;
+            background: #f8fafc;
+            padding: 10px;
+        }
+
+        .product p {
+            color: #718096;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            width: 100%;
+            /* Prend toute la largeur pour un centrage correct */
+        }
+
+        .product strong {
+            display: block;
+            font-size: 1.3rem;
+            color: #2b6cb0;
+            margin: 15px 0;
+            font-weight: 700;
+            width: 100%;
+            /* Prend toute la largeur pour un centrage correct */
+        }
+
+        .product form {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            /* Prend toute la largeur */
+            justify-content: center;
+            /* Centre le formulaire */
+        }
+
+        .product input[type="number"] {
+            width: 70px;
+            padding: 8px;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
             text-align: center;
         }
 
-        .home-container h1 {
-            margin-bottom: 10px;
-            color: #333;
+        .product button {
+            background: linear-gradient(135deg, #5c6bc0, #5c6bc0);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
         }
 
-        .home-container p {
-            font-size: 15px;
-            color: #555;
+        .product button:hover {
+            background: linear-gradient(135deg, rgb(80, 97, 188), rgb(80, 97, 188));
+            transform: translateY(-2px);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header {
+                padding: 10px;
+                gap: 8px;
+            }
+
+            header a {
+                padding: 6px 10px;
+                font-size: 0.9rem;
+            }
+
+            form[method="GET"] {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 
@@ -257,11 +352,11 @@ $products = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 
 <body>
     <header>
-        <a href="cart.php">🛒 Voir le Panier</a> |
-        <a href="home.php">🏠 Page Principale</a> |
-        <a href="checkout.php">Commander</a> |
+        <a href="cart.php"> Voir le Panier</a> 
+        <a href="home.php"> Page Principale</a> 
+        <a href="checkout.php">Commander</a> 
         <?php if ($userId): ?>
-            <a href="order_history.php">📜 Historique des achats</a>
+            <a href="order_history.php"> Historique des achats</a>
             <a href="../controllers/logout.php">Déconnexion</a>
         <?php else: ?>
             <a href="login.php">Se connecter</a>
@@ -298,7 +393,7 @@ $products = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
         <div class="product">
             <h3><?= htmlspecialchars($product['name']) ?></h3>
             <?php if (!empty($product['image'])): ?>
-                <img src="<?= htmlspecialchars($product['image']) ?>" alt="<?= htmlspecialchars($product['name']) ?>"style="max-width: 200px; max-height: 200px; display: block; margin: 10px 0;">
+                <img src="<?= htmlspecialchars($product['image']) ?>" alt="<?= htmlspecialchars($product['name']) ?>" style="max-width: 200px; max-height: 200px; display: block; margin: 10px 0;">
 
             <?php endif; ?>
             <p><?= htmlspecialchars($product['description']) ?></p>

@@ -1,5 +1,5 @@
 <?php
-//checkout
+// checkout.php - Version harmonisée
 session_start();
 require_once '../db/connection.php';
 require_once '../models/Cart.php';
@@ -11,10 +11,16 @@ if (!isset($_SESSION['user'])) {
 }
 
 $userId = $_SESSION['user']['id'];
+
+if (isset($_GET['remove_item'])) {
+    Cart::removeFromCart($userId, (int)$_GET['remove_item']);
+    header('Location: checkout.php');
+    exit;
+}
+
 $cartItems = Cart::getCartByUserId($userId);
 $totalCartPrice = 0;
 
-// 🚨 Vérification : interdire la finalisation si le panier est vide
 if (empty($cartItems)) {
 ?>
     <!DOCTYPE html>
@@ -23,61 +29,101 @@ if (empty($cartItems)) {
     <head>
         <meta charset="UTF-8">
         <title>Panier vide</title>
-        <link rel="stylesheet" href="../assets/css/style.css">
         <style>
+            /* Animation */
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(-20px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
             body {
                 font-family: Arial, sans-serif;
-                background: linear-gradient(135deg, #74ebd5, #9face6);
+                background: linear-gradient(135deg, #f5f7fa, #e4e8f0);
                 min-height: 100vh;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                text-align: center;
                 padding: 20px;
             }
 
             .empty-message {
                 background: white;
                 padding: 40px;
-                border-radius: 15px;
-                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+                border-radius: 16px;
+                box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
                 max-width: 600px;
+                text-align: center;
+                animation: fadeIn 0.6s ease-out;
             }
 
-            h1 {
-                color: #e74c3c;
+            .empty-message h1 {
+                color: #e53e3e;
                 margin-bottom: 20px;
+                font-size: 1.8rem;
             }
 
-            p {
-                font-size: 18px;
-                color: #555;
+            .empty-message p {
+                font-size: 1.1rem;
+                color: #718096;
+                margin-bottom: 25px;
             }
 
-            a {
-                display: inline-block;
-                margin: 15px 10px 0;
-                padding: 10px 20px;
-                background: #5c6bc0;
-                color: white;
-                border-radius: 6px;
+            .action-buttons {
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                margin-top: 30px;
+                flex-wrap: wrap;
+            }
+
+            .btn {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                padding: 12px 25px;
+                border-radius: 8px;
+                font-weight: 600;
                 text-decoration: none;
-                transition: background 0.3s ease;
+                transition: all 0.3s ease;
             }
 
-            a:hover {
-                background: #3f51b5;
+            .btn-home {
+                background: linear-gradient(135deg, #667eea, #5a67d8);
+                color: white;
+            }
+
+            .btn-home:hover {
+                background: linear-gradient(135deg, #5a67d8, #4c51bf);
+                transform: translateY(-3px);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            }
+
+            .btn-products {
+                background: #e2e8f0;
+                color: #4a5568;
+            }
+
+            .btn-products:hover {
+                background: #cbd5e0;
             }
         </style>
     </head>
 
     <body>
         <div class="empty-message">
-            <h1>🚫 Panier vide</h1>
-            <p>Il est impossible d'effectuer une commande avec un panier vide.</p>
-            <p>Veuillez ajouter des articles à votre panier avant de finaliser une commande.</p>
-            <a href="home.php">🏠 Retour à l'accueil</a>
-            <a href="product_list.php">🛍️ Voir les produits</a>
+            <h1>🛒 Votre panier est vide</h1>
+            <p>Vous devez ajouter des produits à votre panier avant de pouvoir passer commande.</p>
+            <div class="action-buttons">
+                <a href="home.php" class="btn btn-home">🏠 Accueil</a>
+                <a href="product_list.php" class="btn btn-products">🛍️ Voir les produits</a>
+            </div>
         </div>
     </body>
 
@@ -86,22 +132,17 @@ if (empty($cartItems)) {
     exit;
 }
 
-
-// 🚨 Recalculer le total et vérifier les stocks en temps réel
 foreach ($cartItems as $item) {
     $product = Product::getProductById($item['id']);
     if (!$product || $product['stock'] < $item['quantity']) {
-        echo "<script>alert('Le produit " . htmlspecialchars($item['name']) . " est en rupture de stock ou quantité insuffisante.'); window.location.href = 'cart.php';</script>";
+        $_SESSION['error'] = 'Le produit "' . htmlspecialchars($item['name']) . '" n\'est plus disponible en quantité suffisante';
+        header('Location: cart.php');
         exit;
     }
     $totalCartPrice += $item['price'] * $item['quantity'];
 }
 
-// 🚨 Valider la commande
 if (isset($_POST['place_order'])) {
-    $payment_method = $_POST['payment_method'];
-
-    // 🔹 Récupérer le dernier numéro de commande de l'utilisateur
     $stmt = $conn->prepare("SELECT IFNULL(MAX(user_order_number), 0) + 1 FROM orders WHERE user_id = ?");
     $stmt->bind_param("i", $userId);
     $stmt->execute();
@@ -109,34 +150,21 @@ if (isset($_POST['place_order'])) {
     $stmt->fetch();
     $stmt->close();
 
-    // 🔹 Insérer la commande avec le bon numéro de commande
     $stmt = $conn->prepare("INSERT INTO orders (user_id, user_order_number, total_price, payment_method, status) VALUES (?, ?, ?, ?, 'en attente')");
-    $stmt->bind_param("iids", $userId, $userOrderNumber, $totalCartPrice, $payment_method);
+    $stmt->bind_param("iids", $userId, $userOrderNumber, $totalCartPrice, $_POST['payment_method']);
     $stmt->execute();
     $order_id = $stmt->insert_id;
 
-    // 🔹 Insérer chaque produit dans la commande et décrémenter le stock
     foreach ($cartItems as $item) {
-        $stmt = $conn->prepare("INSERT INTO order_items (order_id, product_id, quantity, price) VALUES (?, ?, ?, ?)");
-        $stmt->bind_param("iiid", $order_id, $item['id'], $item['quantity'], $item['price']);
-        $stmt->execute();
-
-        $stmt = $conn->prepare("UPDATE products SET stock = stock - ? WHERE id = ?");
-        $stmt->bind_param("ii", $item['quantity'], $item['id']);
-        $stmt->execute();
+        $conn->query("INSERT INTO order_items (order_id, product_id, quantity, price) VALUES ($order_id, {$item['id']}, {$item['quantity']}, {$item['price']})");
+        $conn->query("UPDATE products SET stock = stock - {$item['quantity']} WHERE id = {$item['id']}");
     }
 
-    // 🔹 Vider le panier de la base de données
-    $stmt = $conn->prepare("DELETE FROM cart WHERE user_id = ?");
-    $stmt->bind_param("i", $userId);
-    $stmt->execute();
-
-    // 🔹 Redirection vers la page de confirmation
+    $conn->query("DELETE FROM cart WHERE user_id = $userId");
     header("Location: confirmation.php");
     exit;
 }
 ?>
-
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -144,128 +172,174 @@ if (isset($_POST['place_order'])) {
 <head>
     <meta charset="UTF-8">
     <title>Finaliser la commande</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
-
     <style>
+        /* Reset et styles de base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #74ebd5, #9face6);
+            background: linear-gradient(135deg, #f5f7fa, #e4e8f0);
             min-height: 100vh;
-            padding-top: 100px;
-        }
-
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #ffffff;
-            padding: 15px 20px;
-            text-align: center;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-        }
-
-        header a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        header a:hover {
-            color: #5c6bc0;
+            padding-top: 80px;
+            color: #2d3748;
         }
 
         .container {
-            background-color: white;
-            padding: 30px 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-            width: 90%;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
             max-width: 800px;
-            margin: auto;
-            text-align: center;
+            margin: 30px auto;
         }
 
         h1 {
-            font-size: 28px;
-            margin-bottom: 10px;
-            color: #333;
+            text-align: center;
+            color: #2d3748;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, #667eea, #5a67d8);
+            margin: 15px auto 0;
+            border-radius: 2px;
         }
 
         h2 {
-            font-size: 20px;
-            color: #5c6bc0;
-            margin-top: 30px;
+            text-align: center;
+            color: #4a5568;
+            margin: 25px 0 15px;
+            font-size: 1.4rem;
         }
 
-        ul {
+        /* Liste des produits */
+        .cart-items {
             list-style: none;
             padding: 0;
-            margin-top: 15px;
+            margin: 25px 0;
         }
 
-        ul li {
-            background: #f8f9fa;
-            padding: 10px;
-            margin: 5px 0;
-            border-radius: 6px;
-            color: #333;
-        }
-
-        p strong {
-            font-size: 1.2em;
-            color: #333;
-        }
-
-        form {
-            margin-top: 20px;
-            text-align: left;
-        }
-
-        label {
-            display: block;
-            font-size: 16px;
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
             margin-bottom: 12px;
-            color: #444;
-        }
-
-        input[type="radio"] {
-            margin-right: 8px;
-            transform: scale(1.2);
-        }
-
-        button {
-            background: #28a745;
-            color: white;
-            padding: 10px 25px;
-            font-size: 16px;
-            border: none;
+            background: #f8fafc;
             border-radius: 8px;
-            margin-top: 20px;
-            cursor: pointer;
-            transition: background 0.3s ease;
+            transition: all 0.3s ease;
         }
 
-        button:hover {
-            background: #218838;
+        .cart-item:hover {
+            background: #edf2f7;
+            transform: translateX(5px);
+        }
+
+        .remove-item {
+            color: #e53e3e;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+            margin-left: 15px;
+        }
+
+        /* Total */
+        .total-price {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2b6cb0;
+            margin: 30px 0;
+        }
+
+        /* Options de paiement */
+        .payment-options {
+            margin: 30px 0;
+        }
+
+        .payment-option {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            margin-bottom: 12px;
+            background: #f8fafc;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .payment-option:hover {
+            background: #ebf4ff;
+        }
+
+        .payment-option input {
+            margin-right: 15px;
+        }
+
+        /* Boutons */
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #48bb78, #38a169);
+            color: white;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #38a169, #2f855a);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
         .btn-secondary {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 10px 20px;
-            background: #6c757d;
-            color: white;
+            background: #e2e8f0;
+            color: #4a5568;
             text-decoration: none;
-            border-radius: 6px;
-            transition: background 0.3s ease;
         }
 
         .btn-secondary:hover {
-            background: #545b62;
+            background: #cbd5e0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            .btn-container {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .btn {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -273,31 +347,52 @@ if (isset($_POST['place_order'])) {
 <body>
     <div class="container">
         <h1>Finaliser la commande</h1>
+
         <h2>Résumé de votre commande</h2>
-        <ul>
+        <ul class="cart-items">
             <?php foreach ($cartItems as $item): ?>
-                <li><?= htmlspecialchars($item['name']) ?> - <?= $item['quantity'] ?> x <?= number_format($item['price'], 2) ?> €</li>
+                <li class="cart-item">
+                    <span>
+                        <?= htmlspecialchars($item['name']) ?> -
+                        <?= $item['quantity'] ?> x <?= number_format($item['price'], 2) ?> €
+                    </span>
+                    <a href="checkout.php?remove_item=<?= $item['id'] ?>"
+                        class="remove-item"
+                        title="Supprimer">🗑️</a>
+                </li>
             <?php endforeach; ?>
         </ul>
-        <p><strong>Total :</strong> <?= number_format($totalCartPrice, 2) ?> €</p>
 
-        <h2>Choisissez votre mode de paiement :</h2>
+        <div class="total-price">
+            Total : <?= number_format($totalCartPrice, 2) ?> €
+        </div>
+
         <form method="POST">
-            <label>
-                <input type="radio" name="payment_method" value="paiement_en_ligne" required>
-                💳 Paiement en ligne
-            </label>
-            <label>
-                <input type="radio" name="payment_method" value="paiement_a_la_livraison">
-                🚚 Paiement à la livraison
-            </label>
+            <h2>Mode de paiement</h2>
 
-            <button type="submit" name="place_order">✅ Valider la commande</button>
+            <div class="payment-options">
+                <label class="payment-option">
+                    <input type="radio" name="payment_method"
+                        value="paiement_en_ligne" required>
+                    <span>💳 Paiement en ligne</span>
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="payment_method"
+                        value="paiement_a_la_livraison">
+                    <span>🚚 Paiement à la livraison</span>
+                </label>
+            </div>
+
+            <div class="btn-container">
+                <button type="submit" name="place_order" class="btn btn-primary">
+                    ✅ Valider la commande
+                </button>
+                <a href="product_list.php" class="btn btn-secondary">
+                    ↩️ Retour aux produits
+                </a>
+            </div>
         </form>
-
-        <a href="product_list.php" class="btn-secondary">↩️ Retour aux produits</a>
-
-
     </div>
 </body>
 
