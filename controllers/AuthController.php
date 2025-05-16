@@ -14,7 +14,7 @@ if (isset($_POST['register'])) {
   $name = trim($_POST['name']);
   $email = trim($_POST['email']);
   $password = trim($_POST['password']);
-
+//chokran reda/ walid
   // Champs requis
   if (empty($name) || empty($email) || empty($password)) {
     $_SESSION['error'] = "⚠️ TOUS LES CHAMPS SONT REQUIS.";
@@ -35,7 +35,7 @@ if (isset($_POST['register'])) {
     exit;
   }
   $stmt->close();
-  
+
   // Enregistrer l'utilisateur
   $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
   $stmt = $conn->prepare("INSERT INTO users (name, email, password) VALUES (?, ?, ?)");

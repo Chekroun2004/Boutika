@@ -272,6 +272,5 @@ $orders = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
         <?php endif; ?>
 
         <div class="action-buttons">
-
             <a href="home.php" class="btn btn-primary">🏠 Accueil</a>
             <a href="product_list.php" class="btn btn-primary">🛍️ Boutique</a>
