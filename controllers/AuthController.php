@@ -64,22 +64,7 @@ if (isset($_POST['login'])) {
     exit;
   }
 
-  // 🔐 Informations admin codées en dur (tu peux les déplacer dans une table plus tard)
-  $adminEmail = "admin@site.com";
-  $adminPassword = "admin123";
-
-  // Vérification des identifiants admin
-  if ($email === $adminEmail && $password === $adminPassword) {
-    $_SESSION['user'] = [
-      'email' => $adminEmail,
-      'name' => 'Administrateur'
-    ];
-    $_SESSION['is_admin'] = true;
-    header("Location: ../views/admin/dashboard.php");
-    exit;
-  }
-
-  // Vérification dans la base de données (utilisateur normal)
+  // Requête pour vérifier l'utilisateur (admin ou client)
   $stmt = $conn->prepare("SELECT * FROM users WHERE email = ?");
   $stmt->bind_param("s", $email);
   $stmt->execute();
@@ -93,19 +78,19 @@ if (isset($_POST['login'])) {
 
   $user = $result->fetch_assoc();
 
-  // Vérifier mot de passe
+  // Vérification dyal lmdp
   if (!password_verify($password, $user['password'])) {
     $_SESSION['error'] = "❌ MOT DE PASSE INCORRECT.";
     header("Location: ../views/login.php");
     exit;
   }
 
-  // Connexion réussie utilisateur
+  // Connexion réussie
   session_regenerate_id(true);
   $_SESSION['user'] = $user;
-  $_SESSION['is_admin'] = false;
+  $_SESSION['is_admin'] = isset($user['role']) && $user['role'] === 'admin';
 
-  // Fusion du panier anonyme avec celui de l'utilisateur connecté
+  // Fusion du panier anonyme (s’il existe)
   if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
     foreach ($_SESSION['cart'] as $productId => $quantity) {
       Cart::addToCart($user['id'], $productId, $quantity);
@@ -113,10 +98,16 @@ if (isset($_POST['login'])) {
     unset($_SESSION['cart']);
   }
 
-  header("Location: ../views/home.php");
+  // Redirection selon le rôle
+  if ($_SESSION['is_admin']) {
+    header("Location: ../views/admin/dashboard.php");
+  } else {
+    header("Location: ../views/home.php");
+  }
   exit;
 }
-
-// Redirection par défaut
-header("Location: ../views/login.php");
+  // Redirection par défaut
+  header("Location: ../views/login.php");
 exit;
+
+?>
