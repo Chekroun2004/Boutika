@@ -4,7 +4,6 @@ session_start();
 require_once '../db/connection.php';
 require_once '../models/Cart.php';
 
-// Vérifier si la classe Cart est bien incluse
 if (!class_exists('Cart')) {
   die("❌ Erreur : la classe Cart n'a pas été trouvée. Vérifiez le fichier Cart.php.");
 }
@@ -14,15 +13,14 @@ if (isset($_POST['register'])) {
   $name = trim($_POST['name']);
   $email = trim($_POST['email']);
   $password = trim($_POST['password']);
-//chokran reda/ walid
-  // Champs requis
+
   if (empty($name) || empty($email) || empty($password)) {
     $_SESSION['error'] = "⚠️ TOUS LES CHAMPS SONT REQUIS.";
     header("Location: ../views/register.php");
     exit;
   }
 
-  // Vérifier si l'utilisateur existe déjà
+
   $stmt = $conn->prepare("SELECT id FROM users WHERE email = ?");
   $stmt->bind_param("s", $email);
   $stmt->execute();
@@ -36,7 +34,7 @@ if (isset($_POST['register'])) {
   }
   $stmt->close();
 
-  // Enregistrer l'utilisateur
+
   $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
   $stmt = $conn->prepare("INSERT INTO users (name, email, password) VALUES (?, ?, ?)");
   $stmt->bind_param("sss", $name, $email, $hashedPassword);
@@ -57,14 +55,14 @@ if (isset($_POST['login'])) {
   $email = trim($_POST['email']);
   $password = trim($_POST['password']);
 
-  // Champs requis
+
   if (empty($email) || empty($password)) {
     $_SESSION['error'] = "⚠️ VEUILLEZ REMPLIR TOUS LES CHAMPS.";
     header("Location: ../views/login.php");
     exit;
   }
 
-  // Requête pour vérifier l'utilisateur (admin ou client)
+ 
   $stmt = $conn->prepare("SELECT * FROM users WHERE email = ?");
   $stmt->bind_param("s", $email);
   $stmt->execute();
@@ -78,19 +76,19 @@ if (isset($_POST['login'])) {
 
   $user = $result->fetch_assoc();
 
-  // Vérification dyal lmdp
+
   if (!password_verify($password, $user['password'])) {
     $_SESSION['error'] = "❌ MOT DE PASSE INCORRECT.";
     header("Location: ../views/login.php");
     exit;
   }
 
-  // Connexion réussie
+
   session_regenerate_id(true);
   $_SESSION['user'] = $user;
   $_SESSION['is_admin'] = isset($user['role']) && $user['role'] === 'admin';
 
-  // Fusion du panier anonyme (s’il existe)
+
   if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
     foreach ($_SESSION['cart'] as $productId => $quantity) {
       Cart::addToCart($user['id'], $productId, $quantity);
@@ -98,7 +96,7 @@ if (isset($_POST['login'])) {
     unset($_SESSION['cart']);
   }
 
-  // Redirection selon le rôle
+ 
   if ($_SESSION['is_admin']) {
     header("Location: ../views/admin/dashboard.php");
   } else {
@@ -106,7 +104,7 @@ if (isset($_POST['login'])) {
   }
   exit;
 }
-  // Redirection par défaut
+
   header("Location: ../views/login.php");
 exit;
 

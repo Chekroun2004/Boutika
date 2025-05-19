@@ -1,31 +1,31 @@
 📁 boutique_en_ligne/
 ├── 📁 .qodo/
-│ └── history.sqlite.php
+│  └── history.sqlite.php
 ├── 📁 assets/
-│ └──style.css
-│ ├── .gitignore
-│ └── 📁 .qodo/
-│   └── history.sqlite
+│  └──style.css
+│  ├── .gitignore
+│  └── 📁 .qodo/
+│     └── history.sqlite
 │
 ├───── config.php
 ├───── index.php
 ├───── .gitignore
 │
 ├── 📁 controllers/
-│ ├── AuthController.php
-│ ├── CartController.php
-│ ├── ProductController.php
-│ ├── logout.php
-│ └── OrderController.php
+│  ├── AuthController.php
+│  ├── CartController.php
+│  ├── ProductController.php
+│  ├── logout.php
+│  └── OrderController.php
 │
 ├── 📁 db/
-│ └── connection.php
+│  └── connection.php
 │
 ├── 📁 models/
-│ ├── Cart.php
-│ ├── Order.php
-│ ├── Product.php
-│ └── User.php
+│  ├── Cart.php
+│  ├── Order.php
+│  ├── Product.php
+│  └── User.php
 │
 └── 📁 views/
   ├── login.php
@@ -38,8 +38,12 @@
   ├── home.php
   ├── product_list.php
   ├── order_history.php
+  ├── 📁 uploads/
+  │  ├── ici les src de mes images
+  │  ├── ici les src de mes images
+  │  └── ici les src de mes images...
   └── 📁 admin/
-    ├── manage_products.php
-    ├── dashboard.php
-    └── manage_users.php
+     ├── manage_products.php
+     ├── dashboard.php
+     └── manage_users.php
 

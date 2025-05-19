@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $image = null;
     if (!empty($_FILES['image']['name'])) {
         $image = time() . '_' . $_FILES['image']['name'];
-        move_uploaded_file($_FILES['image']['tmp_name'], '../uploads/' . $image);
+        move_uploaded_file($_FILES['image']['tmp_name'], '../views/uploads/' . $image);
     }
 
     if ($action === 'add') {
