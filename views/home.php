@@ -301,10 +301,10 @@ if (isset($_POST['add_to_cart'])) {
             } else {
                 echo "<img src='images/default.jpg' alt='Image par défaut'>";
             }
-
+            
             echo "<h3>$name</h3>";
             echo "<p>$desc</p>";
-            echo "<p class='price'>$price €</p>";
+            echo "<p class='price'>$price Dh</p>";
 
             echo "<form method='post' action=''>
                 <input type='hidden' name='product_id' value='$id'>

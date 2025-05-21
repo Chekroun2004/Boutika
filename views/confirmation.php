@@ -225,6 +225,7 @@ session_start(); ?>
         <h1>🎉 Votre commande a été validée avec succès !</h1>
         <p>Merci pour votre achat. Nous vous enverrons une confirmation par e-mail.</p>
 
+        
         <div class="action-buttons">
             <a href="../controllers/logout.php" class="btn btn-logout">
                 🔒 Déconnexion

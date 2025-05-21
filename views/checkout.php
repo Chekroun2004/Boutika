@@ -354,7 +354,7 @@ if (isset($_POST['place_order'])) {
                 <li class="cart-item">
                     <span>
                         <?= htmlspecialchars($item['name']) ?> -
-                        <?= $item['quantity'] ?> x <?= number_format($item['price'], 2) ?> €
+                        <?= $item['quantity'] ?> x <?= number_format($item['price'], 2) ?> Dh
                     </span>
                     <a href="checkout.php?remove_item=<?= $item['id'] ?>"
                         class="remove-item"
@@ -364,7 +364,7 @@ if (isset($_POST['place_order'])) {
         </ul>
 
         <div class="total-price">
-            Total : <?= number_format($totalCartPrice, 2) ?> €
+            Total : <?= number_format($totalCartPrice, 2) ?> Dh
         </div>
 
         <form method="POST">

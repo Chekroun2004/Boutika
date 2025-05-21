@@ -21,6 +21,8 @@
             width: 100%;
         }
 
+
+        
         body {
             margin-bottom: 60px;
             /* pour ne pas cacher le contenu */

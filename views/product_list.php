@@ -397,7 +397,7 @@ $products = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 
             <?php endif; ?>
             <p><?= htmlspecialchars($product['description']) ?></p>
-            <strong><?= number_format($product['price'], 2) ?> €</strong>
+            <strong><?= number_format($product['price'], 2) ?> Dh</strong>
             <form method="POST" action="">
                 <input type="hidden" name="product_id" value="<?= $product['id'] ?>">
                 <input type="number" name="quantity" value="1" min="1">

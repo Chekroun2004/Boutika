@@ -321,7 +321,7 @@ foreach ($cartItems as $item) {
                 <?php foreach ($cartItems as $item): ?>
                     <tr>
                         <td><?= htmlspecialchars($item['name']) ?></td>
-                        <td><?= number_format($item['price'], 2) ?> €</td>
+                        <td><?= number_format($item['price'], 2) ?> Dh</td>
                         <td>
                             <form method="POST" action="" class="quantity-control">
                                 <input type="hidden" name="product_id" value="<?= $item['id'] ?>">
@@ -330,7 +330,7 @@ foreach ($cartItems as $item) {
                                 <button type="submit" name="update_quantity" class="btn update-btn">✓</button>
                             </form>
                         </td>
-                        <td><?= number_format($item['total_price'], 2) ?> €</td>
+                        <td><?= number_format($item['total_price'], 2) ?> Dh</td>
                         <td class="action-cell">
                             <form method="POST" action="">
                                 <input type="hidden" name="product_id" value="<?= $item['id'] ?>">
@@ -340,7 +340,7 @@ foreach ($cartItems as $item) {
                     </tr>
                 <?php endforeach; ?>
             </table>
-            <h2>Total : <?= number_format($totalCartPrice, 2) ?> €</h2>
+            <h2>Total : <?= number_format($totalCartPrice, 2) ?> Dh</h2>
         <?php endif; ?>
     </div>
 </body>

@@ -224,7 +224,7 @@ $orders = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
                     <div class="order-details">
                         <div class="detail-row">
                             <span class="detail-label">Total :</span>
-                            <span class="detail-value"><?= number_format($order['total_price'], 2) ?> €</span>
+                            <span class="detail-value"><?= number_format($order['total_price'], 2) ?> Dh</span>
                         </div>
                         <div class="detail-row">
                             <span class="detail-label">Méthode de paiement :</span>
@@ -261,8 +261,8 @@ $orders = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
                                 <tr>
                                     <td><?= htmlspecialchars($item['name']) ?></td>
                                     <td><?= $item['quantity'] ?></td>
-                                    <td><?= number_format($item['price'], 2) ?> €</td>
-                                    <td><?= number_format($item['quantity'] * $item['price'], 2) ?> €</td>
+                                    <td><?= number_format($item['price'], 2) ?> Dh</td>
+                                    <td><?= number_format($item['quantity'] * $item['price'], 2) ?> Dh</td>
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>

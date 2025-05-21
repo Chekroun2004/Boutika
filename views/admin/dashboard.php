@@ -286,6 +286,7 @@ if (isset($_GET['logout'])) {
 
         <div class="dashboard-actions">
             <a href="/boutique_en_ligne/views/admin/manage_users.php" class="btn btn-primary">👥 Gérer les clients</a>
+            <a href="dashboard.php?logout=true" class="logout-link">Déconnexion</a>
         </div>
 
         <h2><?= $editProduct ? "✏️ Modifier un produit" : "➕ Ajouter un nouveau produit" ?></h2>
@@ -307,7 +308,7 @@ if (isset($_GET['logout'])) {
             </div>
 
             <div class="form-group">
-                <label for="price">Prix (€) :</label>
+                <label for="price">Prix (Dh) :</label>
                 <input type="number" step="0.01" id="price" name="price" required value="<?= $editProduct['price'] ?? '' ?>">
             </div>
 
@@ -356,7 +357,7 @@ if (isset($_GET['logout'])) {
                     <tr>
                         <td><?= htmlspecialchars($product['name']) ?></td>
                         <td><?= htmlspecialchars(substr($product['description'], 0, 50)) ?>...</td>
-                        <td><?= number_format($product['price'], 2) ?> €</td>
+                        <td><?= number_format($product['price'], 2) ?> Dh</td>
                         <td><?= htmlspecialchars($product['category']) ?></td>
                         <td><?= $product['stock'] ?></td>
                         <td>
@@ -376,9 +377,7 @@ if (isset($_GET['logout'])) {
             </tbody>
         </table>
 
-        <div class="logout-container">
-            <a href="dashboard.php?logout=true" class="logout-link">Déconnexion</a>
-        </div>
+        
     </div>
 </body>
 
