@@ -15,4 +15,3 @@ if (isset($_POST['add_to_cart'])) {
     $stmt->execute();
 }
 ?>
-git restore --staged

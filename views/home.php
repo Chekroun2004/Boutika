@@ -270,7 +270,7 @@ if (isset($_POST['add_to_cart'])) {
     </header>
 
     <div class="home-container">
-        <h1>Bienvenue sur la boutique en ligne</h1>
+        <h1>Bienvenue sur <br> FSR SHOP</h1>
         <p>Découvrez nos produits et profitez des meilleures offres !</p>
     </div>
 

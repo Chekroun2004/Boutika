@@ -295,11 +295,16 @@ foreach ($cartItems as $item) {
 
 <body>
     <header>
-        <a href="product_list.php">🛒 Voir les produits</a>
-        <a href="home.php">🏠 Page Principale</a>
-        <a href="checkout.php">Finaliser la commande</a>
+        <a href="product_list.php"> Voir les produits</a>
+        <a href="home.php"> Page Principale</a>
+        <?php if (!empty($cartItems)): ?>
+            <a href="checkout.php">Finaliser la commande</a>
+        <?php else: ?>
+            <a href="checkout.php">Finaliser la commande</a>
+        <?php endif; ?>
+
         <?php if (isset($_SESSION['user'])): ?>
-            <a href="order_history.php">📜 Historique des achats</a>
+            <a href="order_history.php"> Historique des achats</a>
             <a href="../controllers/logout.php">Déconnexion</a>
         <?php else: ?>
             <a href="login.php">Se connecter</a>

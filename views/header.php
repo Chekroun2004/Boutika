@@ -47,7 +47,7 @@ session_start();
         <a href="cart.php">Panier</a>
         <a href="checkout.php">Commander</a>
         <?php if (isset($_SESSION['user'])): ?>
-            <a href="order_history.php">📜 Historique</a>
+            <a href="order_history.php">Historique</a>
             <a href="../controllers/logout.php">Déconnexion</a>
         <?php else: ?>
             <a href="login.php">Se connecter</a>

@@ -28,6 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
+
 if (isset($_GET['delete'])) {
     $id = intval($_GET['delete']);
     Product::deleteProduct($id);
